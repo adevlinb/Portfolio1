@@ -33,7 +33,6 @@ body {
 }
 
 .nav-link:hover {
-  /* color: #FFBD75; */
   color: white;
   text-decoration: none;
 }
@@ -45,16 +44,21 @@ body {
 
 .app_links {
   margin: 20px;
-  color: red;
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+}
+.app_links:hover {
+  color: #fb311ecc;
+  text-decoration: none;
 }
 
 .navbar, .footer {
   background-color: rgba(0,0,0,0.4);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-left: 5vw;
-  padding-right: 10vw;
+  padding-left: 10vw;
+  padding-right: 7.5vw;
   margin: 0;
 }
 
@@ -65,12 +69,14 @@ body {
 }
 
 #left {
-  max-width: 40vw;
+  max-width: 45vw;
   overflow: visible;
+  margin-left: 4vw;
 }
 
 #right {
-  max-width: 80vw;
+  padding-top: 5vh;
+  max-width: 50vw;
   align-self: center;
   margin: 0 auto;
 }
@@ -84,12 +90,9 @@ pre {
   text-align: left;
   margin: 0 auto;
   left: 0;
-  font-size: 0.95vw;
+  font-size: 1.02vw;
   line-height: 2.25vh;
-}
-
-pre > a {
-  color: rgb(59, 59, 59);
+  display: inline;
 }
 
 #inline {
@@ -104,11 +107,8 @@ pre > a {
 }
 
 .title {
-  font-size: 1.25vw;
-}
-
-.tech {
-  color:rgb(0, 113, 206);
+  font-size: 1.05vw;
+  color: #fb311ecc;
 }
 
 .modal::backdrop {
@@ -186,7 +186,7 @@ pre > a {
 }
 
 .carousel_indicator.current_slide {
-  background: red;
+  background: #fb311ecc;
 }
 
 .is_hidden {
@@ -201,4 +201,20 @@ pre > a {
 
 .buttonDiv > button {
   height: 1vh;
+}
+
+.background {
+  background: none;
+  padding: 10px;
+  margin: 0px;
+  text-align: left;
+  left: 0;
+  font-size: 0.87vw;
+  line-height: 2.3vh;
+}
+
+.selectedSpan {
+  background: rgb(247, 247, 247);
+  border: 0.75px solid black;
+  border-radius: 5px;
 }

@@ -32,41 +32,41 @@
     </nav>
     <div class="horizontal">
       <div class="vertical" id="left">
-        <pre>
-        <span class="title">MASTERMIND</span> <a class="git_links" href="https://github.com/adevlinb/Mastermind" target="_blank">(GitHub Repo)</a>
-        <span class="tech">• JAVASCRIPT • HTML • CSS • GITHUB PAGES • AFFINITY PHOTO</span>
-        • DIGITAL VERSION OF POPULAR 1970’S CODE-BREAKING GAME
-        • DOM MANIPULATION TO ACCESS INPUT / EVENT HANDLERS
-        • SIMPLIFIED CODE LOGIC THROUGH STEP X STEP APPROACH
-       
-         
-        <span class="title">CLIMATE EVENTS</span> <a class="git_links" href="https://github.com/adevlinb/climate-events" target="_blank">(GitHub Repo)</a>
-        <span class="tech">• NODEJS • EXPRESS • MONGODB • MONGOOSE • HEROKU • API CONSUMPTION</span>
-        • EVENTS APP THAT ACCESSES TWO API’S:
-          - 1ST FOR: LATT / LONG. COORDINATES, 2ND TO RETRIEVE WEATHER DATA
-        • GOOGLE OAUTH AUTHENTICATION / AUTHORIZATION
-        • TAGGING SYSTEM TO SEARCH FOR EVENTS
-        • PLANNING: WIRE-FRAMING, ERD-DIAGRAMMING, USER-STORY IMPLEMENTATION
-        
-        
-        <span class="title">TASTE•BUDS</span><a class="git_links" href="https://github.com/adevlinb/fakebuds" target="_blank">(GitHub Repo)</a>
-        <span class="tech">• PYTHON • DJANGO • DTL • POSTGRESQL • HEROKU • AWS/S3 CLOUD STORAGE</span>
-        • DINING EVENT CREATOR WITH RECIPE SHARING
-        • DJANGO BUILT-IN AUTHENTICATION
-        • AMAZON (AWS) S3 CLOUD STORAGE
-        • PLANNING: WIRE-FRAMING, ERD-DIAGRAMMING, USER-STORY IMPLEMENTATION
-        
-         
-        <span class="title">XYLA</span> <a class="git_links" href="https://github.com/adevlinb/XYLA" target="_blank">(GitHub Repo)</a>
-        <span class="tech">• NODEJS • EXPRESS • REACT • MONGODB • MONGOOSE • HEROKU</span>
-        • SOCIAL APP FOR BOOK-LOVERS
-        • TOKEN BASED AUTHENTICATION / AUTHORIZATION
-        • GOOGLE BOOKS API ACCESS
-        • AJAX REQUESTS FROM REACT / CLIENT TO NODEJS / SERVER
-        • PLANNING: WIRE-FRAMING, ERD-DIAGRAMMING, USER-STORY IMPLEMENTATION
-        
-        </pre>
-        
+
+        <div class="background selectedSpan">
+          <span class="title">MASTERMIND</span> <a class="git_links" href="https://github.com/adevlinb/Mastermind" target="_blank">(GitHub Repo)</a><br>
+          <span class="tech">• JAVASCRIPT | HTML | CSS | GITHUB PAGES | AFFINITY PHOTO</span><br>
+          • DIGITAL VERSION OF POPULAR 1970’S CODE-BREAKING GAME<br>
+          • DOM MANIPULATION TO ACCESS INPUT / EVENT HANDLERS<br>
+          • SIMPLIFIED CODE LOGIC THROUGH STEP X STEP APPROACH
+        </div>
+        <div class="background">
+          <span class="title">CLIMATE EVENTS</span> <a class="git_links" href="https://github.com/adevlinb/climate-events" target="_blank">(GitHub Repo)</a><br>
+          <span class="tech">• NODEJS | EXPRESS | MONGODB | MONGOOSE | HEROKU | API CONSUMPTION</span><br>
+          • EVENTS APP THAT ACCESSES TWO API’S:<br>
+            &nbsp;&nbsp; - 1ST FOR: LATT / LONG. COORDINATES, 2ND TO RETRIEVE WEATHER DATA<br>
+          • GOOGLE OAUTH AUTHENTICATION / AUTHORIZATION<br>
+          • TAGGING SYSTEM TO SEARCH FOR EVENTS<br>
+          • PLANNING: WIRE-FRAMING, ERD-DIAGRAMMING, USER-STORY IMPLEMENTATION
+        </div>
+        <div class="background">
+          <span class="title">TASTE/BUDS</span><a class="git_links" href="https://github.com/adevlinb/fakebuds" target="_blank">(GitHub Repo)</a><br>
+          <span class="tech">• PYTHON | DJANGO | DTL | POSTGRESQL | HEROKU | AWS/S3 CLOUD STORAGE</span><br>
+          • DINING EVENT CREATOR WITH RECIPE SHARING<br>
+          • DJANGO BUILT-IN AUTHENTICATION<br>
+          • AMAZON (AWS) S3 CLOUD STORAGE<br>
+          • PLANNING: WIRE-FRAMING, ERD-DIAGRAMMING, USER-STORY IMPLEMENTATION
+        </div>
+        <div class="background">
+          <span class="title">XYLA</span> <a class="git_links" href="https://github.com/adevlinb/XYLA" target="_blank">(GitHub Repo)</a><br>
+          <span class="tech">• NODEJS | EXPRESS | REACT | MONGODB | MONGOOSE | HEROKU</span><br>
+          • SOCIAL APP FOR BOOK-LOVERS<br>
+          • TOKEN BASED AUTHENTICATION / AUTHORIZATION<br>
+          • GOOGLE BOOKS API ACCESS<br>
+          • AJAX REQUESTS FROM REACT / CLIENT TO NODEJS / SERVER<br>
+          • PLANNING: WIRE-FRAMING, ERD-DIAGRAMMING, USER-STORY IMPLEMENTATION
+      </div>
+
       </div>
       <div class="vertical" id="right">
         <div class="buttonDiv">
@@ -84,15 +84,15 @@
           <button class="carousel_button carousel_button--right"><img src="images/forward.png" alt="forward"></button>
         </div>
         <div class="carousel_nav">
-          <button class="carousel_indicator current_slide">•</button>
-          <button class="carousel_indicator">•</button>
-          <button class="carousel_indicator">•</button>
-          <button class="carousel_indicator">•</button>
+          <button class="carousel_indicator current_slide"></button>
+          <button class="carousel_indicator"></button>
+          <button class="carousel_indicator"></button>
+          <button class="carousel_indicator"></button>
         </div>
         <div id="inline">
           <p><a class="app_links" href="https://adevlinb.github.io/Mastermind/" target="_blank">MASTERMIND</a></p>
-          <p><a class="app_links" href="https://climate-events.herokuapp.com/" target="_blank">CLIMATE_EVENTS</a></p>
-          <p><a class="app_links" href="https://taste--buds.herokuapp.com/" target="_blank">TASTE•BUDS</a></p>
+          <p><a class="app_links" href="https://climate-events.herokuapp.com/" target="_blank">CLIMATE EVENTS</a></p>
+          <p><a class="app_links" href="https://taste--buds.herokuapp.com/" target="_blank">TASTE/BUDS</a></p>
           <p><a class="app_links" href="https://xyla-books.herokuapp.com/" target="_blank">XYLA</a></p>
         </div>
       </div>
@@ -123,7 +123,8 @@ const nextButton = document.querySelector('.carousel_button--right');
 const prevButton = document.querySelector('.carousel_button--left');
 const dotsNav = document.querySelector('.carousel_nav');
 const dots = Array.from(dotsNav.children);
-
+const projectParent = document.getElementById('left');
+const projects = Array.from(projectParent.children);
 
 ////////////////// MODAL EVENT LISTENERS / FUNCTIONS ////////////
 openButton.addEventListener('click', function() {
@@ -157,6 +158,11 @@ closeButton.addEventListener('click', function() {
     targetDot.classList.add('current_slide');
   }
 
+  const updateProjects = (currentProject, targetProject) => {
+    currentProject.classList.remove('selectedSpan');
+    targetProject.classList.add('selectedSpan');
+  }
+
   const updateHideArrows = (slides, prevButton, nextButton, targetIndex) => {
     if (targetIndex === 0) {
       prevButton.classList.add('is_hidden');
@@ -175,10 +181,14 @@ closeButton.addEventListener('click', function() {
     const prevSlide = currentSlide.previousElementSibling;
     const currentDot = dotsNav.querySelector('.current_slide');
     const prevDot = currentDot.previousElementSibling;
-    const prevIndex = slides.findIndex(slide => slide === prevSlide)
+    const prevIndex = slides.findIndex(slide => slide === prevSlide);
+
+    const currentProject = projectParent.querySelector('.selectedSpan');
+    const prevProject = currentProject.previousElementSibling;
 
     moveToSlide(track, currentSlide, prevSlide);
     updateDots(currentDot, prevDot);
+    updateProjects(currentProject, prevProject);
     updateHideArrows(slides, prevButton, nextButton, prevIndex);
   })
 
@@ -189,8 +199,12 @@ closeButton.addEventListener('click', function() {
     const nextDot = currentDot.nextElementSibling;
     const nextIndex = slides.findIndex(slide => slide === nextSlide);
 
+    const currentProject = projectParent.querySelector('.selectedSpan');
+    const nextProject = currentProject.nextElementSibling;
+
     moveToSlide(track, currentSlide, nextSlide);
     updateDots(currentDot, nextDot);
+    updateProjects(currentProject, nextProject);
     updateHideArrows(slides, prevButton, nextButton, nextIndex);
   });
 
@@ -205,8 +219,12 @@ closeButton.addEventListener('click', function() {
 
     const nextIndex = slides.findIndex(slide => slide === nextSlide);
 
+    const currentProject = projectParent.querySelector('.selectedSpan');
+    const targetProject = projects[targetIndex];
+
     moveToSlide(track, currentSlide, targetSlide);
-    updateDots(currentDot, targetDot)
+    updateDots(currentDot, targetDot);
+    updateProjects(currentProject, targetProject);
     updateHideArrows(slides, prevButton, nextButton, targetIndex);
   })
 
