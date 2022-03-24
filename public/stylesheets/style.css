@@ -52,13 +52,13 @@ body {
   text-decoration: none;
 }
 
-.navbar, .footer {
+.navbar {
   background-color: rgba(0,0,0,0.4);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 10vw;
-  padding-right: 7.5vw;
+  padding-left: 11vw;
+  padding-right: 11vw;
   margin: 0;
 }
 
@@ -86,20 +86,21 @@ p {
   align-self: center;
 }
 
-pre {
-  text-align: left;
-  margin: 0 auto;
-  left: 0;
-  font-size: 1.02vw;
-  line-height: 2.25vh;
-  display: inline;
-}
-
 #inline {
   display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.4);
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 }
 
 #foot-txt {
@@ -109,6 +110,31 @@ pre {
 .title {
   font-size: 1.05vw;
   color: #fb311ecc;
+  text-decoration: none;
+}
+
+.modal_container {
+  border-radius: 0;
+  color: black;
+  width: 0;
+  height: 0;
+  transition: all 3s ease-in-out;
+  animation:fadein .5s;
+}
+
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+
+.open {
+  border-radius: 15px;
+  min-width: 50vw;
+  min-height: 50vh;
 }
 
 .modal::backdrop {
@@ -136,6 +162,7 @@ pre {
   overflow: hidden;
   border: 2px solid rgba(0, 0, 0, 0.7);
   border-radius: 15px;
+  box-shadow: 3px 5px 5px rgb(92, 92, 92);
 }
 
 .carousel_track {
@@ -204,17 +231,27 @@ pre {
 }
 
 .background {
-  background: none;
+  background-color: none;
   padding: 10px;
   margin: 0px;
   text-align: left;
   left: 0;
   font-size: 0.87vw;
   line-height: 2.3vh;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  /* transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out; */
 }
 
 .selectedSpan {
-  background: rgb(247, 247, 247);
+  background-color: rgb(247, 247, 247);
   border: 0.75px solid black;
   border-radius: 5px;
+  box-shadow: 3px 5px 5px rgb(155, 155, 155);
+}
+
+@media query  {
+  
 }

@@ -19,7 +19,7 @@
             <a class="nav-link" href="https://github.com/adevlinb" target="_blank">GitHub</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/devlin-booth/" target="_blank">LinkdedIn</a>
+            <a class="nav-link" href="https://www.linkedin.com/in/devlin-booth/" target="_blank">LinkedIn</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="images/OUTCOMES 31822 RESUME.pdf" target="_blank">Resume</a>
@@ -34,14 +34,14 @@
       <div class="vertical" id="left">
 
         <div class="background selectedSpan">
-          <span class="title">MASTERMIND</span> <a class="git_links" href="https://github.com/adevlinb/Mastermind" target="_blank">(GitHub Repo)</a><br>
+          <span class="title"><a class="title" href="https://adevlinb.github.io/Mastermind/" target="_blank">MASTERMIND</a></span> <a class="git_links" href="https://github.com/adevlinb/Mastermind" target="_blank">(GitHub Repo)</a><br>
           <span class="tech">• JAVASCRIPT | HTML | CSS | GITHUB PAGES | AFFINITY PHOTO</span><br>
           • DIGITAL VERSION OF POPULAR 1970’S CODE-BREAKING GAME<br>
           • DOM MANIPULATION TO ACCESS INPUT / EVENT HANDLERS<br>
           • SIMPLIFIED CODE LOGIC THROUGH STEP X STEP APPROACH
         </div>
         <div class="background">
-          <span class="title">CLIMATE EVENTS</span> <a class="git_links" href="https://github.com/adevlinb/climate-events" target="_blank">(GitHub Repo)</a><br>
+          <span class="title"><a class="title" href="https://climate-events.herokuapp.com/" target="_blank">CLIMATE EVENTS</a></span><a class="git_links" href="https://github.com/adevlinb/climate-events" target="_blank">(GitHub Repo)</a><br>
           <span class="tech">• NODEJS | EXPRESS | MONGODB | MONGOOSE | HEROKU | API CONSUMPTION</span><br>
           • EVENTS APP THAT ACCESSES TWO API’S:<br>
             &nbsp;&nbsp; - 1ST FOR: LATT / LONG. COORDINATES, 2ND TO RETRIEVE WEATHER DATA<br>
@@ -50,7 +50,7 @@
           • PLANNING: WIRE-FRAMING, ERD-DIAGRAMMING, USER-STORY IMPLEMENTATION
         </div>
         <div class="background">
-          <span class="title">TASTE/BUDS</span><a class="git_links" href="https://github.com/adevlinb/fakebuds" target="_blank">(GitHub Repo)</a><br>
+          <span class="title"><a class="title" href="https://taste--buds.herokuapp.com/" target="_blank">TASTE/BUDS</span><a class="git_links" href="https://github.com/adevlinb/fakebuds" target="_blank">(GitHub Repo)</a><br>
           <span class="tech">• PYTHON | DJANGO | DTL | POSTGRESQL | HEROKU | AWS/S3 CLOUD STORAGE</span><br>
           • DINING EVENT CREATOR WITH RECIPE SHARING<br>
           • DJANGO BUILT-IN AUTHENTICATION<br>
@@ -58,15 +58,14 @@
           • PLANNING: WIRE-FRAMING, ERD-DIAGRAMMING, USER-STORY IMPLEMENTATION
         </div>
         <div class="background">
-          <span class="title">XYLA</span> <a class="git_links" href="https://github.com/adevlinb/XYLA" target="_blank">(GitHub Repo)</a><br>
+          <span class="title"><a class="title" href="https://xyla-books.herokuapp.com/" target="_blank">XYLA</a></span> <a class="git_links" href="https://github.com/adevlinb/XYLA" target="_blank">(GitHub Repo)</a><br>
           <span class="tech">• NODEJS | EXPRESS | REACT | MONGODB | MONGOOSE | HEROKU</span><br>
           • SOCIAL APP FOR BOOK-LOVERS<br>
           • TOKEN BASED AUTHENTICATION / AUTHORIZATION<br>
           • GOOGLE BOOKS API ACCESS<br>
           • AJAX REQUESTS FROM REACT / CLIENT TO NODEJS / SERVER<br>
           • PLANNING: WIRE-FRAMING, ERD-DIAGRAMMING, USER-STORY IMPLEMENTATION
-      </div>
-
+        </div>
       </div>
       <div class="vertical" id="right">
         <div class="buttonDiv">
@@ -96,14 +95,13 @@
           <p><a class="app_links" href="https://xyla-books.herokuapp.com/" target="_blank">XYLA</a></p>
         </div>
       </div>
-  </div>
+    </div>
 
     <dialog class="modal_container" id="modal_container">
       <h1>Hi Devlin</h1>
       <button id="close_button">close</button>
     </dialog>
-
-    <footer class="navbar" style="bottom: 0; position: fixed; width: 100%;"><p id="foot-txt">THANK YOU FOR VISITING MY PAGE!</p></footer>
+    <footer class="footer"><p id="foot-txt">THANK YOU FOR VISITING MY PAGE!</p></footer>
   </body>
 </html>
 
@@ -129,11 +127,13 @@ const projects = Array.from(projectParent.children);
 ////////////////// MODAL EVENT LISTENERS / FUNCTIONS ////////////
 openButton.addEventListener('click', function() {
   modal_container.showModal()
+  modal_container.classList.add('open')
   console.log('click open');
 });
 
 closeButton.addEventListener('click', function() {
   modal_container.close();
+  modal_container.classList.remove('open')
   console.log('click closed');
 });
 
