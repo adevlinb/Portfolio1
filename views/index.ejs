@@ -4,28 +4,28 @@
     <title><%= title %></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-none">
+    <nav class="navbar">
       <h3 id="headline">Devlin B's Projects!</h3>
-      <div class="collapse navbar-collapse" style="justify-content: center;" id="navbarNav">
+      <div >
         <ul class="navbar-nav">
           <li class="nav-item">
-            <button class="nav-link" id="open">ABOUT ME</button>
+            <a class="nav-link" id="open">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/adevlinb" target="_blank">GitHub<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="https://github.com/adevlinb" target="_blank">GitHub</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/devlin-booth/" target="_blank">LinkedIn</a>
+            <a class="nav-link" href="https://www.linkedin.com/in/devlin-booth/" target="_blank">LinkdedIn</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="images/OUTCOMES 31822 RESUME.pdf" target="_blank">Resume</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="mailto:adevlin.booth@gmail.com" target="_blank">Send me an email!</a>
+            <a class="nav-link" href="mailto:adevlin.booth@gmail.com" target="_blank">Email!</a>
           </li>
         </ul>
       </div>
@@ -38,7 +38,7 @@
           • DIGITAL VERSION OF POPULAR 1970’S CODE-BREAKING GAME
           • DOM MANIPULATION TO ACCESS INPUT / EVENT HANDLERS
           • SIMPLIFIED CODE LOGIC THROUGH STEP X STEP APPROACH
-         <a class="links" href="https://github.com/adevlinb/Mastermind" target="_blank">MASTERMIND GitHub Repo</a>
+        <a class="git_links" href="https://github.com/adevlinb/Mastermind" target="_blank">MASTERMIND GitHub Repo</a>
          
          <span class="title">CLIMATE EVENTS</span>
          <span class="tech">• NODEJS • EXPRESS • MONGODB • MONGOOSE • HEROKU • API CONSUMPTION</span>
@@ -47,7 +47,7 @@
          • GOOGLE OAUTH AUTHENTICATION / AUTHORIZATION
          • TAGGING SYSTEM TO SEARCH FOR EVENTS
          • PLANNING: WIRE-FRAMING, ERD-DIAGRAMMING, USER-STORY IMPLEMENTATION
-        <a class="links" href="https://github.com/adevlinb/climate-events" target="_blank">Climate Events GitHub Repo</a>
+        <a class="git_links" href="https://github.com/adevlinb/climate-events" target="_blank">Climate Events GitHub Repo</a>
         
          <span class="title">TASTE•BUDS</span>
          <span class="tech">• PYTHON • DJANGO • DTL • POSTGRESQL • HEROKU • AWS/S3 CLOUD STORAGE</span>
@@ -55,7 +55,7 @@
          • DJANGO BUILT-IN AUTHENTICATION
          • AMAZON (AWS) S3 CLOUD STORAGE
          • PLANNING: WIRE-FRAMING, ERD-DIAGRAMMING, USER-STORY IMPLEMENTATION
-        <a class="links" href="https://github.com/adevlinb/fakebuds" target="_blank">Taste•Buds GitHub Repo</a>
+        <a class="git_links" href="https://github.com/adevlinb/fakebuds" target="_blank">Taste•Buds GitHub Repo</a>
          
          <span class="title">XYLA</span>
          <span class="tech">• NODEJS • EXPRESS • REACT • MONGODB • MONGOOSE • HEROKU</span>
@@ -64,40 +64,39 @@
          • GOOGLE BOOKS API ACCESS
          • AJAX REQUESTS FROM REACT / CLIENT TO NODEJS / SERVER
          • PLANNING: WIRE-FRAMING, ERD-DIAGRAMMING, USER-STORY IMPLEMENTATION
-        <a class="links" href="https://github.com/adevlinb/XYLA" target="_blank">XYLA GitHub Repo</a>
+        <a class="git_links" href="https://github.com/adevlinb/XYLA" target="_blank">XYLA GitHub Repo</a>
         </pre>
         
       </div>
       <div class="vertical" id="right">
-            <div class="carousel">
-              <button class="carousel_button carousel_button--left is_hidden">+</button>
-              <div class="carousel_track_container">
-                <ul class="carousel_track">
-                  <li class="carousel_slide current_slide"><img class="carousel_images" id="mastermind" src="images/mastermind.png" alt="First slide"></li>
-                  <li class="carousel_slide"><img class="carousel_images" id="climate" src="images/climateevents.png" alt="Second slide"></li>
-                  <li class="carousel_slide"><img class="carousel_images" id="taste" src="images/taste_buds.png" alt="Third slide"></li>
-                  <li class="carousel_slide"><img class="carousel_images" id="xyla" src="images/xyla2.png" alt="Fourth slide"></li>
-                </ul>
-              </div>
-              <button class="carousel_button carousel_button--right">+</button>
-
-              <div class="carousel_nav">
-                <button class="carousel_indicator current_slide">1</button>
-                <button class="carousel_indicator">2</button>
-                <button class="carousel_indicator">3</button>
-                <button class="carousel_indicator">4</button>
-              </div>
+        <div class="buttonDiv">
+          <button class="carousel_button carousel_button--left is_hidden"><img src="images/back.png" alt="backArrow"></button>
+          <div class="carousel">
+            <div class="carousel_track_container">
+              <ul class="carousel_track">
+                <li class="carousel_slide current_slide"><img class="carousel_images" id="mastermind" src="images/mastermind.png" alt="First slide"></li>
+                <li class="carousel_slide"><img class="carousel_images" id="climate" src="images/climateevents.png" alt="Second slide"></li>
+                <li class="carousel_slide"><img class="carousel_images" id="taste" src="images/taste_buds.png" alt="Third slide"></li>
+                <li class="carousel_slide"><img class="carousel_images" id="xyla" src="images/xyla2.png" alt="Fourth slide"></li>
+              </ul>
+            </div>
           </div>
-  
-          <div id="inline">
-            <p><a class="links" href="https://adevlinb.github.io/Mastermind/" target="_blank">MASTERMIND</a></p>
-            <p><a class="links" href="https://climate-events.herokuapp.com/" target="_blank">CLIMATE_EVENTS</a></p>
-            <p><a class="links" href="https://taste--buds.herokuapp.com/" target="_blank">TASTE•BUDS</a></p>
-            <p><a class="links" href="https://xyla-books.herokuapp.com/" target="_blank">XYLA</a></p>
-          </div>
+          <button class="carousel_button carousel_button--right">+</button>
+        </div>
+        <div class="carousel_nav">
+          <button class="carousel_indicator current_slide">1</button>
+          <button class="carousel_indicator">2</button>
+          <button class="carousel_indicator">3</button>
+          <button class="carousel_indicator">4</button>
+        </div>
+        <div id="inline">
+          <p><a class="app_links" href="https://adevlinb.github.io/Mastermind/" target="_blank">MASTERMIND</a></p>
+          <p><a class="app_links" href="https://climate-events.herokuapp.com/" target="_blank">CLIMATE_EVENTS</a></p>
+          <p><a class="app_links" href="https://taste--buds.herokuapp.com/" target="_blank">TASTE•BUDS</a></p>
+          <p><a class="app_links" href="https://xyla-books.herokuapp.com/" target="_blank">XYLA</a></p>
         </div>
       </div>
-    </div>
+  </div>
 
     <dialog class="modal_container" id="modal_container">
       <h1>Hi Devlin</h1>
