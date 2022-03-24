@@ -64,61 +64,8 @@ body {
   margin: 20px;
 }
 
-/* #carousel {
-  border-style: solid;
-  border-radius: 50px;
-  border-width: 5px;
-  border-color: rgba(0, 0, 0, 0.7);
-  height: 75vh;
-  max-height: 500px;
-  max-width: 75vw;
-  width: fit-content;
-  align-self: center;
-  margin: auto;
-} */
-
-/* #carousel-slide {
-  max-width: 650px;
-  width: fit-content;
-} */
-
-/* #mastermind {
-  max-height: 75vh;
-  min-height: 500px;
-  max-width: 610px;
-  width: auto;
-  object-fit: cover;
-}
-
-#climate {
-  max-height: 75vh;
-  width: auto;
-  max-width: 610px;
-  object-fit: cover;
-  min-height: 500px;
-}
-
-#taste {
-  max-height: 75vh;
-  width: auto;
-  max-width: 610px;
-  object-fit: fill;
-}
-
-
-#xyla {
-  max-height: 75vh;
-  max-width: 610px;
-  width: auto;
-  object-fit: cover;
-} */
-
-.caption {
-  background: white;
-}
-
 #left {
-  max-width: 30vw;
+  max-width: 40vw;
   overflow: visible;
 }
 
@@ -137,7 +84,7 @@ pre {
   text-align: left;
   margin: 0 auto;
   left: 0;
-  font-size: 0.8vw;
+  font-size: 0.95vw;
   line-height: 2.25vh;
 }
 
@@ -157,11 +104,11 @@ pre > a {
 }
 
 .title {
-  font-size: 1vw;
+  font-size: 1.25vw;
 }
 
 .tech {
-  color:rgba(6, 51, 175, 0.7)
+  color:rgb(0, 113, 206);
 }
 
 .modal::backdrop {
@@ -214,6 +161,7 @@ pre > a {
   top: 50%;
   transform: translateY(-50%);
   border: 0;
+  background: none;
   cursor: pointer;
 }
 
@@ -242,7 +190,7 @@ pre > a {
 }
 
 .is_hidden {
-  display: none;
+  pointer-events: none;
 }
 
 .buttonDiv {
