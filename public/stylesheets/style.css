@@ -225,14 +225,12 @@ p {
 
 #backDiv {
   background-image: url("/images/background.jpeg");
+  /* background-size: contain; */
+  background-position: 50%;
   height: 200px;
   width: 100%;
   display: flex;
-}
 
-#modalBackImage {
-  min-width: 100%;
-  object-fit: cover;
 }
 
 #modalProfileImage {
@@ -253,9 +251,17 @@ p {
   color: black;
   width: 0;
   height: 0;
-  transition: all 3s ease-in-out;
-  animation:fadein .5s;
+  /* transition: all 3s ease-in-out; */
+  animation:fadein 1s;
   overflow: hidden;
+}
+
+.open {
+  border-radius: 20px;
+  min-width: 60vw;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
 }
 
 dialog {
@@ -275,13 +281,6 @@ dialog::backdrop {
 	}
 }
 
-.open {
-  border-radius: 20px;
-  min-width: 60vw;
-  min-height: 75vh;
-  display: flex;
-  flex-direction: column;
-}
 
 #open {
   cursor: pointer;
