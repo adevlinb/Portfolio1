@@ -75,7 +75,7 @@ body {
 }
 
 #right {
-  padding-top: 5vh;
+  padding-top: 1vh;
   max-width: 50vw;
   align-self: center;
   margin: 0 auto;
@@ -121,11 +121,21 @@ p {
 }
 
 .carousel_images {
-  width: 600px;
-  height: 100%;
+  width: 35vw;
+  height: 60vh;
   object-fit: cover;
-
+  border-radius: 15px;
+  border: 2px solid black;
 }
+
+#taste {
+  object-fit: fill;
+}
+
+#xyla {
+  object-fit: fill;
+
+} 
 
 .carousel_track_container {
   background: green;
@@ -135,6 +145,8 @@ p {
   border: 2px solid rgba(0, 0, 0, 0.7);
   border-radius: 15px;
   box-shadow: 3px 5px 5px rgb(92, 92, 92);
+  background-image: url("../images/bamboo12.png");
+  padding: 10px;
 }
 
 .carousel_track {
@@ -196,6 +208,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 65vh;
 }
 
 .buttonDiv > button {
