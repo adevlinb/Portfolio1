@@ -58,7 +58,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-left: 11vw;
-  padding-right: 11vw;
+  padding-right: 9vw;
   margin: 0;
 }
 
@@ -111,34 +111,6 @@ p {
   font-size: 1.05vw;
   color: #fb311ecc;
   text-decoration: none;
-}
-
-.modal_container {
-  border-radius: 0;
-  color: black;
-  width: 0;
-  height: 0;
-  transition: all 3s ease-in-out;
-  animation:fadein .5s;
-}
-
-@keyframes fadein {
-	from {
-		opacity:0;
-	}
-	to {
-		opacity:1;
-	}
-}
-
-.open {
-  border-radius: 15px;
-  min-width: 50vw;
-  min-height: 50vh;
-}
-
-.modal::backdrop {
-  background: rgb(0 0 0 / 0.4);
 }
 
 .carousel {
@@ -242,7 +214,6 @@ p {
   border-radius: none;
   border: none;
   transition: all 0.5s ease-in-out;
-  /* transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out; */
 }
 
 .selectedSpan {
@@ -251,6 +222,76 @@ p {
   border-radius: 5px;
   box-shadow: 3px 5px 5px rgb(155, 155, 155);
 }
+
+#backDiv {
+  background-image: url("/images/background.jpeg");
+  height: 200px;
+  width: 100%;
+  display: flex;
+}
+
+#modalBackImage {
+  min-width: 100%;
+  object-fit: cover;
+}
+
+#modalProfileImage {
+  max-height: 17.5vh;
+  width: auto;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: 1vw;
+  transform: translateY(17vh);
+}
+
+.modal_container > h1 {
+  margin: 2vh;
+}
+
+.modal_container {
+  border-radius: 0;
+  color: black;
+  width: 0;
+  height: 0;
+  transition: all 3s ease-in-out;
+  animation:fadein .5s;
+  overflow: hidden;
+}
+
+dialog {
+  padding: 0;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+
+.open {
+  border-radius: 20px;
+  min-width: 60vw;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#open {
+  cursor: pointer;
+}
+
+.modal::backdrop {
+  background: black;
+}
+
+
 
 @media query  {
   
