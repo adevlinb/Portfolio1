@@ -237,11 +237,11 @@ p {
 }
 
 #backDiv {
-  background-image: url("/images/background.jpeg");
-  /* background-size: contain; */
+  background-image: url("/images/profile_background.jpeg");
   background-position: 50%;
-  height: 200px;
-  width: 100%;
+  background-size: cover;
+  height: 25vh;
+  width: auto;
   display: flex;
 
 }
@@ -252,11 +252,11 @@ p {
   border-radius: 50%;
   border: 2px solid white;
   margin-left: 1vw;
-  transform: translateY(17vh);
+  transform: translateY(15vh);
 }
 
 .modal_container > h1 {
-  margin: 2vh;
+  color: red;
 }
 
 .modal_container {
@@ -264,7 +264,6 @@ p {
   color: black;
   width: 0;
   height: 0;
-  /* transition: all 3s ease-in-out; */
   animation:fadein 1s;
   overflow: hidden;
 }
