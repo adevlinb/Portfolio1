@@ -1,54 +1,23 @@
+html {
+  min-width: 100%;
+  margin: 0 auto;
+}
 body {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   text-align: center;
   background-image: url("../images/bamboo12.png");
   background-size: contain;
   font-weight: 900;
+  min-width: 100%;
 }
 
-.horizontal {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  padding-top: 5vh;
-}
 
-.vertical {
-  display: flex;
-  flex-direction: column;
-  align-content: center !important;
-}
-
-#headline {
-  margin: 10px;
-  color: rgb(235, 235, 235);
-}
+/*************** NAV BAR *****************/
 
 .nav-link {
-  /* color: #FFBD75; */
   color: rgba(0, 0, 0, 0.7);
-  text-decoration: none;
-}
-
-.nav-link:hover {
-  color: white;
-  text-decoration: none;
-}
-
-.git_links {
-  margin: 10px;
-  color: blue;
-}
-
-.app_links {
-  margin: 20px;
-  color: rgba(0, 0, 0, 0.7);
-  text-decoration: none;
-}
-.app_links:hover {
-  color: #fb311ecc;
   text-decoration: none;
 }
 
@@ -57,9 +26,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 11vw;
-  padding-right: 9vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
   margin: 0;
+  min-width: 100%;
 }
 
 .nav-item {
@@ -68,43 +38,54 @@ body {
   margin: 20px;
 }
 
-#left {
-  max-width: 45vw;
-  overflow: visible;
-  margin-left: 4vw;
+.nav-link:hover {
+  color: white;
+  text-decoration: none;
 }
 
-#right {
-  padding-top: 1vh;
-  max-width: 50vw;
-  align-self: center;
-  margin: 0 auto;
-}
-
-p {
-  margin-top: 15px;
-  align-self: center;
-}
-
-#inline {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0,0,0,0.4);
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-}
-
-#foot-txt {
+#headline {
   margin: 10px;
+  color: rgb(235, 235, 235);
+}
+
+/*************** MAIN CONTAINERS *****************/
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  padding-top: 2vh;
+}
+
+#left {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+}
+
+/*************** PROJECT INFO / CARDS *****************/
+
+.background {
+  background-color: none;
+  padding: 10px;
+  margin: 0px;
+  text-align: left;
+  left: 0;
+  font-size: 0.87vw;
+  line-height: 2.3vh;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  display: none;
+}
+
+.selectedSpan {
+  background-color: rgb(247, 247, 247);
+  border: 0.75px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 5px 5px rgb(155, 155, 155);
+  display: flex;
+  min-width: 100%;
 }
 
 .title {
@@ -112,6 +93,14 @@ p {
   color: #fb311ecc;
   text-decoration: none;
 }
+
+.git_links {
+  margin: 10px;
+  color: blue;
+}
+
+
+/*************** CAROUSEL *****************/
 
 .carousel {
   position: relative;
@@ -121,25 +110,6 @@ p {
   min-width: 30vw;
   margin: 0 auto;
 }
-
-.carousel_images {
-  width: 35vw;
-  max-width: 30vw;
-  min-width: 30vw;
-  height: 60vh;
-  object-fit: cover;
-  border-radius: 15px;
-  border: 2px solid black;
-}
-
-#taste {
-  object-fit: fill;
-}
-
-#xyla {
-  object-fit: fill;
-
-} 
 
 .carousel_track_container {
   background: green;
@@ -175,23 +145,18 @@ p {
   width: 100%;
 }
 
+
+/***** CAROUSEL BUTTON CSS ******/
 .carousel_button {
-  /* position: absolute; */
-  top: 50%;
+  /* top: 50%;
   transform: translateY(-50%);
   border: 0;
   background: none;
-  cursor: pointer;
+  cursor: pointer; */
+  display: none;
 }
 
-.carousel_button--left {
-  left: -25px;
-}
-
-.carousel_button--right {
-  margin-left: 25px;
-}
-
+/***** CAROUSEL BOTTOM NAV / INDICATOR DOTS ******/
 .carousel_nav {
   display: flex;
   justify-content: center;
@@ -210,50 +175,58 @@ p {
 
 .carousel_indicator.current_slide {
   background: #fb311ecc;
+
+
+}
+/***** CAROUSEL IMAGE CSS ******/
+.carousel_images {
+  width: 35vw;
+  max-width: 30vw;
+  min-width: 30vw;
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid black;
 }
 
-.is_hidden {
-  pointer-events: none;
+#taste {
+  object-fit: fill;
 }
 
-.buttonDiv {
+#xyla {
+  object-fit: fill;
+} 
+
+/***** CAROUSEL LINKS at BOTTOM ******/
+#inline {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 65vh;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
 }
 
-.buttonDiv > button {
-  height: 1vh;
+.app_links {
+  margin: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
 }
 
-.background {
-  background-color: none;
-  padding: 10px;
-  margin: 0px;
-  text-align: left;
-  left: 0;
-  font-size: 0.87vw;
-  line-height: 2.3vh;
-  box-shadow: none;
-  border-radius: none;
-  border: none;
-  transition: all 0.5s ease-in-out;
+.app_links:hover {
+  color: #fb311ecc;
+  text-decoration: none;
 }
 
-.selectedSpan {
-  background-color: rgb(247, 247, 247);
-  border: 0.75px solid black;
-  border-radius: 5px;
-  box-shadow: 3px 5px 5px rgb(155, 155, 155);
-}
+
+
+
+/*************** ABOUT ME / MODAL / DIALOG / POP-UP *****************/
 
 #backDiv {
   background-image: url("/images/profile_background.jpeg");
   background-position: 50%;
   background-size: cover;
-  min-height: 25vh;
-  height: 25vh;
+  min-height: 20vh;
+  height: 20vh;
   width: auto;
   display: flex;
 }
@@ -261,8 +234,8 @@ p {
 #hi {
   margin-bottom: 0.5vh;
   margin-left: 1.25vw;
-  transform: translateY(20.75vh);
-  max-height: 100px;
+  transform: translateY(15vh);
+  max-height: 50px;
 }
 
 .hello {
@@ -278,12 +251,12 @@ p {
 }
 
 #modalProfileImage {
-  max-height: 17.5vh;
+  max-height: 12vh;
   width: auto;
   border-radius: 50%;
   border: 2px solid white;
   margin-left: 1vw;
-  transform: translateY(15vh);
+  transform: translateY(13vh);
 }
 
 .modal_container {
@@ -296,32 +269,13 @@ p {
 }
 
 .modalTitle {
-  display: flex;
-  margin-left: 1vw;
-  justify-content: flex-end;
-}
-
-.modalTitle > h1 {
-  margin: 7px;
-  margin-top: 0;
-}
-
-#caption {
-  margin: 5px;
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 2px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-}
-
-#caption > h6 {
-  margin: 0;
+  display: none;
 }
 
 .open {
   border-radius: 20px;
-  min-width: 55vw;
-  min-height: 80vh;
+  min-width: 85vw; 
+  min-height: 80vh; 
   display: flex;
   flex-direction: column;
 }
@@ -341,8 +295,8 @@ dialog::backdrop {
   border-radius: 50%;
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.8);
-  right: 1vw;
-  top: 2vh;
+  right: 2.5vw;
+  top: 3vh;
   position: absolute;
   cursor: pointer;
 }
@@ -358,15 +312,14 @@ dialog::backdrop {
   display: flex;
   padding: 7.5px;
   height: 100%;
-  margin-top: 10px;
-  font-size: 0.9vw;
+  margin-top:40px;
+  font-size: 1.85vw;
 }
 
 #list {
   text-align: left;
-  width: 11vw;
-  min-width: 11vw;
-  margin-top: 13px;
+  width: 20vw;     
+  min-width: 20vw; 
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   box-shadow: inset 1px 1px 1px rgb(155, 155, 155);
@@ -380,8 +333,8 @@ dialog::backdrop {
 
 #aboutMeDescription {
   max-width: 100%;
-  margin-top: 10px;
   padding: 10px;
+  padding-top: 0;
 }
 
 #aboutMeDescription > p {
@@ -389,7 +342,7 @@ dialog::backdrop {
   margin-top: 0;
   text-align: justify;
   text-justify: inter-word;
-  line-height: 2.25vh;
+  line-height: 2.25vh; //
 }
 
 #aboutMeDescription > h3 {
@@ -412,7 +365,6 @@ dialog::backdrop {
   align-items: center;
 }
 
-
 @keyframes fadein {
 	from {
 		opacity:0;
@@ -430,15 +382,207 @@ dialog::backdrop {
   background: black;
 }
 
-
-@media only screen and (max-width: 800px) {
-    #bookOnlyTitle {
-        font-size: 1.75vw;
-    }
+/*************** FOOTER *****************/
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.4);
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
-    #bookOnlyTitle {
-        font-size: 2.75vw;
-    }
+#foot-txt {
+  margin: 10px;
+}
+
+/********************************************* MEDIA QUERIES ******************************************/
+
+@media only screen and (min-width: 750px) {
+  /*************** MAIN CONTAINERS *****************/
+  .mainSection {
+    min-width: 100%;
+    padding-top: 2vh;
+  }
+  
+  #left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+    min-width: 100%;
+  }
+  
+  #right {
+    padding-top: 1vh;
+    max-width: 50vw;
+    align-self: center;
+    margin: 0 auto;
+  }
+  /*************** NAV *****************/
+  .navbar {
+    padding-left: 11vw;
+    padding-right: 9vw;
+  }
+  
+  /*************** PROJECT INFO / CARDS *****************/
+  .background {
+    display: inline;
+    min-width: 40vw;
+    max-width: 40vw;
+    min-height: 15vh;
+    max-height: 15vh;
+    margin: 0 auto;
+  }
+  
+  .selectedSpan {
+    min-width: 40vw;
+    max-width: 40vw;
+    min-height: 15vh;
+    max-height: 15vh;
+    margin: 0 auto;
+  }
+  
+  /***** CAROUSEL BUTTON CSS ******/
+  .carousel_button {
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    background: none;
+    cursor: pointer;
+    display: inline;
+  }
+  
+  .carousel_button--left {
+    left: -25px;
+  }
+  
+  .carousel_button--right {
+    margin-left: 25px;
+  }
+  
+  .is_hidden {
+    pointer-events: none;
+  }
+  
+  .buttonDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65vh;
+  }
+  
+  .buttonDiv > button {
+    height: 1vh;
+  }
+
+  /*************** ABOUT ME / MODAL / DIALOG / POP-UP *****************/
+  #modalProfileImage { 
+    max-height: 13.5vh;
+  }
+
+  .modalTitle {
+    display: flex;
+    margin-left: 1vw;
+    justify-content: flex-end;
+  }
+
+  .modalTitle > h1 {
+    margin: 7px;
+    margin-top: 0;
+  }
+
+  #caption {
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+
+  #caption > h6 {
+    margin: 0;
+  }
+
+  .open {
+    min-width: 70vw; 
+    min-height: 80vh; 
+  }
+
+  #hi {
+    transform: translateY(15vh);
+  }
+
+  #aboutMe {
+    font-size: 1.3vw;
+    margin-top: 20px;
+  }
+
+  #list {
+    width: 18vw;     
+    min-width: 18vw; 
+    line-height: 2.5vh; 
+  }
+
+}
+
+@media only screen and (min-width: 900px) {
+  /*************** MAIN CONTAINERS *****************/
+  .mainSection {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #left {
+    display: flex;
+    flex-direction: column;
+    max-width: 40vw;
+    overflow: visible;
+    min-width: 40vw;
+    margin-left: 5vw;
+  }
+  
+  /*************** NAV *****************/
+  .navbar {
+    padding-left: 11vw;
+    padding-right: 9vw;
+  }
+  /*************** PROJECT INFO / CARDS *****************/
+  .background {
+    display: inline;
+    min-width: 40vw;
+    max-width: 40vw;
+    min-height: 15vh;
+    max-height: 15vh;
+    /* margin: 0 auto; */
+  }
+  
+  .selectedSpan {
+    min-width: 40vw;
+    max-width: 40vw;
+    min-height: 15vh;
+    max-height: 15vh;
+    /* margin: 0 auto; */
+  }  
+  
+  /*************** ABOUT ME / MODAL / DIALOG / POP-UP *****************/
+  .open {
+    min-width: 60vw; 
+    min-height: 80vh; 
+  }
+
+  #modalProfileImage { 
+    max-height: 15vh;
+  }
+
+  #aboutMe {
+    font-size: 1vw;
+    margin-top: 20px;
+  }
+
+  #list {
+    width: 18vw;     
+    min-width: 18vw; 
+    line-height: 2.5vh; 
+  }
 }
