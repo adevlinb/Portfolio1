@@ -117,11 +117,15 @@ p {
   position: relative;
   height: 60vh;
   width: 40vw;
+  max-width: 37.5vw;
+  min-width: 30vw;
   margin: 0 auto;
 }
 
 .carousel_images {
   width: 35vw;
+  max-width: 30vw;
+  min-width: 30vw;
   height: 60vh;
   object-fit: cover;
   border-radius: 15px;
@@ -147,6 +151,8 @@ p {
   box-shadow: 3px 5px 5px rgb(92, 92, 92);
   background-image: url("../images/bamboo12.png");
   padding: 10px;
+  max-width: 37.5vw;
+  min-width: 37.5vw;
 }
 
 .carousel_track {
@@ -154,7 +160,9 @@ p {
   margin: 0;
   list-style: none;
   position: relative;
-  width: 30vw;
+  max-width: 37.5vw;
+  min-width: 37.5vw;
+  /* width: 30vw; */
   height: 100%;
   width: auto;
   transition: transform 500ms ease-in;
@@ -178,6 +186,10 @@ p {
 
 .carousel_button--left {
   left: -25px;
+}
+
+.carousel_button--right {
+  margin-left: 25px;
 }
 
 .carousel_nav {
@@ -410,7 +422,6 @@ dialog::backdrop {
 	}
 }
 
-
 #open {
   cursor: pointer;
 }
@@ -420,7 +431,14 @@ dialog::backdrop {
 }
 
 
+@media only screen and (max-width: 800px) {
+    #bookOnlyTitle {
+        font-size: 1.75vw;
+    }
+}
 
-@media query  {
-  
+@media only screen and (max-width: 600px) {
+    #bookOnlyTitle {
+        font-size: 2.75vw;
+    }
 }
