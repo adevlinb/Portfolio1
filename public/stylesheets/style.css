@@ -240,10 +240,27 @@ p {
   background-image: url("/images/profile_background.jpeg");
   background-position: 50%;
   background-size: cover;
+  min-height: 25vh;
   height: 25vh;
   width: auto;
   display: flex;
+}
 
+#hi {
+  margin-bottom: 0.5vh;
+  margin-left: 1.25vw;
+  transform: translateY(20.5vh);
+}
+
+.hello {
+  color: white;
+  margin: 0;
+  text-align: left;
+}
+
+#devlin {
+  color: black;
+  font-weight: 200;
 }
 
 #modalProfileImage {
@@ -255,10 +272,6 @@ p {
   transform: translateY(15vh);
 }
 
-.modal_container > h1 {
-  color: red;
-}
-
 .modal_container {
   border-radius: 0;
   color: black;
@@ -268,9 +281,32 @@ p {
   overflow: hidden;
 }
 
+.modalTitle {
+  display: flex;
+  margin-left: 1vw;
+  justify-content: flex-end;
+}
+
+.modalTitle > h1 {
+  margin: 7px;
+  margin-top: 0;
+}
+
+#caption {
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+#caption > h6 {
+  margin: 0;
+}
+
 .open {
   border-radius: 20px;
-  min-width: 60vw;
+  min-width: 50vw;
   min-height: 75vh;
   display: flex;
   flex-direction: column;
@@ -283,6 +319,62 @@ dialog {
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+#close_button {
+  font-size: 2.5vh;
+  color: rgb(0, 0, 0);
+  background: white;
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  right: 1vw;
+  top: 2vh;
+  position: absolute;
+  cursor: pointer;
+}
+
+#close_button:hover {
+  border-color: red;
+  transform: scale(150%);
+  transition: transform 500ms ease-in-out;
+}
+
+
+#aboutMe {
+  display: flex;
+  padding: 5px;
+  height: 100%;
+  margin-top: 10px;
+}
+
+#list {
+  text-align: justify;
+  width: 15vw;
+  min-width: 10vw;
+  margin-top: 10px;
+}
+
+#list > p {
+  margin: 2.5px;
+}
+
+#aboutMeDescription {
+  max-width: 400px;
+  margin-top: 10px;
+}
+
+#aboutMeDescription > p {
+  margin: 2.5px;
+  text-align: left;
+}
+
+#modalFooter {
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(72, 126, 224, 0.7);
+  color: white;
+}
+
 
 @keyframes fadein {
 	from {
