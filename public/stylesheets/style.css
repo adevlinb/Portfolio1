@@ -250,6 +250,7 @@ p {
   margin-bottom: 0.5vh;
   margin-left: 1.25vw;
   transform: translateY(20.75vh);
+  max-height: 100px;
 }
 
 .hello {
@@ -280,7 +281,6 @@ p {
   height: 0;
   animation:fadein 1s;
   overflow: hidden;
-  box-shadow: 3px 5px 5px rgb(155, 155, 155);
 }
 
 .modalTitle {
@@ -308,8 +308,8 @@ p {
 
 .open {
   border-radius: 20px;
-  min-width: 50vw;
-  min-height: 75vh;
+  min-width: 55vw;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
 }
@@ -359,7 +359,7 @@ dialog::backdrop {
   border-radius: 10px;
   box-shadow: inset 1px 1px 1px rgb(155, 155, 155);
   padding: 5px;
-    line-height: 2.5vh;
+  line-height: 2.5vh;
 }
 
 #list > p {
@@ -374,12 +374,19 @@ dialog::backdrop {
 
 #aboutMeDescription > p {
   margin: 2.5px;
+  margin-top: 0;
   text-align: justify;
   text-justify: inter-word;
+  line-height: 2.25vh;
 }
 
 #aboutMeDescription > h3 {
   margin: 5px;
+  margin-bottom: 2px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-left: 0;
+  text-align: left;
 }
 
 #modalFooter {
