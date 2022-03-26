@@ -249,7 +249,7 @@ p {
 #hi {
   margin-bottom: 0.5vh;
   margin-left: 1.25vw;
-  transform: translateY(20.5vh);
+  transform: translateY(20.75vh);
 }
 
 .hello {
@@ -259,6 +259,7 @@ p {
 }
 
 #devlin {
+  margin-top: 5px;
   color: black;
   font-weight: 200;
 }
@@ -386,6 +387,9 @@ dialog::backdrop {
   min-height: 2.75vh;
   background-color: rgba(72, 126, 224, 0.7);
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
