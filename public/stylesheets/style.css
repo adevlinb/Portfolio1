@@ -60,11 +60,11 @@ body {
 
 .background {
   background-color: none;
-  padding: 10px;
+  padding: 7.5px;
   margin: 0px;
   text-align: left;
   left: 0;
-  font-size: 1.4vw;
+  font-size: 1.8vw;
   line-height: 2vh;
   box-shadow: none;
   border-radius: none;
@@ -85,6 +85,12 @@ body {
 .background > div:nth-child(1) {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  border-right: 1px solid black;
+  justify-content: center;
+  padding: 5px;
+  padding-right: 2.5vw;
+  margin-right: 5vw;
 }
 
 .background > div:nth-child(2n) {
@@ -100,6 +106,7 @@ body {
 
 .git_links {
   margin: 10px;
+  font-size: 2vw;
   color: blue;
 }
 
@@ -398,35 +405,18 @@ dialog::backdrop {
 
 @media only screen and (min-width: 650px) {
   /*************** MAIN CONTAINERS *****************/
-  .mainSection {
-    min-width: 100%;
-    padding-top: 2vh;
-  }
   
-  /* #left {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2vw;
-    min-width: 100%;
-  } */
-  
-  /* #right {
-    padding-top: 1vh;
-    max-width: 50vw;
-    align-self: center;
-    margin: 0 auto;
-  } */
-  /*************** NAV *****************/
-  /* .navbar {
-    padding-left: 11vw;
-    padding-right: 20vw;
-  } */
-  
-  /*************** PROJECT INFO / CARDS *****************/
 
-  .title {
-    font-size: 1.5vw;
+  /*************** NAV *****************/
+
+
+  /*************** PROJECT INFO / CARDS *****************/
+  .background {
+    font-size: 1.4vw;
   }
+  /* .title {
+    font-size: 1.5vw;
+  } */
   
   /***** CAROUSEL BUTTON CSS ******/
   .carousel_button {
@@ -544,7 +534,8 @@ dialog::backdrop {
 
   /*************** PROJECT INFO / CARDS *****************/
   .background {
-    display: inline;
+    display: flex;
+    flex-direction: column;
     min-width: 40vw;
     max-width: 40vw;
     min-height: 15vh;
@@ -557,7 +548,30 @@ dialog::backdrop {
     max-width: 40vw;
     min-height: 15vh;
     max-height: 15vh;
+    border-radius: 5px;
   }  
+
+  .background > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    padding: 0;
+  }
+
+  .background > div:nth-child(2n) {
+   line-height: 2.5vh; 
+  }
+
+  .title {
+    font-size: 1.5vw;
+  }
+
+  .git_links {
+    font-size: 1.3vw;
+    color: blue;
+  }
+
+
   
   /*************** ABOUT ME / MODAL / DIALOG / POP-UP *****************/
   .open {
