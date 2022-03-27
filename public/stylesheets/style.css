@@ -8,7 +8,6 @@ body {
   font-weight: 900;
 }
 
-
 /*************** NAV BAR *****************/
 
 .nav-link {
@@ -54,6 +53,14 @@ body {
   display: flex;
   width: 100vw;
   align-items: center;
+}
+
+#right {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
 }
 
 /*************** PROJECT INFO / CARDS *****************/
@@ -111,61 +118,75 @@ body {
 }
 
 
-/*************** CAROUSEL *****************/
+/********************** CAROUSEL ************************/
 
 .carousel {
+  /* display: flex;
+  flex-direction: column;
   position: relative;
-  height: 60vh;
-  width: 40vw;
-  max-width: 37.5vw;
-  min-width: 30vw;
-  margin: 0 auto;
+  align-self: center; */
 }
 
 .carousel_track_container {
-  background: green;
-  height: 100%;
   position: relative;
   overflow: hidden;
   border: 2px solid rgba(0, 0, 0, 0.7);
   border-radius: 15px;
   box-shadow: 3px 5px 5px rgb(92, 92, 92);
   background-image: url("../images/bamboo12.png");
-  padding: 10px;
-  max-width: 37.5vw;
-  min-width: 37.5vw;
+  /* padding: 10px; */
+  height: 65vh;
+  width: 65vw;
 }
 
 .carousel_track {
+  display: flex;
+  align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
   position: relative;
-  max-width: 37.5vw;
-  min-width: 37.5vw;
-  /* width: 30vw; */
-  height: 100%;
-  width: auto;
   transition: transform 500ms ease-in;
+  width: 60vw; 
 }
 
 .carousel_slide {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 100%;
+
 }
 
 
 /***** CAROUSEL BUTTON CSS ******/
 .carousel_button {
-  /* top: 50%;
-  transform: translateY(-50%);
-  border: 0;
-  background: none;
-  cursor: pointer; */
   display: none;
 }
+
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: fit-content;
+}
+
+/***** CAROUSEL IMAGE CSS ******/
+.carousel_images {
+  width: 65vw;
+  height: 65vh;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
+#taste {
+  object-fit: fill;
+}
+
+#xyla {
+  object-fit: fill;
+} 
 
 /***** CAROUSEL BOTTOM NAV / INDICATOR DOTS ******/
 .carousel_nav {
@@ -186,40 +207,12 @@ body {
 
 .carousel_indicator.current_slide {
   background: #fb311ecc;
-
-
 }
-/***** CAROUSEL IMAGE CSS ******/
-.carousel_images {
-  width: 35vw;
-  max-width: 30vw;
-  min-width: 30vw;
-  height: 60vh;
-  object-fit: cover;
-  border-radius: 15px;
-  border: 2px solid black;
-}
-
-#taste {
-  object-fit: fill;
-}
-
-#xyla {
-  object-fit: fill;
-} 
 
 /***** CAROUSEL LINKS at BOTTOM ******/
 #inline {
   display: none;
-  /* flex-direction: row;
-  align-content: center;
-  justify-content: center; */
-
 }
-
-
-
-
 
 /*************** ABOUT ME / MODAL / DIALOG / POP-UP *****************/
 
@@ -432,19 +425,8 @@ dialog::backdrop {
     left: -25px;
   }
   
-  .carousel_button--right {
-    margin-left: 25px;
-  }
-  
   .is_hidden {
     pointer-events: none;
-  }
-  
-  .buttonDiv {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 65vh;
   }
   
   .buttonDiv > button {
@@ -571,8 +553,6 @@ dialog::backdrop {
     color: blue;
   }
 
-
-  
   /*************** ABOUT ME / MODAL / DIALOG / POP-UP *****************/
   .open {
     min-width: 60vw; 
@@ -594,6 +574,7 @@ dialog::backdrop {
     min-width: 18vw; 
     line-height: 2.5vh; 
   }
+  
   /*************** LINKS BELOW CAROUSEL *****************/
   #inline {
     display: flex;
