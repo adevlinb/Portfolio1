@@ -134,9 +134,8 @@ body {
   border-radius: 15px;
   box-shadow: 3px 5px 5px rgb(92, 92, 92);
   background-image: url("../images/bamboo12.png");
-  /* padding: 10px; */
-  height: 65vh;
-  width: 65vw;
+  height: 55vh;
+  width: 75vw;
 }
 
 .carousel_track {
@@ -147,7 +146,7 @@ body {
   list-style: none;
   position: relative;
   transition: transform 500ms ease-in;
-  width: 60vw; 
+  width: 65vw; 
 }
 
 .carousel_slide {
@@ -173,8 +172,8 @@ body {
 
 /***** CAROUSEL IMAGE CSS ******/
 .carousel_images {
-  width: 65vw;
-  height: 65vh;
+  width: 75vw;
+  height: 55vh;
   object-fit: cover;
   border-radius: 15px;
   border: 2px solid black;
@@ -411,7 +410,21 @@ dialog::backdrop {
     font-size: 1.5vw;
   } */
   
-  /***** CAROUSEL BUTTON CSS ******/
+  /***** CAROUSEL  ******/
+  .carousel_track_container {
+    height: 65vh;
+    width: 65vw;
+  }
+
+  .carousel_track {
+    width: 60vw; 
+  }
+  
+  .carousel_images {
+    width: 65vw;
+    height: 65vh;
+  }
+
   .carousel_button {
     top: 50%;
     transform: translateY(-50%);
@@ -420,6 +433,7 @@ dialog::backdrop {
     cursor: pointer;
     display: inline;
   }
+
   
   .carousel_button--left {
     left: -25px;
@@ -574,7 +588,7 @@ dialog::backdrop {
     min-width: 18vw; 
     line-height: 2.5vh; 
   }
-  
+
   /*************** LINKS BELOW CAROUSEL *****************/
   #inline {
     display: flex;
@@ -594,6 +608,19 @@ dialog::backdrop {
     text-decoration: none;
   }
 
+  .carousel_track_container {
+    height: 65vh;
+    width: 45vw;
+  }
+
+  .carousel_track {
+    width: 60vw; 
+  }
+  
+  .carousel_images {
+    width: 45vw;
+    height: 65vh;
+  }
 
 }
 
