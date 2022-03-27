@@ -46,7 +46,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* padding-top: 2vh; */
 }
 
 #left {
@@ -58,9 +57,10 @@ body {
 #right {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  /* width: 100vw; */
   align-items: center;
   justify-content: center;
+  padding-top: 2.5vh;
 }
 
 /*************** PROJECT INFO / CARDS *****************/
@@ -120,13 +120,6 @@ body {
 
 /********************** CAROUSEL ************************/
 
-.carousel {
-  /* display: flex;
-  flex-direction: column;
-  position: relative;
-  align-self: center; */
-}
-
 .carousel_track_container {
   position: relative;
   overflow: hidden;
@@ -166,7 +159,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 62.5vh;
   width: fit-content;
 }
 
@@ -191,7 +184,7 @@ body {
 .carousel_nav {
   display: flex;
   justify-content: center;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 .carousel_indicator {
@@ -406,9 +399,6 @@ dialog::backdrop {
   .background {
     font-size: 1.4vw;
   }
-  /* .title {
-    font-size: 1.5vw;
-  } */
   
   /***** CAROUSEL  ******/
   .carousel_track_container {
@@ -434,13 +424,17 @@ dialog::backdrop {
     display: inline;
   }
 
-  
   .carousel_button--left {
     left: -25px;
   }
   
   .is_hidden {
     pointer-events: none;
+  }
+
+  .buttonDiv {
+    margin-bottom: 2vh;
+    height: 65vh;
   }
   
   .buttonDiv > button {
