@@ -1,16 +1,11 @@
-html {
-  min-width: 100%;
-  margin: 0 auto;
-}
 body {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   text-align: center;
   background-image: url("../images/bamboo12.png");
   background-size: contain;
   font-weight: 900;
-  min-width: 100%;
 }
 
 
@@ -29,7 +24,6 @@ body {
   padding-left: 2vw;
   padding-right: 2vw;
   margin: 0;
-  min-width: 100%;
 }
 
 .nav-item {
@@ -52,8 +46,8 @@ body {
 .mainSection {
   display: flex;
   flex-direction: column;
-  min-width: 100%;
-  padding-top: 2vh;
+  width: 100%;
+  /* padding-top: 2vh; */
 }
 
 #left {
@@ -70,26 +64,36 @@ body {
   margin: 0px;
   text-align: left;
   left: 0;
-  font-size: 0.87vw;
-  line-height: 2.3vh;
+  font-size: 1.4vw;
+  line-height: 2vh;
   box-shadow: none;
   border-radius: none;
   border: none;
   transition: all 0.5s ease-in-out;
+  width: 100%;
   display: none;
 }
 
 .selectedSpan {
   background-color: rgb(247, 247, 247);
   border: 0.75px solid black;
-  border-radius: 5px;
   box-shadow: 3px 5px 5px rgb(155, 155, 155);
   display: flex;
-  min-width: 100%;
+  flex-direction: row;
+}
+
+.background > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+
+.background > div:nth-child(2n) {
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
-  font-size: 1.05vw;
+  font-size: 3vw;
   color: #fb311ecc;
   text-decoration: none;
 }
@@ -199,22 +203,13 @@ body {
 
 /***** CAROUSEL LINKS at BOTTOM ******/
 #inline {
-  display: flex;
-  flex-direction: row;
+  display: none;
+  /* flex-direction: row;
   align-content: center;
-  justify-content: center;
+  justify-content: center; */
+
 }
 
-.app_links {
-  margin: 20px;
-  color: rgba(0, 0, 0, 0.7);
-  text-decoration: none;
-}
-
-.app_links:hover {
-  color: #fb311ecc;
-  text-decoration: none;
-}
 
 
 
@@ -233,7 +228,7 @@ body {
 
 #hi {
   margin-bottom: 0.5vh;
-  margin-left: 1.25vw;
+  margin-left: 2.75vw;
   transform: translateY(15vh);
   max-height: 50px;
 }
@@ -251,12 +246,12 @@ body {
 }
 
 #modalProfileImage {
-  max-height: 12vh;
+  max-height: 14.5vh;
   width: auto;
   border-radius: 50%;
   border: 2px solid white;
-  margin-left: 1vw;
-  transform: translateY(13vh);
+  margin-left: 2.5vw;
+  transform: translateY(12vh);
 }
 
 .modal_container {
@@ -311,15 +306,17 @@ dialog::backdrop {
 #aboutMe {
   display: flex;
   padding: 7.5px;
-  height: 100%;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  height: 90%;
   margin-top:40px;
   font-size: 1.85vw;
 }
 
 #list {
   text-align: left;
-  width: 20vw;     
-  min-width: 20vw; 
+  width: 21.5vw;     
+  min-width: 21.5vw; 
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   box-shadow: inset 1px 1px 1px rgb(155, 155, 155);
@@ -342,7 +339,7 @@ dialog::backdrop {
   margin-top: 0;
   text-align: justify;
   text-justify: inter-word;
-  line-height: 2.25vh; //
+  line-height: 2.25vh;
 }
 
 #aboutMeDescription > h3 {
@@ -399,48 +396,36 @@ dialog::backdrop {
 
 /********************************************* MEDIA QUERIES ******************************************/
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 650px) {
   /*************** MAIN CONTAINERS *****************/
   .mainSection {
     min-width: 100%;
     padding-top: 2vh;
   }
   
-  #left {
+  /* #left {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2vw;
     min-width: 100%;
-  }
+  } */
   
-  #right {
+  /* #right {
     padding-top: 1vh;
     max-width: 50vw;
     align-self: center;
     margin: 0 auto;
-  }
+  } */
   /*************** NAV *****************/
-  .navbar {
+  /* .navbar {
     padding-left: 11vw;
-    padding-right: 9vw;
-  }
+    padding-right: 20vw;
+  } */
   
   /*************** PROJECT INFO / CARDS *****************/
-  .background {
-    display: inline;
-    min-width: 40vw;
-    max-width: 40vw;
-    min-height: 15vh;
-    max-height: 15vh;
-    margin: 0 auto;
-  }
-  
-  .selectedSpan {
-    min-width: 40vw;
-    max-width: 40vw;
-    min-height: 15vh;
-    max-height: 15vh;
-    margin: 0 auto;
+
+  .title {
+    font-size: 1.5vw;
   }
   
   /***** CAROUSEL BUTTON CSS ******/
@@ -478,7 +463,8 @@ dialog::backdrop {
 
   /*************** ABOUT ME / MODAL / DIALOG / POP-UP *****************/
   #modalProfileImage { 
-    max-height: 13.5vh;
+    max-height: 16.5vh;
+    transform: translateY(10.5vh);
   }
 
   .modalTitle {
@@ -511,10 +497,11 @@ dialog::backdrop {
 
   #hi {
     transform: translateY(15vh);
+    margin-left: 1.25vw;
   }
 
   #aboutMe {
-    font-size: 1.3vw;
+    font-size: 1.32vw;
     margin-top: 20px;
   }
 
@@ -541,12 +528,20 @@ dialog::backdrop {
     min-width: 40vw;
     margin-left: 5vw;
   }
+
+  #right {
+    padding-top: 1vh;
+    max-width: 50vw;
+    align-self: center;
+    margin: 0 auto;
+  }
   
   /*************** NAV *****************/
-  .navbar {
+  /* .navbar {
     padding-left: 11vw;
     padding-right: 9vw;
-  }
+  } */
+
   /*************** PROJECT INFO / CARDS *****************/
   .background {
     display: inline;
@@ -554,7 +549,7 @@ dialog::backdrop {
     max-width: 40vw;
     min-height: 15vh;
     max-height: 15vh;
-    /* margin: 0 auto; */
+    font-size: 1vw;
   }
   
   .selectedSpan {
@@ -562,7 +557,6 @@ dialog::backdrop {
     max-width: 40vw;
     min-height: 15vh;
     max-height: 15vh;
-    /* margin: 0 auto; */
   }  
   
   /*************** ABOUT ME / MODAL / DIALOG / POP-UP *****************/
@@ -572,7 +566,8 @@ dialog::backdrop {
   }
 
   #modalProfileImage { 
-    max-height: 15vh;
+    max-height: 17vh;
+    transform: translateY(10vh);
   }
 
   #aboutMe {
@@ -584,5 +579,36 @@ dialog::backdrop {
     width: 18vw;     
     min-width: 18vw; 
     line-height: 2.5vh; 
+  }
+  /*************** LINKS BELOW CAROUSEL *****************/
+  #inline {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .app_links {
+    margin: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+  }
+
+  .app_links:hover {
+    color: #fb311ecc;
+    text-decoration: none;
+  }
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+  /*************** ABOUT ME / MODAL / DIALOG / POP-UP *****************/
+  #aboutMe {
+    font-size: 0.9vw;
+  }
+
+  .background {
+    font-size: 1vw;
   }
 }
