@@ -8,38 +8,82 @@ body {
   font-weight: 900;
 }
 
-/*************** NAV BAR *****************/
-
-.nav-link {
-  color: rgba(0, 0, 0, 0.7);
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
   text-decoration: none;
 }
+
+/*************** NAV BAR *****************/
 
 .navbar {
   background-color: rgba(0,0,0,0.4);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  margin: 0;
+  height: 60px;
 }
 
-.nav-item {
-  list-style: none;
-  display: inline;
-  margin: 20px;
+.navbar-ul {
+  position: fixed; 
+  width: 100%;
+  height: 100vh;
+  left: -100%;
+  background: #34495e;
+  top: 60px;
+  transition: all .5s
 }
 
-.nav-link:hover {
+input:checked ~ .navbar-ul {
+  left: 0;
+}
+
+.nav-li {
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+
+.nav-a {
+  color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  text-transform: uppercase;
+}
+
+.nav-a:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear; 
+}
+
+.nav-a:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+label #btn, label #cancel {
   color: white;
-  text-decoration: none;
+  font-size: 30px;
+  float: right;
+  cursor: pointer;
+  display: block;
+  line-height: 60px;
 }
+
+#check {
+  display: none;
+} 
 
 #headline {
   margin: 10px;
   color: rgb(235, 235, 235);
 }
+
 
 /*************** MAIN CONTAINERS *****************/
 .mainSection {
@@ -121,7 +165,6 @@ body {
 /********************** CAROUSEL ************************/
 
 .carousel_track_container {
-  position: relative;
   overflow: hidden;
   border: 2px solid rgba(0, 0, 0, 0.7);
   border-radius: 15px;
@@ -137,16 +180,13 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
-  position: relative;
   transition: transform 500ms ease-in;
   width: 65vw; 
 }
 
 .carousel_slide {
-  position: absolute;
   top: 0;
   bottom: 0;
-
 }
 
 
@@ -387,6 +427,9 @@ dialog::backdrop {
 }
 
 /********************************************* MEDIA QUERIES ******************************************/
+/********************************************* MEDIA QUERIES ******************************************/
+/********************************************* MEDIA QUERIES ******************************************/
+/********************************************* MEDIA QUERIES ******************************************/
 
 @media only screen and (min-width: 650px) {
   /*************** MAIN CONTAINERS *****************/
@@ -394,6 +437,20 @@ dialog::backdrop {
 
   /*************** NAV *****************/
 
+  .navbar-ul {
+    background: none;
+    top: 0;
+  }
+
+  .nav-li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 15px;
+  }
+
+  label #btn, label #cancel {
+    display: none;
+  }
 
   /*************** PROJECT INFO / CARDS *****************/
   .background {
