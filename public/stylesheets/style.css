@@ -440,6 +440,8 @@ dialog::backdrop {
   .navbar-ul {
     background: none;
     top: 0;
+    left: 0;
+    /* transition: all 0s; */
   }
 
   .nav-li {
