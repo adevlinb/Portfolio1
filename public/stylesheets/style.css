@@ -238,7 +238,7 @@ label #btn, label #cancel {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 62.5vh;
+  height: 55vh;
   width: fit-content;
 }
 
@@ -300,7 +300,7 @@ label #btn, label #cancel {
 #hi {
   margin-bottom: 0.5vh;
   margin-left: 2.75vw;
-  transform: translateY(16.5vh);
+  transform: translateY(15.75vh);
   max-height: 50px;
 }
 
@@ -716,17 +716,18 @@ dialog::backdrop {
   
   /*************** CAROUSEL *****************/
   .carousel_track_container {
-    height: 65vh;
+    height: 60vh;
     width: 45vw;
+    
   }
 
   .carousel_track {
-    width: 60vw; 
+    width: 65vw; 
   }
   
   .carousel_images {
     width: 45vw;
-    height: 65vh;
+    height: 60vh;
   }
 
 }
