@@ -19,33 +19,55 @@ body {
 
 .navbar {
   background-color: rgba(0,0,0,0.4);
-  height: 60px;
+  height: 8vh;
 }
 
 .navbar-ul {
+  background-image: url("../images/bamboo12.png");
+  background-size: contain;
   position: fixed; 
   width: 100%;
-  height: 100vh;
+  height: 87vh;
   left: -100%;
-  background: #34495e;
-  top: 60px;
-  transition: all .5s
+  top: 8vh;
+  transition: all .5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
 }
 
 input:checked ~ .navbar-ul {
   left: 0;
 }
 
+#check:checked ~ label #btn {
+  display: none;
+}
+
+#check:checked ~ label #cancel {
+  display: block;
+}
+
+label #btn {
+  display: block;
+}
+
+label #cancel {
+  display: none;
+}
+
 .nav-li {
   display: block;
   margin: 50px 0;
-  line-height: 30px;
+  line-height: 2.5vh;
 }
 
 .nav-a {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(27, 27, 27, 0.9);
   position: relative;
   text-transform: uppercase;
+  padding: 5px 0;
 }
 
 .nav-a:before {
@@ -55,10 +77,10 @@ input:checked ~ .navbar-ul {
   bottom: 0;
   height: 3px;
   width: 100%;
-  background: white;
+  background: rgb(24, 95, 228);
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform .4s linear; 
+  transition: transform .4s linear;
 }
 
 .nav-a:hover:before {
@@ -71,8 +93,7 @@ label #btn, label #cancel {
   font-size: 30px;
   float: right;
   cursor: pointer;
-  display: block;
-  line-height: 60px;
+  line-height: 8vh;
 }
 
 #check {
@@ -420,6 +441,7 @@ dialog::backdrop {
   bottom: 0;
   position: fixed;
   width: 100%;
+  height: 5vh;
 }
 
 #foot-txt {
@@ -441,7 +463,8 @@ dialog::backdrop {
     background: none;
     top: 0;
     left: 0;
-    /* transition: all 0s; */
+    display: block;
+    height: 8vh;
   }
 
   .nav-li {
