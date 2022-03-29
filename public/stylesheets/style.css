@@ -123,6 +123,7 @@ label #btn, label #cancel {
   flex-direction: column;
   width: 100%;
   height: 88vh;
+  max-height: 88vh;
 }
 
 #left {
