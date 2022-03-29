@@ -53,16 +53,18 @@ input:checked ~ .navbar-ul {
   display: none;
 }
 
+label #cancel {
+  display: none;
+}
+
 #check:checked ~ label #cancel {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 label #btn {
-  display: block;
-}
-
-label #cancel {
-  display: none;
+  display: flex;
+  align-items: center;
 }
 
 .nav-li {
@@ -101,8 +103,7 @@ label #btn, label #cancel {
   font-size: 30px;
   float: right;
   cursor: pointer;
-  line-height: 7vh;
-  /* margin-right: 6.5vw; */
+  height: 7vh;
   margin: auto 6.5vw;
 }
 
