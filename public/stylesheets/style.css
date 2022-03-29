@@ -19,7 +19,7 @@ body {
 
 .navbar {
   background-color: rgba(0,0,0,0.4);
-  height: 8vh;
+  height: 7vh;
 }
 
 .navbar-ul {
@@ -27,9 +27,9 @@ body {
   background-size: contain;
   position: fixed; 
   width: 100%;
-  height: 87vh;
+  height: 88vh;
   left: -100%;
-  top: 8vh;
+  top: 7vh;
   transition: all .5s;
   display: flex;
   flex-direction: column;
@@ -93,7 +93,7 @@ label #btn, label #cancel {
   font-size: 30px;
   float: right;
   cursor: pointer;
-  line-height: 8vh;
+  line-height: 7vh;
   margin-right: 6.5vw;
 }
 
@@ -143,7 +143,8 @@ label #btn, label #cancel {
   border-radius: none;
   border: none;
   transition: all 0.5s ease-in-out;
-  width: 100%;
+  width: 90%;
+  margin: 1vh auto 0 auto;
   display: none;
 }
 
@@ -153,6 +154,7 @@ label #btn, label #cancel {
   box-shadow: 3px 5px 5px rgb(155, 155, 155);
   display: flex;
   flex-direction: row;
+  border-radius: 10px;
 }
 
 .background > div:nth-child(1) {
@@ -469,12 +471,12 @@ dialog::backdrop {
     top: 0;
     left: 0;
     display: block;
-    height: 8vh;
+    height: 7vh;
   }
 
   .nav-li {
     display: inline-block;
-    line-height: 60px;
+    line-height: 7vh;
     margin: 0 15px;
   }
 
