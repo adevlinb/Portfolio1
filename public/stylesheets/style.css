@@ -207,8 +207,8 @@ label #btn, label #cancel {
   border-radius: 15px;
   box-shadow: 3px 5px 5px rgb(92, 92, 92);
   background-image: url("../images/bamboo12.png");
-  height: 55vh;
-  width: 75vw;
+  height: 50vh;
+  width: 65vw;
 }
 
 .carousel_track {
@@ -244,8 +244,8 @@ label #btn, label #cancel {
 
 /***** CAROUSEL IMAGE CSS ******/
 .carousel_images {
-  width: 75vw;
-  height: 55vh;
+  width: 65vw;
+  height: 50vh;
   object-fit: cover;
   border-radius: 15px;
   border: 2px solid black;
@@ -506,17 +506,17 @@ dialog::backdrop {
   
   /***** CAROUSEL  ******/
   .carousel_track_container {
-    height: 65vh;
-    width: 65vw;
+    height: 60vh;
+    width: 60vw;
   }
 
   .carousel_track {
-    width: 60vw; 
+    width: 65vw; 
   }
   
   .carousel_images {
-    width: 65vw;
-    height: 65vh;
+    width: 60vw;
+    height: 60vh;
   }
 
   .carousel_button {
@@ -604,13 +604,14 @@ dialog::backdrop {
   .mainSection {
     display: flex;
     flex-direction: row;
+    max-height: 88vh;
   }
   
   #left {
     display: flex;
     flex-direction: column;
     width: 45vw;
-    height: 100%;
+    height: 88vh;
     overflow: visible;
     justify-content: space-evenly;
     align-items: center;
