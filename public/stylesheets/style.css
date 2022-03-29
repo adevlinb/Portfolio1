@@ -137,6 +137,7 @@ label #btn, label #cancel {
   align-items: center;
   justify-content: center;
   padding-top: 2.5vh;
+  max-height: 70vh;
 }
 
 /*************** PROJECT INFO / CARDS *****************/
@@ -482,6 +483,7 @@ dialog::backdrop {
     left: 0;
     display: block;
     height: 7vh;
+    position: sticky;
   }
 
   .nav-li {
@@ -617,6 +619,7 @@ dialog::backdrop {
     display: flex;
     align-items: center;
     width: 55vw;
+    max-height: 88vh;
   }
   
   /*************** NAV *****************/
