@@ -329,7 +329,7 @@ label #btn, label #cancel {
 }
 
 dialog {
-  padding: 0;
+  margin: auto auto;
 }
 
 dialog::backdrop {
@@ -338,9 +338,10 @@ dialog::backdrop {
 
 #close_button {
   font-size: 2.5vh;
+  padding: 2.5px 5px;
   color: rgb(0, 0, 0);
   background: white;
-  border-radius: 50%;
+  border-radius: 50px;
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.8);
   right: 2.5vw;
@@ -361,7 +362,7 @@ dialog::backdrop {
   padding: 7.5px;
   padding-top: 15px;
   padding-bottom: 5px;
-  height: 90%;
+  height: 80%;
   margin-top:40px;
   font-size: 1.85vw;
 }
@@ -392,7 +393,7 @@ dialog::backdrop {
   margin-top: 0;
   text-align: justify;
   text-justify: inter-word;
-  line-height: 2.25vh;
+  line-height: 2vh;
 }
 
 #aboutMeDescription > h3 {
@@ -476,6 +477,8 @@ dialog::backdrop {
   label #btn, label #cancel {
     display: none;
   }
+
+
 
   /*************** PROJECT INFO / CARDS *****************/
   .background {
