@@ -22,6 +22,14 @@ body {
   height: 7vh;
 }
 
+.navbar > div:nth-child(1) {
+  color: white;
+  position: absolute;
+  left: 4vw;
+  top: 1vh;
+  margin-right: 1vw;
+}
+
 .navbar-ul {
   background-image: url("../images/bamboo12.png");
   background-size: contain;
@@ -460,7 +468,7 @@ dialog::backdrop {
 /********************************************* MEDIA QUERIES ******************************************/
 /********************************************* MEDIA QUERIES ******************************************/
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 700px) {
   /*************** MAIN CONTAINERS *****************/
   
 
