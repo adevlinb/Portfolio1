@@ -575,7 +575,7 @@ dialog::backdrop {
   }
 
   #hi {
-    transform: translateY(15vh);
+    transform: translateY(16.5vh);
     margin-left: 1.25vw;
   }
 
