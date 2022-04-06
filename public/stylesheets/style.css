@@ -252,7 +252,7 @@ label #btn, label #cancel {
 }
 
 #taste {
-  object-fit: fill;
+  object-fit: cover;
 }
 
 #xyla {
