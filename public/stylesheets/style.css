@@ -5,7 +5,7 @@ body {
   text-align: center;
   background-image: url("../images/bamboo12.png");
   background-size: contain;
-  font-weight: 900;
+  /* font-weight: 900; */
 }
 
 *{
@@ -186,15 +186,16 @@ label #btn, label #cancel {
 }
 
 .title {
-  font-size: 3vw;
+  font-size: 2vw;
   color: #fb311ecc;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .git_links {
   margin: 10px;
   font-size: 2vw;
   color: blue;
+  text-decoration: underline;
 }
 
 
@@ -246,18 +247,27 @@ label #btn, label #cancel {
 .carousel_images {
   width: 65vw;
   height: 50vh;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 15px;
   border: 2px solid black;
 }
 
 #taste {
   object-fit: cover;
+  object-position: left;
 }
 
 #xyla {
   object-fit: fill;
 } 
+
+#climate {
+  object-fit: cover;
+}
+
+#mastermind {
+  object-fit: cover;
+}
 
 /***** CAROUSEL BOTTOM NAV / INDICATOR DOTS ******/
 .carousel_nav {
@@ -268,16 +278,19 @@ label #btn, label #cancel {
 
 .carousel_indicator {
   border: 0;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  background: black;
-  margin: 12px;
+  background: none;
+  /* border-radius: 50%; */
+  /* width: 15px; */
+  /* height: 15px; */
+  /* background: black; */
+  /* margin: 12px; */
   cursor: pointer;
 }
 
 .carousel_indicator.current_slide {
-  background: #fb311ecc;
+  /* background: #fb311ecc; */
+  color: #fb311ecc;
+
 }
 
 /***** CAROUSEL LINKS at BOTTOM ******/
@@ -394,6 +407,8 @@ dialog::backdrop {
   box-shadow: inset 1px 1px 1px rgb(155, 155, 155);
   padding: 5px;
   line-height: 2.5vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 #list > p {
@@ -502,6 +517,14 @@ dialog::backdrop {
   /*************** PROJECT INFO / CARDS *****************/
   .background {
     font-size: 1.4vw;
+  }
+
+  .title {
+    font-size: 1.5vw;
+  }
+
+  .git_links {
+    font-size: 1.5vw;
   }
   
   /***** CAROUSEL  ******/
@@ -636,7 +659,7 @@ dialog::backdrop {
     flex-direction: column;
     width: 37.5vw;
     height: 15vh;
-    font-size: 1vw;
+    font-size: 1.2vw;
     justify-content: center;
     margin: 0.5vh 1vh;
     line-height: 3vh; 
@@ -647,7 +670,6 @@ dialog::backdrop {
   .selectedSpan {
     width: 37.5vw;
     height: 15vh;
-    font-size: 1vw;
     border-radius: 5px;
   }  
 
@@ -659,15 +681,15 @@ dialog::backdrop {
   }
 
   .background > div:nth-child(2n) {
-   line-height: 2.5vh; 
+   line-height: 2.25vh; 
   }
 
   .title {
-    font-size: 1.25vw;
+    font-size: 1vw;
   }
 
   .git_links {
-    font-size: 1.3vw;
+    font-size: 1vw;
     color: blue;
     margin-top: 2.5px;
     margin-bottom: 2.5px;
