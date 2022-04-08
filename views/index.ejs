@@ -20,9 +20,9 @@
         <i id="cancel"><img src="images/close.png" alt="closeNav"></i>
       </label>
         <ul class="navbar-ul">
-          <li class="nav-li">
+          <!-- <li class="nav-li">
             <a class="nav-a" id="open">About Me</a>
-          </li>
+          </li> -->
           <li class="nav-li">
             <a class="nav-a" href="https://github.com/adevlinb" target="_blank">GitHub</a>
           </li>
@@ -38,7 +38,37 @@
         </ul>
       </nav>
       <div id="aboutMeSection">
+        <!-- <h3>HI!</h3>
+        <h3>I'm Devlin!</h3>
+        <h5>Fullstack Software Developer & Designer</h5>
+        <p>Please view some of my recent work below via scrolling or quick links at the foot of the page!</p>
+        <p>Additionally you can access a detailed AboutMe, my github, linkedIn profile, 
+          and resume in the navBar! As well as contact me if you have any questions!</p> -->
+        <div id="backDiv">
+          <img id="modalProfileImage" src="images/profilePic.jpeg" alt="profilePic">
+          <div id="hi">
+            <h1 class="hello">Hi!</h1>
+            <h1 id="devlin" class="hello">I'm Devlin!</h1>
+          </div>
+        </div>
+        <div class="modalTitle">
+          <div id="caption">
+            <h6>Hollywood, CA: Mt. Lee ⬆️,</h6>
+            <h6>👀 into San Fernando Valley</h6>
+          </div>
+        </div>
+        <div id="aboutMe">
 
+          <div id="aboutMeDescription">
+        
+            <h5>Fullstack Software Developer & Designer</h5>
+            <p>Please view some of my recent work below via scrolling or quick links at the foot of the page!</p>
+            <p>Additionally you can access a detailed AboutMe, my github, linkedIn profile,
+              and resume in the navBar! As well as contact me if you have any questions!</p>
+        
+          </div>
+        </div>
+        <div id="modalFooter"> THANK YOU FOR COMING TO MY PAGE!</div>
       </div>
       <div id="xylaMedia">
         <div class="background selectedSpan">
@@ -284,9 +314,9 @@
 
 ////////////////  MODAL VARIABLES ///////////////////////////
 
-const openButton = document.getElementById('open');
-const modal_container = document.getElementById('modal_container');
-const closeButton = document.getElementById('close_button');
+// const openButton = document.getElementById('open');
+// const modal_container = document.getElementById('modal_container');
+// const closeButton = document.getElementById('close_button');
 
 
 //////////////// CAROUSEL VARIABLES /////////////////////////
@@ -301,17 +331,17 @@ const projects = Array.from(projectParent.children);
 
 ////////////////// MODAL EVENT LISTENERS / FUNCTIONS ////////////
 
-openButton.addEventListener('click', function() {
-  modal_container.showModal()
-  modal_container.classList.add('open')
-  console.log('click open');
-});
+// openButton.addEventListener('click', function() {
+//   modal_container.showModal()
+//   modal_container.classList.add('open')
+//   console.log('click open');
+// });
 
-closeButton.addEventListener('click', function() {
-  modal_container.close();
-  modal_container.classList.remove('open')
-  console.log('click closed');
-});
+// closeButton.addEventListener('click', function() {
+//   modal_container.close();
+//   modal_container.classList.remove('open')
+//   console.log('click closed');
+// });
 
 
 ////////////////// CAROUSEL EVENT LISTENERS / FUNCTIONS ////////////

@@ -124,8 +124,10 @@ label #btn, label #cancel {
 /*************** MAIN CONTAINERS *****************/
 #aboutMeSection {
   display: flex;
-  margin-top: 7vh;
-  margin-bottom: 6vh;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 7vh;
+  padding-bottom: 6vh;
   height: 88vh;
 }
 
@@ -138,10 +140,6 @@ label #btn, label #cancel {
   scroll-behavior: smooth;
 
 }
-
-/* #scrollBox {
-  background-color: rgba(0,0,0,0.4);
-} */
 
 #left {
   display: flex;
@@ -184,7 +182,7 @@ label #btn, label #cancel {
 #mastermindMedia {
   display: flex;
   flex-direction: column;
-  margin-top: 2vh;
+  padding-top: 2vh;
   height: 92vh;
   border-top: 8vh solid rgba(0, 0, 0, 0.4);
 }
@@ -204,7 +202,7 @@ label #btn, label #cancel {
   text-align: left;
   left: 0;
   font-size: 2vw;
-  line-height: 2.2vh;
+  line-height: 2.5vh;
   box-shadow: none;
   border-radius: none;
   border: none;
@@ -359,12 +357,13 @@ label #btn, label #cancel {
   height: 20vh;
   width: auto;
   display: flex;
+  
 }
 
 #hi {
   margin-bottom: 0.5vh;
   margin-left: 2.75vw;
-  transform: translateY(15.75vh);
+  margin-top: 15.6vh;
   max-height: 50px;
 }
 
@@ -381,12 +380,25 @@ label #btn, label #cancel {
 }
 
 #modalProfileImage {
-  max-height: 14.5vh;
+  height: 17vh;
   width: auto;
   border-radius: 50%;
   border: 2px solid white;
   margin-left: 2.5vw;
-  transform: translateY(12vh);
+  margin-top: 10vh;
+  z-index: 0;
+}
+
+#caption {
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+#caption > h6 {
+  margin: 0;
 }
 
 .modal_container {
@@ -399,7 +411,9 @@ label #btn, label #cancel {
 }
 
 .modalTitle {
-  display: none;
+  display: flex;
+  margin-left: 1vw;
+  justify-content: flex-end;
 }
 
 .open {
@@ -579,9 +593,9 @@ dialog::backdrop {
 
 @media only screen and (min-width: 750px) {
   /*************** MAIN CONTAINERS *****************/
-.mainSection {
-  margin-top: 7vh;
-}
+  .mainSection {
+    margin-top: 7vh;
+  }
 
 
 
@@ -598,6 +612,13 @@ dialog::backdrop {
     left: 0;
     display: block;
     height: 7vh;
+  }
+
+  .nav-a {
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    padding: 5px 0;
   }
 
   .nav-li {
@@ -673,43 +694,28 @@ dialog::backdrop {
   }
 
   /*************** ABOUT ME / MODAL / DIALOG / POP-UP *****************/
-  #modalProfileImage { 
+  /* #modalProfileImage { 
     max-height: 16.5vh;
     transform: translateY(10.5vh);
-  }
+  } */
 
-  .modalTitle {
-    display: flex;
-    margin-left: 1vw;
-    justify-content: flex-end;
-  }
 
   .modalTitle > h1 {
     margin: 7px;
     margin-top: 0;
   }
 
-  #caption {
-    margin: 5px;
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 2px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-  }
 
-  #caption > h6 {
-    margin: 0;
-  }
 
   .open {
     min-width: 70vw; 
     min-height: 80vh; 
   }
-
+/* 
   #hi {
     transform: translateY(16.5vh);
     margin-left: 1.25vw;
-  }
+  } */
 
   #aboutMe {
     font-size: 1.32vw;
@@ -729,12 +735,12 @@ dialog::backdrop {
 @media only screen and (min-width: 900px) {
   /*************** MAIN CONTAINERS *****************/
 
-  #aboutMeSection {
+  /* #aboutMeSection {
     display: flex;
     margin-top: 7vh;
     margin-bottom: 5vh;
     height: 88vh;
-  }
+  } */
 
   .mainSection {
     display: flex;
@@ -820,10 +826,10 @@ dialog::backdrop {
     min-height: 80vh; 
   }
 
-  #modalProfileImage { 
+  /* #modalProfileImage { 
     max-height: 17vh;
     transform: translateY(10vh);
-  }
+  } */
 
   #aboutMe {
     font-size: 1vw;
