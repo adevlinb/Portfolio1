@@ -20,6 +20,9 @@ body {
 .navbar {
   background-color: rgba(0,0,0,0.4);
   height: 7vh;
+  width: 100%;
+  top: 0;
+  position: fixed;
 }
 
 .navbar > div:nth-child(1) {
@@ -42,7 +45,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 5;
+  z-index: 10;
 }
 
 input:checked ~ .navbar-ul {
@@ -118,12 +121,15 @@ label #btn, label #cancel {
 
 
 /*************** MAIN CONTAINERS *****************/
- #aboutMeSection {
-  display: none;
-  }
+#aboutMeSection {
+  display: flex;
+  margin-top: 7vh;
+  margin-bottom: 5vh;
+  height: 88vh;
+}
 
 .mainSection {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 100%;
   align-items: center;
@@ -142,6 +148,26 @@ label #btn, label #cancel {
   align-items: center;
   justify-content: center;
   max-height: 70vh;
+}
+
+#xylaMedia {
+  padding-top: 7vh;
+  height: 100vh;
+}
+
+#tasteMedia {
+  padding-top: 7vh;
+  height: 100vh;
+}
+
+#climateMedia {
+  padding-top: 7vh;
+  height: 100vh;
+}
+
+#mastermindMedia {
+  padding-top: 7vh;
+  height: 100vh;
 }
 
 /*************** PROJECT INFO / CARDS *****************/
