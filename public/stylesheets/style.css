@@ -194,6 +194,10 @@ label #btn, label #cancel {
   justify-content: center;
 }
 
+#mainSectionButton {
+  display: none;
+}
+
 /*************** PROJECT INFO / CARDS *****************/
 
 .background {
@@ -386,7 +390,6 @@ label #btn, label #cancel {
   border: 2px solid white;
   margin-left: 2.5vw;
   margin-top: 10vh;
-  z-index: 0;
 }
 
 #caption {
@@ -484,7 +487,14 @@ dialog::backdrop {
   max-width: 100%;
   padding: 10px;
   padding-top: 0;
+  display: flex;
+  flex-direction: column;
 }
+
+#projects {
+  align-self: center;
+}
+
 
 #aboutMeDescription > p {
   margin: 2.5px;
@@ -745,8 +755,20 @@ dialog::backdrop {
   .mainSection {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 93vh;
+    border-top: 8vh solid rgba(0, 0, 0, 0.4);
+  }
 
+  #mainSectionButton {
+    display: flex;
+    margin: 2vh;
+    color: black;
+    background-color: rgba(72, 126, 224, 0.7);
+    width: 5vw;
+    height: 5vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    align-self: center;
   }
   
   #left {
@@ -831,10 +853,10 @@ dialog::backdrop {
     transform: translateY(10vh);
   } */
 
-  #aboutMe {
+  /* #aboutMe {
     font-size: 1vw;
     margin-top: 20px;
-  }
+  } */
 
   #list {
     width: 18vw;     
@@ -887,7 +909,7 @@ dialog::backdrop {
 @media only screen and (min-width: 1000px) {
   /*************** ABOUT ME / MODAL / DIALOG / POP-UP *****************/
   #aboutMe {
-    font-size: 0.9vw;
+    font-size: 1.2vw;
   }
 
   .background {
