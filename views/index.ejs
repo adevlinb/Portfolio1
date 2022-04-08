@@ -36,7 +36,10 @@
           </li>
         </ul>
       </nav>
-      <div class="mainSection">
+      <div id="aboutMeSection">
+        <a href="#mainSection">Projects</a>
+      </div>
+      <div class="mainSection" id="mainSection">
         <div class="vertical" id="left">
           <div class="background selectedSpan">
             <div>
@@ -145,7 +148,7 @@
           <p>Activities:</p>
           <p>🥾 🏃‍♂️ 🏋️‍♂️ 🧘‍♂️</p>
           <p>Entertainment:</p>
-          <p> 🎭</p>
+          <p>📺 🎭 🎥</p>
           <p>Play Music:</p>
           <p>🎹 🎸 🎤</p>
           <p>Hobbies:</p>
@@ -183,6 +186,7 @@
 <script>
 
 ////////////////  MODAL VARIABLES ///////////////////////////
+
 const openButton = document.getElementById('open');
 const modal_container = document.getElementById('modal_container');
 const closeButton = document.getElementById('close_button');
@@ -199,6 +203,7 @@ const projectParent = document.getElementById('left');
 const projects = Array.from(projectParent.children);
 
 ////////////////// MODAL EVENT LISTENERS / FUNCTIONS ////////////
+
 openButton.addEventListener('click', function() {
   modal_container.showModal()
   modal_container.classList.add('open')
