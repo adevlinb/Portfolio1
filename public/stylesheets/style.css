@@ -151,21 +151,25 @@ label #btn, label #cancel {
 }
 
 #xylaMedia {
+  display: flex;
   padding-top: 7vh;
   height: 100vh;
 }
 
 #tasteMedia {
+  display: flex;
   padding-top: 7vh;
   height: 100vh;
 }
 
 #climateMedia {
+  display: flex;
   padding-top: 7vh;
   height: 100vh;
 }
 
 #mastermindMedia {
+  display: flex;
   padding-top: 7vh;
   height: 100vh;
 }
@@ -512,8 +516,24 @@ dialog::backdrop {
 
 @media only screen and (min-width: 750px) {
   /*************** MAIN CONTAINERS *****************/
-  .mainSection {
+.mainSection {
   margin-top: 7vh;
+}
+
+#xylaMedia {
+  display: none;
+}
+
+#tasteMedia {
+  display: none;
+}
+
+#climateMedia {
+  display: none;
+}
+
+#mastermindMedia {
+  display: none;
 }
 
   /*************** NAV *****************/
