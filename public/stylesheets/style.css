@@ -152,44 +152,54 @@ label #btn, label #cancel {
 
 #xylaMedia {
   display: flex;
-  padding-top: 7vh;
+  flex-direction: column;
+  padding-top: 8vh;
   height: 100vh;
 }
 
 #tasteMedia {
   display: flex;
-  padding-top: 7vh;
+  flex-direction: column;
+  padding-top: 8vh;
   height: 100vh;
 }
 
 #climateMedia {
   display: flex;
-  padding-top: 7vh;
+  flex-direction: column;
+  padding: 8vh 0;
   height: 100vh;
 }
 
 #mastermindMedia {
   display: flex;
+  flex-direction: column;
   padding-top: 7vh;
-  height: 100vh;
+  height: 90vh;
+}
+
+.mediaBottom {
+  display: flex;
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
 }
 
 /*************** PROJECT INFO / CARDS *****************/
 
 .background {
   background-color: none;
-  padding: 7.5px;
-  margin: 0px;
+  padding: 5px;
   text-align: left;
   left: 0;
-  font-size: 1.8vw;
-  line-height: 2vh;
+  font-size: 2vw;
+  line-height: 2.2vh;
   box-shadow: none;
   border-radius: none;
   border: none;
   transition: all 0.5s ease-in-out;
   width: 90%;
-  margin: 1vh auto 0 auto;
+  margin: 0 auto;
   display: none;
 }
 
@@ -200,6 +210,7 @@ label #btn, label #cancel {
   display: flex;
   flex-direction: row;
   border-radius: 10px;
+  height: 15vh;
 }
 
 .background > div:nth-child(1) {
@@ -209,13 +220,14 @@ label #btn, label #cancel {
   border-right: 1px solid black;
   justify-content: center;
   padding: 5px;
-  padding-right: 2.5vw;
-  margin-right: 5vw;
+  padding-right: 1.5vw;
+  margin-right: 2.5vw;
 }
 
 .background > div:nth-child(2n) {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .title {
@@ -279,7 +291,7 @@ label #btn, label #cancel {
 /***** CAROUSEL IMAGE CSS ******/
 .carousel_images {
   width: 65vw;
-  height: 50vh;
+  height: 65vw;
   object-fit: contain;
   border-radius: 15px;
   border: 2px solid black;
@@ -520,21 +532,7 @@ dialog::backdrop {
   margin-top: 7vh;
 }
 
-#xylaMedia {
-  display: none;
-}
 
-#tasteMedia {
-  display: none;
-}
-
-#climateMedia {
-  display: none;
-}
-
-#mastermindMedia {
-  display: none;
-}
 
   /*************** NAV *****************/
   .navbar {
@@ -706,6 +704,22 @@ dialog::backdrop {
     align-items: center;
     width: 55vw;
     max-height: 75vh;
+  }
+
+  #xylaMedia {
+    display: none;
+  }
+
+  #tasteMedia {
+    display: none;
+  }
+
+  #climateMedia {
+    display: none;
+  }
+
+  #mastermindMedia {
+    display: none;
   }
   
   /*************** NAV *****************/
