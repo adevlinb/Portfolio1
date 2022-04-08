@@ -6,6 +6,7 @@ body {
   background-image: url("../images/bamboo12.png");
   background-size: contain;
   /* font-weight: 900; */
+  scroll-behavior: smooth;
 }
 
 *{
@@ -134,6 +135,7 @@ label #btn, label #cancel {
   width: 100%;
   align-items: center;
   height: 88vh;
+    scroll-behavior: smooth;
 }
 
 #left {
@@ -155,6 +157,7 @@ label #btn, label #cancel {
   flex-direction: column;
   padding-top: 8vh;
   height: 100vh;
+  /* background-color: rgba(0,0,0,0.4); */
 }
 
 #tasteMedia {
@@ -290,11 +293,12 @@ label #btn, label #cancel {
 
 /***** CAROUSEL IMAGE CSS ******/
 .carousel_images {
-  width: 65vw;
-  height: 65vw;
+  width: 82.5vw;
+  height: 82.5vw;
   object-fit: contain;
   border-radius: 15px;
   border: 2px solid black;
+  box-shadow: 3px 5px 5px rgb(114, 114, 114);
 }
 
 #taste {
@@ -508,23 +512,53 @@ dialog::backdrop {
 /*************** FOOTER *****************/
 .footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.55);
   bottom: 0;
   position: fixed;
   width: 100%;
   height: 5vh;
 }
 
+.smallMediaLink {
+  color: white;
+  align-self: center;
+  margin: 0.5vh;
+}
+
+.footer > div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer > div:hover {
+  background-color: rgba(0,0,0,0.55);;
+}
+
 #foot-txt {
-  margin: 10px;
+  display: none;
 }
 
 /********************************************* MEDIA QUERIES ******************************************/
 /********************************************* MEDIA QUERIES ******************************************/
 /********************************************* MEDIA QUERIES ******************************************/
 /********************************************* MEDIA QUERIES ******************************************/
+
+@media only screen and (min-width: 300px) {
+  .mediaBottom {
+    margin-top: 5vh;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+    .carousel_images {
+    width: 65vw;
+    height: 65vw;
+  }
+}
+
 
 @media only screen and (min-width: 750px) {
   /*************** MAIN CONTAINERS *****************/
@@ -578,7 +612,7 @@ dialog::backdrop {
   
   /***** CAROUSEL  ******/
   .carousel_track_container {
-    height: 60vh;
+    height: 60vw;
     width: 60vw;
   }
 
@@ -587,8 +621,8 @@ dialog::backdrop {
   }
   
   .carousel_images {
-    width: 60vw;
-    height: 60vh;
+    width: 55vw;
+    height: 55vw;
   }
 
   .carousel_button {
@@ -721,6 +755,14 @@ dialog::backdrop {
   #mastermindMedia {
     display: none;
   }
+
+  .smallMediaLink {
+    display: none;
+  }
+
+  #jumpTo {
+    display: none;
+  }
   
   /*************** NAV *****************/
   /* .navbar {
@@ -816,17 +858,22 @@ dialog::backdrop {
   /*************** CAROUSEL *****************/
   .carousel_track_container {
     height: 60vh;
-    width: 45vw;
+    width: 60vh;
     
   }
 
   .carousel_track {
-    width: 65vw; 
+    width: 60vh; 
   }
   
   .carousel_images {
-    width: 45vw;
+    width: 60vh;
     height: 60vh;
+  }
+
+  #foot-txt {
+    display: inline; 
+    margin: 10px;
   }
 
 }
