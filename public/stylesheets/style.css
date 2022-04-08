@@ -763,7 +763,7 @@ dialog::backdrop {
     display: flex;
     margin: 2vh;
     color: black;
-    background-color: rgba(72, 126, 224, 0.7);
+    background-color: rgba(72, 126, 224, 0.4);
     width: 5vw;
     height: 5vh;
     border: 1px solid black;
