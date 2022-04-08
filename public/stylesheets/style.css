@@ -125,7 +125,7 @@ label #btn, label #cancel {
 #aboutMeSection {
   display: flex;
   margin-top: 7vh;
-  margin-bottom: 5vh;
+  margin-bottom: 6vh;
   height: 88vh;
 }
 
@@ -135,8 +135,13 @@ label #btn, label #cancel {
   width: 100%;
   align-items: center;
   height: 88vh;
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+
 }
+
+/* #scrollBox {
+  background-color: rgba(0,0,0,0.4);
+} */
 
 #left {
   display: flex;
@@ -155,30 +160,33 @@ label #btn, label #cancel {
 #xylaMedia {
   display: flex;
   flex-direction: column;
-  padding-top: 8vh;
+  padding-top: 2vh;
   height: 100vh;
-  /* background-color: rgba(0,0,0,0.4); */
+  border-top: 7vh solid rgba(0, 0, 0, 0.4);
 }
-
+  
 #tasteMedia {
   display: flex;
   flex-direction: column;
-  padding-top: 8vh;
+  padding-top: 2vh;
   height: 100vh;
+  border-top: 7vh solid rgba(0, 0, 0, 0.4);
 }
 
 #climateMedia {
   display: flex;
   flex-direction: column;
-  padding: 8vh 0;
+  padding: 2vh;
   height: 100vh;
+  border-top: 7vh solid rgba(0, 0, 0, 0.4);
 }
 
 #mastermindMedia {
   display: flex;
   flex-direction: column;
-  padding-top: 7vh;
-  height: 90vh;
+  margin-top: 2vh;
+  height: 92vh;
+  border-top: 8vh solid rgba(0, 0, 0, 0.4);
 }
 
 .mediaBottom {
