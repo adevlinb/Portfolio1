@@ -282,16 +282,10 @@ label #btn, label #cancel {
 .carousel_indicator {
   border: 0;
   background: none;
-  /* border-radius: 50%; */
-  /* width: 15px; */
-  /* height: 15px; */
-  /* background: black; */
-  /* margin: 12px; */
   cursor: pointer;
 }
 
 .carousel_indicator.current_slide {
-  /* background: #fb311ecc; */
   color: #fb311ecc;
 
 }
@@ -568,7 +562,7 @@ dialog::backdrop {
   
   .is_hidden {
     /* pointer-events: none; */
-    display: none;
+    visibility: hidden;
   }
 
   .buttonDiv {
