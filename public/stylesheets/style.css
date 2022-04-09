@@ -145,6 +145,27 @@ label #btn, label #cancel {
   border-radius: 10px;
 }
 
+#firstProjectButton {
+    display: flex;
+    margin: 2vh;
+    color: black;
+    background-color: rgba(72, 126, 224, 0.4);
+    width: 5vh;
+    height: 5vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    align-self: center;
+    box-shadow: 3px 5px 5px rgb(155, 155, 155);
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: large;
+}
+
+#firstProjectButton:hover {
+  border: 2px solid blue;
+}
+
 .mainSection {
   display: none;
   flex-direction: column;
@@ -461,7 +482,7 @@ dialog::backdrop {
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.8);
   right: 2.5vw;
-  top: 5vh;
+  top: 6vh;
   position: absolute;
   cursor: pointer;
 }
@@ -790,16 +811,29 @@ dialog::backdrop {
     border-top: 8vh solid rgba(0, 0, 0, 0.4);
   }
 
+  #firstProjectButton {
+    display: none;
+  }
+
   #mainSectionButton {
     display: flex;
     margin: 2vh;
     color: black;
     background-color: rgba(72, 126, 224, 0.4);
-    width: 5vw;
+    width: 5vh;
     height: 5vh;
     border: 1px solid black;
     border-radius: 10px;
     align-self: center;
+    box-shadow: 3px 5px 5px rgb(155, 155, 155);
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: large;
+  }
+
+  #mainSectionButton:hover {
+    border: 2px solid blue;
   }
   
   #left {
