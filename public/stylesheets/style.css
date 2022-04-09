@@ -136,7 +136,7 @@ label #btn, label #cancel {
   padding-top: 7vh;
   padding-bottom: 6vh;
   height: 90vh;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
 
 #aboutMeTitle {
@@ -184,7 +184,7 @@ label #btn, label #cancel {
 }
 
 #mainSection {
-  scroll-snap-align: end;
+  scroll-snap-align: start;
 }
 
 #left {
@@ -440,7 +440,7 @@ label #btn, label #cancel {
   width: auto;
   border-radius: 50%;
   border: 2px solid white;
-  margin-left: 2.5vw;
+  margin-left: 2.25vw;
   margin-top: 10vh;
 }
 
@@ -460,8 +460,8 @@ label #btn, label #cancel {
 .modal_container {
   border-radius: 0;
   color: black;
-  width: 0;
-  height: 0;
+  width: 85vw;
+  height: 85vh;
   animation:fadein 1s;
   overflow: hidden;
 }
@@ -475,7 +475,7 @@ label #btn, label #cancel {
 .open {
   border-radius: 20px;
   min-width: 85vw; 
-  min-height: 80vh; 
+  min-height: 82.5vh; 
   display: flex;
   flex-direction: column;
 }
@@ -512,9 +512,9 @@ dialog::backdrop {
 #aboutMe {
   display: flex;
   padding: 7.5px;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 10px;
-  height: 80%;
+  height: 75%;
   margin-top:40px;
   font-size: 1.85vw;
 }
@@ -560,8 +560,8 @@ dialog::backdrop {
 #aboutMeDescription > h3 {
   margin: 5px;
   margin-bottom: 2px;
-  font-weight: 900;
-  text-transform: uppercase;
+  font-weight: 450;
+  /* text-transform: uppercase; */
   margin-left: 0;
   text-align: left;
 }
@@ -823,7 +823,7 @@ dialog::backdrop {
     display: flex;
     flex-direction: row;
     height: 93vh;
-    border-top: 8vh solid rgba(0, 0, 0, 0.4);
+    border-top: 7vh solid rgba(0, 0, 0, 0.4);
   }
 
   #firstProjectButton {
