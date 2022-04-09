@@ -5,8 +5,8 @@ body {
   text-align: center;
   background-image: url("../images/bamboo12.png");
   background-size: contain;
-  /* font-weight: 900; */
-  scroll-behavior: smooth;
+  overflow: hidden;
+
 }
 
 *{
@@ -122,6 +122,13 @@ label #btn, label #cancel {
 
 
 /*************** MAIN CONTAINERS *****************/
+#scrollBox {
+  scroll-behavior: smooth;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
 #aboutMeSection {
   display: flex;
   flex-direction: column;
@@ -129,6 +136,7 @@ label #btn, label #cancel {
   padding-top: 7vh;
   padding-bottom: 6vh;
   height: 88vh;
+  scroll-snap-align: center;
 }
 
 #aboutMeTitle {
@@ -173,7 +181,7 @@ label #btn, label #cancel {
   align-items: center;
   height: 88vh;
   scroll-behavior: smooth;
-
+  scroll-snap-align: center 1;
 }
 
 #left {
@@ -194,32 +202,36 @@ label #btn, label #cancel {
   display: flex;
   flex-direction: column;
   padding-top: 2vh;
-  height: 100vh;
+  height: 90vh;
   border-top: 7vh solid rgba(0, 0, 0, 0.4);
+  scroll-snap-align: start;
 }
   
 #tasteMedia {
   display: flex;
   flex-direction: column;
   padding-top: 2vh;
-  height: 100vh;
+  height: 90vh;
   border-top: 7vh solid rgba(0, 0, 0, 0.4);
+  scroll-snap-align: start;
 }
 
 #climateMedia {
   display: flex;
   flex-direction: column;
   padding: 2vh;
-  height: 100vh;
+  height: 90vh;
   border-top: 7vh solid rgba(0, 0, 0, 0.4);
+  scroll-snap-align: start;
 }
 
 #mastermindMedia {
   display: flex;
   flex-direction: column;
   padding-top: 2vh;
-  height: 92vh;
-  border-top: 8vh solid rgba(0, 0, 0, 0.4);
+  height: 94vh;
+  border-top: 7vh solid rgba(0, 0, 0, 0.4);
+  scroll-snap-align: center;
 }
 
 .mediaBottom {
@@ -481,7 +493,7 @@ dialog::backdrop {
   border-radius: 50px;
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.8);
-  right: 2.5vw;
+  right: 3vw;
   top: 6vh;
   position: absolute;
   cursor: pointer;
