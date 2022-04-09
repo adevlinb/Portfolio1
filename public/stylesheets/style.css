@@ -180,8 +180,11 @@ label #btn, label #cancel {
   width: 100%;
   align-items: center;
   height: 88vh;
-  scroll-behavior: smooth;
-  scroll-snap-align: center 1;
+
+}
+
+#mainSection {
+  scroll-snap-align: end;
 }
 
 #left {
@@ -407,7 +410,7 @@ label #btn, label #cancel {
   background-position: 50%;
   background-size: cover;
   min-height: 20vh;
-  height: 20vh;
+  height: 18vh;
   width: auto;
   display: flex;
   
@@ -433,7 +436,7 @@ label #btn, label #cancel {
 }
 
 #modalProfileImage {
-  height: 17vh;
+  height: 18vh;
   width: auto;
   border-radius: 50%;
   border: 2px solid white;
@@ -494,7 +497,7 @@ dialog::backdrop {
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.8);
   right: 3vw;
-  top: 6vh;
+  top: 3vh;
   position: absolute;
   cursor: pointer;
 }
