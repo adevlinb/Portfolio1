@@ -145,6 +145,31 @@ label #btn, label #cancel {
   margin-left: 22vh;
 }
 
+#mainPageAboutMe {
+  display: flex;
+  padding: 2.5vw;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  height: 75%;
+  font-size: 2vw;
+}
+
+#mainPageAboutMeDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#mainPageAboutMeDescription:nth-child(1) {
+  text-align: left;
+}
+
+#mainPageAboutMeDescription2ndChild {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 #pageCaption {
   margin: 5px;
   background-color: rgba(0, 0, 0, 0.1);
@@ -154,20 +179,21 @@ label #btn, label #cancel {
 }
 
 #firstProjectButton {
-    display: flex;
-    margin: 2vh;
-    color: black;
-    background-color: rgba(72, 126, 224, 0.4);
-    width: 5vh;
-    height: 5vh;
-    border: 1px solid black;
-    border-radius: 10px;
-    align-self: center;
-    box-shadow: 3px 5px 5px rgb(155, 155, 155);
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    font-size: large;
+  display: flex;
+  margin: 2vh auto;
+  color: black;
+  background-color: rgba(72, 126, 224, 0.4);
+  width: 5vh;
+  height: 5vh;
+  border: 1px solid black;
+  border-radius: 10px;
+  align-self: center;
+  box-shadow: 3px 5px 5px rgb(155, 155, 155);
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: large;
+  text-align: center;
 }
 
 #firstProjectButton:hover {
@@ -234,7 +260,7 @@ label #btn, label #cancel {
   padding-top: 2vh;
   height: 94vh;
   border-top: 7vh solid rgba(0, 0, 0, 0.4);
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
 
 .mediaBottom {
@@ -826,6 +852,10 @@ dialog::backdrop {
     border-top: 7vh solid rgba(0, 0, 0, 0.4);
   }
 
+  #mainPageAboutMe {
+    font-size: 1.4vw;
+  }
+
   #firstProjectButton {
     display: none;
   }
@@ -845,6 +875,7 @@ dialog::backdrop {
     align-items: center;
     padding: 10px;
     font-size: large;
+    text-align: center;
   }
 
   #mainSectionButton:hover {
