@@ -124,7 +124,7 @@ label #btn, label #cancel {
 /*************** MAIN CONTAINERS *****************/
 #scrollBox {
   scroll-behavior: smooth;
-  height: 100vh;
+  height: 98vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
@@ -135,7 +135,7 @@ label #btn, label #cancel {
   justify-content: space-around;
   padding-top: 7vh;
   padding-bottom: 6vh;
-  height: 88vh;
+  height: 90vh;
   scroll-snap-align: center;
 }
 
