@@ -471,12 +471,7 @@ label #btn, label #cancel {
 }
 
 #caption {
-  /* margin: 5px;
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 2px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 10px; */
-  display: none;
+  visibility: hidden;
 }
 
 #caption > h6 {
@@ -673,7 +668,7 @@ dialog::backdrop {
 }
 
 @media only screen and (min-width: 600px) {
-    .carousel_images {
+  .carousel_images {
     width: 65vw;
     height: 65vw;
   }
@@ -683,13 +678,13 @@ dialog::backdrop {
   }
 
   #caption {
-    display: block;
+    /* display: block; */
     margin: 5px;
     background-color: rgba(0, 0, 0, 0.1);
     padding: 2px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-
+    visibility: visible;
   }
 }
 
