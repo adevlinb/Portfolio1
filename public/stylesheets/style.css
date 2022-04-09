@@ -131,6 +131,20 @@ label #btn, label #cancel {
   height: 88vh;
 }
 
+#aboutMeTitle {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 22vh;
+}
+
+#pageCaption {
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
 .mainSection {
   display: none;
   flex-direction: column;
@@ -336,9 +350,11 @@ label #btn, label #cancel {
 }
 
 .carousel_indicator {
-  border: 0;
-  background: none;
+  padding: 5px;
   cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgb(114, 114, 114);
+  font-size: 1.25vw;
 }
 
 .carousel_indicator.current_slide {
@@ -393,11 +409,12 @@ label #btn, label #cancel {
 }
 
 #caption {
-  margin: 5px;
+  /* margin: 5px;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 2px;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
+  border-radius: 10px; */
+  display: none;
 }
 
 #caption > h6 {
@@ -444,7 +461,7 @@ dialog::backdrop {
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.8);
   right: 2.5vw;
-  top: 3vh;
+  top: 5vh;
   position: absolute;
   cursor: pointer;
 }
@@ -460,7 +477,7 @@ dialog::backdrop {
   display: flex;
   padding: 7.5px;
   padding-top: 40px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   height: 80%;
   margin-top:40px;
   font-size: 1.85vw;
@@ -598,6 +615,20 @@ dialog::backdrop {
     width: 65vw;
     height: 65vw;
   }
+
+  #close_button {
+    top: 5vh;
+  }
+
+  #caption {
+    display: block;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+
+  }
 }
 
 
@@ -729,7 +760,7 @@ dialog::backdrop {
 
   #aboutMe {
     font-size: 1.32vw;
-    margin-top: 20px;
+    margin-top: 40px;
     padding-top: 20px;
     
   }
