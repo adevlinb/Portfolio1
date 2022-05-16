@@ -1,13 +1,13 @@
 body {
   padding: 0;
   margin: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  text-align: center;
-  background-image: url("../images/bamboo12.png");
-  background-size: contain;
-  overflow: hidden;
-
+  font-family: 'Open Sans',
+    sans-serif;
 }
+
+/* font-family: 'Inter', sans-serif; */
+/* font-family: 'Alegreya Sans SC', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
 
 *{
   margin: 0;
@@ -16,1010 +16,225 @@ body {
   text-decoration: none;
 }
 
-/*************** NAV BAR *****************/
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  font-variant-caps: small-caps;
+}
+
+a:hover {
+  color: black;
+}
 
 .navbar {
-  background-color: rgba(0,0,0,0.4);
-  height: 7vh;
-  width: 100%;
-  top: 0;
-  position: fixed;
-}
-
-.navbar > div:nth-child(1) {
-  color: white;
-  position: absolute;
-  left: 4vw;
-  top: 1vh;
-  margin-right: 1vw;
-}
-
-.navbar-ul {
-  background-image: url("../images/bamboo12.png");
-  background-size: contain;
-  position: fixed; 
-  width: 100%;
-  height: 88vh;
-  left: -100%;
-  top: 7vh;
-  transition: all .5s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 10;
-}
-
-input:checked ~ .navbar-ul {
-  left: 0;
-}
-
-#check:checked ~ label #btn {
-  display: none;
-}
-
-label #cancel {
-  display: none;
-}
-
-#check:checked ~ label #cancel {
+  height: 10vh;
   display: flex;
   align-items: center;
-}
-
-label #btn {
-  display: flex;
-  align-items: center;
-}
-
-.nav-li {
-  display: block;
-  margin: 50px 0;
-  line-height: 2.5vh;
-}
-
-.nav-a {
-  color: rgba(27, 27, 27, 0.9);
-  position: relative;
-  text-transform: uppercase;
-  padding: 5px 0;
-}
-
-.nav-a:before {
-  position: absolute;
-  content: '';
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 100%;
-  background: rgb(24, 95, 228);
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform .4s linear;
-}
-
-.nav-a:hover:before {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-label #btn, label #cancel {
-  color: white;
-  font-size: 30px;
-  float: right;
-  cursor: pointer;
-  height: 7vh;
-  margin: auto 6.5vw;
-}
-
-#check {
-  display: none;
-} 
-
-#headline {
-  margin: 10px;
-  color: rgb(235, 235, 235);
-}
-
-
-/*************** MAIN CONTAINERS *****************/
-#scrollBox {
-  scroll-behavior: smooth;
-  height: 98vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-
-#aboutMeSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding-top: 7vh;
-  padding-bottom: 6vh;
-  height: 90vh;
-  scroll-snap-align: start;
-}
-
-#aboutMeTitle {
-  display: flex;
   justify-content: space-between;
-  margin-left: 22vh;
+  margin: 0 5vw 0 5vw;
+  padding: 5vh;
 }
 
-#mainPageAboutMe {
+li {
+  display: inline;
+  color: grey;
+  margin: 2.5vw;
+}
+
+.logo {
+  background-color: black;
+  height: 10vh;
+  width: 10vh;
   display: flex;
-  padding: 2.5vw;
-  padding-top: 20px;
-  padding-bottom: 10vh;
-  height: 75%;
-  font-size: 2vw;
+  align-items: center;
+  justify-content: center;
+  font-variant-caps: small-caps;
 }
 
-#mainPageAboutMeDescription {
+.logo > h3 {
+  color: white;
+  font-size: 1rem;
+}
+
+#main {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-#mainPageAboutMeDescription:nth-child(1) {
-  text-align: left;
+/******        INTRODUCTION      ********/
+
+#profile_Image {
+  width: 20vw;
+  border-radius: 0.5vh;
+  box-shadow: 2px 2px 2px rgb(171, 171, 171);
 }
 
-#mainPageAboutMeDescription2ndChild {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+#intro {
+  height: 60vh;
+  text-align: center;
+  margin: 5vh;
 }
 
-#pageCaption {
-  margin: 5px;
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 2px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-}
-
-#firstProjectButton {
-  display: flex;
-  margin: 2vh auto;
-  color: black;
-  background-color: rgba(72, 126, 224, 0.4);
-  width: 5vh;
-  height: 5vh;
+.connect_box {
   border: 1px solid black;
   border-radius: 10px;
-  align-self: center;
-  box-shadow: 3px 5px 5px rgb(155, 155, 155);
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  font-size: large;
-  text-align: center;
+  margin: 5vh;
+  padding: 1vh;
 }
 
-#firstProjectButton:hover {
-  border: 2px solid blue;
-}
+/******        PROJECTS      ********/
 
-.mainSection {
-  display: none;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  height: 88vh;
-
-}
-
-#mainSection {
-  scroll-snap-align: start;
-}
-
-#left {
-  display: flex;
-  width: 100vw;
-  align-items: center;
-}
-
-#right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-height: 70vh;
-}
-
-#xylaMedia {
-  display: flex;
-  flex-direction: column;
-  padding-top: 2vh;
-  height: 90vh;
-  border-top: 7vh solid rgba(0, 0, 0, 0.4);
-  scroll-snap-align: start;
-}
-  
-#tasteMedia {
-  display: flex;
-  flex-direction: column;
-  padding-top: 2vh;
-  height: 90vh;
-  border-top: 7vh solid rgba(0, 0, 0, 0.4);
-  scroll-snap-align: start;
-}
-
-#climateMedia {
-  display: flex;
-  flex-direction: column;
-  padding: 2vh;
-  height: 90vh;
-  border-top: 7vh solid rgba(0, 0, 0, 0.4);
-  scroll-snap-align: start;
-}
-
-#mastermindMedia {
-  display: flex;
-  flex-direction: column;
-  padding-top: 2vh;
-  height: 94vh;
-  border-top: 7vh solid rgba(0, 0, 0, 0.4);
-  scroll-snap-align: start;
-}
-
-.mediaBottom {
-  display: flex;
-  /* height: 60vh; */
-  align-items: center;
-  justify-content: center;
-  margin-top: 2.5vh;
-}
-
-#mainSectionButton {
-  display: none;
-}
-
-/*************** PROJECT INFO / CARDS *****************/
-
-.background {
-  background-color: none;
-  padding: 5px;
-  text-align: left;
-  left: 0;
-  font-size: 2vw;
-  line-height: 2.5vh;
-  box-shadow: none;
-  border-radius: none;
-  border: none;
-  transition: all 0.5s ease-in-out;
-  width: 90%;
-  margin: 0 auto;
-  display: none;
-}
-
-.selectedSpan {
-  background-color: rgb(247, 247, 247);
-  border: 0.75px solid black;
-  box-shadow: 3px 5px 5px rgb(155, 155, 155);
-  display: flex;
-  flex-direction: row;
-  border-radius: 10px;
-  height: 15vh;
-}
-
-.background > div:nth-child(1) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-right: 1px solid black;
-  justify-content: center;
-  padding: 5px;
-  padding-right: 1.5vw;
-  margin-right: 2.5vw;
-}
-
-.background > div:nth-child(2n) {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.title {
-  font-size: 2vw;
-  color: #fb311ecc;
-  text-decoration: underline;
-}
-
-.git_links {
-  margin: 10px;
-  font-size: 2vw;
-  color: blue;
-  text-decoration: underline;
-}
-
-
-/********************** CAROUSEL ************************/
-
-.carousel_track_container {
-  position: relative;
-  overflow: hidden;
-  border: 2px solid rgba(0, 0, 0, 0.7);
-  border-radius: 15px;
-  box-shadow: 3px 5px 5px rgb(92, 92, 92);
-  background-image: url("../images/bamboo12.png");
-  height: 50vh;
-  width: 65vw;
-}
-
-.carousel_track {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  transition: transform 500ms ease-in;
-  width: 65vw; 
-}
-
-.carousel_slide {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-}
-
-
-/***** CAROUSEL BUTTON CSS ******/
-.carousel_button {
-  display: none;
-}
-
-.buttonDiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 55vh;
-  width: fit-content;
-}
-
-/***** CAROUSEL IMAGE CSS ******/
-.carousel_images {
-  width: 82.5vw;
-  height: 82.5vw;
-  object-fit: contain;
-  border-radius: 15px;
-  border: 2px solid black;
-  box-shadow: 3px 5px 5px rgb(114, 114, 114);
-}
-
-#taste {
-  object-fit: cover;
-  object-position: left;
-}
-
-#xyla {
-  object-fit: fill;
-} 
-
-#climate {
-  object-fit: cover;
-}
-
-#mastermind {
-  object-fit: cover;
-}
-
-/***** CAROUSEL BOTTOM NAV / INDICATOR DOTS ******/
-.carousel_nav {
-  display: flex;
-  justify-content: center;
-  /* margin: 10px; */
-}
-
-.carousel_indicator {
-  padding: 5px;
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px rgb(114, 114, 114);
-  font-size: 1.25vw;
-}
-
-.carousel_indicator.current_slide {
-  color: #fb311ecc;
-
-}
-
-/***** CAROUSEL LINKS at BOTTOM ******/
-#inline {
-  display: none;
-}
-
-/*************** ABOUT ME / MODAL / DIALOG / POP-UP *****************/
-
-#backDiv {
-  background-image: url("/images/profile_background.jpeg");
-  background-position: 50%;
-  background-size: cover;
-  min-height: 20vh;
-  height: 18vh;
-  width: auto;
-  display: flex;
-  
-}
-
-#hi {
-  margin-bottom: 0.5vh;
-  margin-left: 2.75vw;
-  margin-top: 15.6vh;
-  max-height: 50px;
-}
-
-.hello {
-  color: white;
-  margin: 0;
-  text-align: left;
-}
-
-#devlin {
-  margin-top: 5px;
-  color: black;
-  font-weight: 200;
-}
-
-#modalProfileImage {
-  height: 18vh;
-  width: auto;
-  border-radius: 50%;
-  border: 2px solid white;
-  margin-left: 2.25vw;
-  margin-top: 10vh;
-}
-
-#caption {
-  visibility: hidden;
-}
-
-#caption > h6 {
-  margin: 0;
-}
-
-.modal_container {
-  border-radius: 0;
-  color: black;
-  width: 85vw;
-  height: 85vh;
-  animation:fadein 1s;
-  overflow: hidden;
-}
-
-.modalTitle {
-  display: flex;
-  margin-left: 1vw;
-  justify-content: flex-end;
-}
-
-.open {
-  border-radius: 20px;
-  min-width: 85vw; 
-  min-height: 82.5vh; 
-  display: flex;
-  flex-direction: column;
-}
-
-dialog {
-  margin: auto auto;
-}
-
-dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-#close_button {
-  font-size: 2.5vh;
-  padding: 2.5px 5px;
-  color: rgb(0, 0, 0);
-  background: white;
-  border-radius: 50px;
-  outline: none;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  right: 3vw;
-  top: 3vh;
-  position: absolute;
-  cursor: pointer;
-}
-
-#close_button:hover {
-  border-color: red;
-  transform: scale(150%);
-  transition: transform 500ms ease-in-out;
-}
-
-
-#aboutMe {
-  display: flex;
-  padding: 7.5px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  height: 75%;
-  margin-top:40px;
-  font-size: 1.85vw;
-}
-
-#list {
-  text-align: left;
-  width: 21.5vw;     
-  min-width: 21.5vw; 
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  box-shadow: inset 1px 1px 1px rgb(155, 155, 155);
-  padding: 5px;
-  line-height: 2.5vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-#list > p {
-  margin: 2.5px;
-}
-
-#aboutMeDescription {
-  max-width: 100%;
-  padding: 10px;
-  padding-top: 0;
-  display: flex;
-  flex-direction: column;
+#projects_container {
+  margin: 5vh;
 }
 
 #projects {
-  align-self: center;
-}
-
-
-#aboutMeDescription > p {
-  margin: 2.5px;
-  margin-top: 0;
-  text-align: justify;
-  text-justify: inter-word;
-  line-height: 2vh;
-}
-
-#aboutMeDescription > h3 {
-  margin: 5px;
-  margin-bottom: 2px;
-  font-weight: 450;
-  /* text-transform: uppercase; */
-  margin-left: 0;
-  text-align: left;
-}
-
-#modalFooter {
-  bottom: 0;
-  width: 100%;
-  min-height: 2.75vh;
-  background-color: rgba(72, 126, 224, 0.7);
-  color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: scroll;
 }
 
-@keyframes fadein {
-	from {
-		opacity:0;
-	}
-	to {
-		opacity:1;
-	}
+#xyla_container, #taste_container, #climate_container, #master_container, #skills_container, #about_container {
+  margin: 5vw;
 }
 
-#open {
-  cursor: pointer;
+#xyla,
+#taste,
+#climate,
+#mastermind {
+  width: 40vw;
+  height: 40vw;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  box-shadow: 3px 5px 5px rgb(171, 171, 171);
 }
 
-.modal::backdrop {
-  background: black;
-}
-
-/*************** FOOTER *****************/
-.footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: rgba(0,0,0,0.55);
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-  height: 5vh;
-}
-
-#footerMediaLinks {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  height: 5vh;
-}
-
-.smallMediaLink {
-  color: white;
-  align-self: center;
+#project_link {
+  width: 6vw;
+  background-size: cover;
+  transform: rotate(-45deg);
   margin: 0.5vh;
-  font-size: 2.5vw;
 }
 
-#footerMediaLinks > div {
-  height: 100%;
+#project_link:hover {
+  border: 1px solid yellow;
+  border-radius: 50%;
+  
+}
+
+#github_logo {
+  width: 5vw;
+  background-size: cover;
+  margin: 0.5vh;
+}
+
+#github_logo:hover {
+  border: 1px solid yellow;
+  border-radius: 50%;
+
+}
+
+/******        SKILLS      ********/
+#skills {
+  text-align: center;
+}
+
+#skills_container {
+  margin:2.5vh;
+  padding: 2.5vh;
+  background-color: rgba(241, 246, 250, 0.5);
+  border-radius: 5px;
+}
+
+.skill {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  border: 0.25px solid rgb(196, 196, 196);
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 1px rgb(209, 209, 209);
+  padding: 1.5vh;
+  margin: 0.5vh;
 }
 
-#footerMediaLinks > div:hover {
-  background-color: rgba(0,0,0,0.55);;
+.skill > p {
+  font-family: 'Alegreya Sans SC',
+  sans-serif
 }
 
-#foot-txt {
-  display: none;
+#skills_grid {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/********************************************* MEDIA QUERIES ******************************************/
-/********************************************* MEDIA QUERIES ******************************************/
-/********************************************* MEDIA QUERIES ******************************************/
-/********************************************* MEDIA QUERIES ******************************************/
-
-@media only screen and (min-width: 300px) {
-  .mediaBottom {
-    margin-top: 5vh;
-  }
+.skill_icon {
+  width: 5vw;
 }
 
-@media only screen and (min-width: 600px) {
-  .carousel_images {
-    width: 65vw;
-    height: 65vw;
-  }
-
-  #close_button {
-    top: 5vh;
-  }
-
-  #caption {
-    /* display: block; */
-    margin: 5px;
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 2px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    visibility: visible;
-  }
+#node {
+  width: 8vw;
 }
 
 
-@media only screen and (min-width: 750px) {
-  /*************** MAIN CONTAINERS *****************/
-  .mainSection {
-    margin-top: 7vh;
-  }
+/******        ABOUT      ********/
 
+#about {
+  margin: 5vh;
+}
 
-
-  /*************** NAV / FOOTER *****************/
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
-  .navbar-ul {
-    background: none;
-    top: 0;
-    left: 0;
-    display: block;
-    height: 7vh;
-  }
-
-  .nav-a {
-    color: white;
-    position: relative;
-    text-transform: uppercase;
-    padding: 5px 0;
-  }
-
-  .nav-li {
-    display: inline-block;
-    line-height: 7vh;
-    margin: 0 15px;
-  }
-
-  label #btn, label #cancel {
-    display: none;
-  }
-
-  .smallMediaLink {
-    font-size: 2vw;
-  }
-
-
-
-
-  /*************** PROJECT INFO / CARDS *****************/
-  .background {
-    font-size: 1.4vw;
-  }
-
-  .title {
-    font-size: 1.5vw;
-  }
-
-  .git_links {
-    font-size: 1.5vw;
-  }
-  
-  /***** CAROUSEL  ******/
-  .carousel_track_container {
-    height: 60vw;
-    width: 60vw;
-  }
-
-  .carousel_track {
-    width: 65vw; 
-  }
-  
-  .carousel_images {
-    width: 55vw;
-    height: 55vw;
-  }
-
-  .carousel_button {
-    top: 50%;
-    transform: translateY(-50%);
-    border: 0;
-    background: none;
-    cursor: pointer;
-    display: inline;
-  }
-
-  .carousel_button--left {
-    left: -25px;
-  }
-  
-  .is_hidden {
-    /* pointer-events: none; */
-    visibility: hidden;
-  }
-
-  .buttonDiv {
-    margin-bottom: 2vh;
-    height: 65vh;
-  }
-  
-  .buttonDiv > button {
-    height: 1vh;
-  }
-
-  /*************** ABOUT ME / MODAL / DIALOG / POP-UP *****************/
-  /* #modalProfileImage { 
-    max-height: 16.5vh;
-    transform: translateY(10.5vh);
-  } */
-
-
-  .modalTitle > h1 {
-    margin: 7px;
-    margin-top: 0;
-  }
-
-
-
-  .open {
-    min-width: 70vw; 
-    min-height: 80vh; 
-  }
-/* 
-  #hi {
-    transform: translateY(16.5vh);
-    margin-left: 1.25vw;
-  } */
-
-  #aboutMe {
-    font-size: 1.32vw;
-    margin-top: 40px;
-    padding-top: 20px;
-    
-  }
-
-  #list {
-    width: 18vw;     
-    min-width: 18vw; 
-    line-height: 2.5vh; 
-  }
+.titles {
+  font-weight: 900;
+  margin: 5vw;
 
 }
 
-@media only screen and (min-width: 900px) {
-  /*************** MAIN CONTAINERS *****************/
 
-  /* #aboutMeSection {
-    display: flex;
-    margin-top: 7vh;
-    margin-bottom: 5vh;
-    height: 88vh;
-  } */
-
-  .mainSection {
-    display: flex;
-    flex-direction: row;
-    height: 93vh;
-    border-top: 7vh solid rgba(0, 0, 0, 0.4);
-  }
-
-  #mainPageAboutMe {
-    font-size: 1.4vw;
-  }
-
-  #firstProjectButton {
-    display: none;
-  }
-
-  #mainSectionButton {
-    display: flex;
-    margin: 2vh;
-    color: black;
-    background-color: rgba(72, 126, 224, 0.4);
-    width: 5vh;
-    height: 5vh;
-    border: 1px solid black;
-    border-radius: 10px;
-    align-self: center;
-    box-shadow: 3px 5px 5px rgb(155, 155, 155);
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    font-size: large;
-    text-align: center;
-  }
-
-  #mainSectionButton:hover {
-    border: 2px solid blue;
-  }
-  
-  #left {
-    display: flex;
-    flex-direction: column;
-    width: 45vw;
-    height: 75vh;
-    overflow: visible;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  #right {
-    display: flex;
-    align-items: center;
-    width: 55vw;
-    max-height: 75vh;
-  }
-
-  #xylaMedia, #tasteMedia, #climateMedia, #mastermindMedia, .smallMediaLink, #footerMediaLinks {
-    display: none;
-  }
-  
-  /*************** NAV *****************/
-  /* .navbar {
-    padding-left: 11vw;
-    padding-right: 9vw;
-  } */
-
-  /*************** PROJECT INFO / CARDS *****************/
-  .background {
-    display: flex;
-    flex-direction: column;
-    width: 40vw;
-    height: 15vh;
-    font-size: 1.2vw;
-    justify-content: center;
-    margin: 0.5vh 1vh;
-    line-height: 3vh; 
-    padding: 3px;
-    padding-left: 6px;
-  }
-  
-  .selectedSpan {
-    width: 40vw;
-    height: 17vh;
-    border-radius: 5px;
-  }  
-
-
-
-  .background > div:nth-child(1) {
-    display: flex;
-    flex-direction: row;
-    border: none;
-    padding: 0;
-  }
-
-  .background > div:nth-child(2n) {
-   line-height: 2.25vh; 
-  }
-
-  .title {
-    font-size: 1vw;
-  }
-
-  .git_links {
-    font-size: 1vw;
-    color: blue;
-    margin-top: 2.5px;
-    margin-bottom: 2.5px;
-  }
-
-  /*************** ABOUT ME / MODAL / DIALOG / POP-UP *****************/
-  .open {
-    min-width: 60vw; 
-    min-height: 80vh; 
-  }
-
-  /* #modalProfileImage { 
-    max-height: 17vh;
-    transform: translateY(10vh);
-  } */
-
-  /* #aboutMe {
-    font-size: 1vw;
-    margin-top: 20px;
-  } */
-
-  #list {
-    width: 18vw;     
-    min-width: 18vw; 
-    line-height: 2.5vh; 
-  }
-
-  /*************** LINKS BELOW CAROUSEL *****************/
-  #inline {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-  }
-  
-  .app_links {
-    margin: 20px;
-    color: rgba(0, 0, 0, 0.7);
-    text-decoration: none;
-  }
-  
-  .app_links:hover {
-    color: #fb311ecc;
-    text-decoration: none;
-  }
-  
-  /*************** CAROUSEL *****************/
-  .carousel_track_container {
-    height: 60vh;
-    width: 60vh;
-    
-  }
-
-  .carousel_track {
-    width: 60vh; 
-  }
-  
-  .carousel_images {
-    width: 60vh;
-    height: 60vh;
-  }
-
-  #foot-txt {
-    display: inline; 
-    margin: 10px;
-  }
-
+#contact {
+  height: 50vh;
 }
 
-@media only screen and (min-width: 1000px) {
-  /*************** ABOUT ME / MODAL / DIALOG / POP-UP *****************/
-  #aboutMe {
-    font-size: 1.2vw;
-  }
+/******        FOOTER      ********/
 
-  .background {
-    font-size: 1vw;
-  }
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 5vh;
+  position: relative;
+  bottom: 0;
+  background-color: black;
 }
+
+#github_contact {
+  width: 10vw;
+  background-size: cover;
+}
+
+#linkedin {
+  width: 11vw;
+  background-size: cover;
+}
+
+#top {
+  color: white;
+}
+
+#top:hover {
+  font-size: larger;
+}
+
+
+
+
+
