@@ -19,15 +19,26 @@
         <ul>
           <li><a href="#projects_container">projects</a></li>
           <li><a href="#about">about</a></li>
-          <li><a href="#contact">contact</a></li>
+          <li><a class="nav-a" href="images/Devlin Booth Resume 5:12:22.pdf" target="_blank">resume</a></li>
+          <li><a href="#contact">connect</a></li>
         </ul>
       </nav>
       <div id="main">
         <div id="intro">
-          <img id="profile_Image" src="images/profilePic2.jpeg" alt="profilePic">
-          <h1>Hi, I'm Devlin!</h1>
-          <h3>Full Stack Software Developer & Designer</h5>
-            <div class="row">
+          <div class="row" id="intro_header">
+            <img id="profile_Image" src="images/profilePic2.jpeg" alt="profilePic">
+            <div class="block" id="name">
+              <!-- <h5>Hi,</h5> 👋-->
+              <h1>I'm Devlin!</h1>
+              <h3>Full Stack Software Developer, Designer, & Coffee Lover</h3>
+            </div>
+          </div>
+          <br><br>
+          <div id="header_info">
+            <p>Currently living in sunny Los Angeles, California where I enjoy working through coding logic to solve complex problems and 
+              create full stack applications with the user in mind.
+            </p>
+            <!-- <div class="row">
               <div class="connect_box">
                 <a class="nav-a" href="https://github.com/adevlinb" target="_blank">github</a>
               </div>
@@ -37,114 +48,136 @@
               <div class="connect_box">
                 <a class="nav-a" href="images/Devlin Booth Resume 5:12:22.pdf" target="_blank">resume</a>
               </div>
-            </div>
+            </div> -->
+          </div>
         </div>
-      <hr>
-      <div id="projects_container">
-        <h3 class="titles">Projects</h3>
-        <div id="projects"> 
-            <div id="xyla_container">
-              <h3>XYLA</h3>
-              <img class="carousel_images" id="xyla" src="images/xyla2.png" alt="Fourth slide">
-              <div class="row">
-                <a href="https://xyla-books.herokuapp.com/" target="_blank"><img id="project_link" src="images/linkSvg.svg" alt="link_xyla"></a>
-                <a href="https://github.com/adevlinb/XYLA" target="_blank"><img id="github_logo" src="images/GitHub.png" alt="github_xyla"></a>
-              </div>
-              <p>Social app for book lovers that allows users to add books to their library, make recommendations, make posts, and
-              comment on other users posts in the "social wall." A personal project for me that I intend to continue developing.</p>
-            </div>
-            <div id="taste_container">
-              <h3>TasteBuds</h3>
-              <img class="carousel_images" id="taste" src="https://i.imgur.com/sq1FqTx.png" alt="Third slide">
-              <div class="row">
-                <a class="title" href="https://taste-buds-dining.herokuapp.com/" target="_blank"><img id="project_link" src="images/linkSvg.svg" alt="link_taste_buds"></a>
-                <a class="git_links" href="https://github.com/adevlinb/fakebuds" target="_blank"><img id="github_logo" src="images/GitHub.png" alt="github_taste_buds"></a>
-              </div>
-              <p>Full CRUD dining events and recipe saving app that allows users to create a profile, join groups, create events, and
-              then recommend their recipes to those events with option to vote on recipes.</p>
-            </div>
-            <div id="climate_container">
-              <h3>Climate Events</h3>
-              <img class="carousel_images" id="climate" src="images/climateevents.png" alt="Second slide">
-              <div class="row">
-                <a class="title" href="https://climate-events.herokuapp.com/" target="_blank"><img id="project_link" src="images/linkSvg.svg" alt="link_climate_events"></a>
-                <a class="git_links" href="https://github.com/adevlinb/climate-events" target="_blank"><img id="github_logo" src="images/GitHub.png" alt="github_climate_events"></a>
-              </div>
-              <p>Social app for book lovers that allows users to add books to their library, make recommendations, make posts, and
-                comment on other users posts in the "social wall." A personal project for me that I intend to continue developing.</p>
-            </div>
-            <div id="master_container">
-              <h3>Mastermind</h3>
-              <img class="carousel_images" id="mastermind" src="images/mastermind.png" alt="First slide">
+        <!-- <hr> -->
+        <div id="projects_container">
+
+            <h1 class="titles">Projects</h1>
+            <!-- <a class="nav-a" href="https://github.com/adevlinb" target="_blank"><img id="github_contact" src="images/GitHub.png" alt="github_main"></a> -->
+          
+          <p>A small sample of the many projects I've produced. Please reach out with any questions and checkout my github for other projects.</p>
+          <div id="projects"> 
+              <div id="xyla_container">
+                <h3>XYLA</h3>
+                <img class="carousel_images" id="xyla" src="images/xyla2.png" alt="Fourth slide">
                 <div class="row">
-                  <a class="title" href="https://adevlinb.github.io/Mastermind/" target="_blank"><img id="project_link" src="images/linkSvg.svg" alt="link_mastermind"></a> 
-                  <a class="git_links" href="https://github.com/adevlinb/Mastermind" target="_blank"><img id="github_logo" src="images/GitHub.png" alt="github_mastermind"></a>
+                  <a href="https://xyla-books.herokuapp.com/" target="_blank"><img id="project_link" src="images/linkSvg.svg" alt="link_xyla"></a>
+                  <a href="https://github.com/adevlinb/XYLA" target="_blank"><img id="github_logo" src="images/GitHub.png" alt="github_xyla"></a>
                 </div>
-              <p>Social app for book lovers that allows users to add books to their library, make recommendations, make posts, and
-              comment on other users posts in the "social wall." A personal project for me that I intend to continue developing.</p>
-            </div>
-          </div>
-        </div>
-        
-        <div id="skills"> 
-          <div id="skills_container">
-            <h1 class="titles">Skills</h1>
-            <p>Currently working to expand knowledge in these technologies and learning new tech like Swift, SwiftUI, Xcode, and Socket.io.</p>
-            <div id="skills_grid">
-              <div class="skill">
-                <img class="skill_icon" src="images/javascript.svg" alt="javascript_icon">
-                <p>javascript</p>
+                <p>Social app for book lovers that allows users to add books to their library, make recommendations, make posts, and
+                comment on other users posts in the "social wall." A personal project for me that I intend to continue developing.</p>
               </div>
-              <div class="skill">
-                <img class="skill_icon" src="images/html_svg.svg" alt="html_icon">
-                <p>html</p>
+              <div id="taste_container">
+                <h3>TasteBuds</h3>
+                <img class="carousel_images" id="taste" src="https://i.imgur.com/sq1FqTx.png" alt="Third slide">
+                <div class="row">
+                  <a class="title" href="https://taste-buds-dining.herokuapp.com/" target="_blank"><img id="project_link" src="images/linkSvg.svg" alt="link_taste_buds"></a>
+                  <a class="git_links" href="https://github.com/adevlinb/fakebuds" target="_blank"><img id="github_logo" src="images/GitHub.png" alt="github_taste_buds"></a>
+                </div>
+                <p>Full CRUD dining events and recipe saving app that allows users to create a profile, join groups, create events, and
+                then recommend their recipes to those events with option to vote on recipes.</p>
               </div>
-              <div class="skill">
-                <img class="skill_icon" src="images/css_svg.svg" alt="css_icon">
-                <p>css</p>
+              <div id="climate_container">
+                <h3>Climate Events</h3>
+                <img class="carousel_images" id="climate" src="images/climateevents.png" alt="Second slide">
+                <div class="row">
+                  <a class="title" href="https://climate-events.herokuapp.com/" target="_blank"><img id="project_link" src="images/linkSvg.svg" alt="link_climate_events"></a>
+                  <a class="git_links" href="https://github.com/adevlinb/climate-events" target="_blank"><img id="github_logo" src="images/GitHub.png" alt="github_climate_events"></a>
+                </div>
+                <p>Social app for book lovers that allows users to add books to their library, make recommendations, make posts, and
+                  comment on other users posts in the "social wall." A personal project for me that I intend to continue developing.</p>
               </div>
-              <div class="skill">
-                <img class="skill_icon" id="node" src="images/nodejs.svg" alt="nodejs_expressjs_icon">
-                <p>nodejs/express</p>
-              </div>
-              <div class="skill">
-                <img class="skill_icon" src="images/react.svg" alt="react_icon">
-                <p>react</p>
-              </div>
-              <div class="skill">
-                <img class="skill_icon" src="images/mongodb.svg" alt="mongodb_icon">
-                <p>mongodb</p>
-              </div>
-              <div class="skill">
-                <img class="skill_icon" src="images/python.svg" alt="mongodb_icon">
-                <p>python</p>
-              </div>
-              <div class="skill">
-                <img class="skill_icon" src="images/django (1).svg" alt="django_icon">
-                <p>django</p>
-              </div>
-              <div class="skill">
-                <img class="skill_icon" src="images/postgresql.svg" alt="postgres_icon">
-                <p>postgresql</p>
+              <div id="master_container">
+                <h3>Mastermind</h3>
+                <img class="carousel_images" id="mastermind" src="images/mastermind.png" alt="First slide">
+                  <div class="row">
+                    <a class="title" href="https://adevlinb.github.io/Mastermind/" target="_blank"><img id="project_link" src="images/linkSvg.svg" alt="link_mastermind"></a> 
+                    <a class="git_links" href="https://github.com/adevlinb/Mastermind" target="_blank"><img id="github_logo" src="images/GitHub.png" alt="github_mastermind"></a>
+                  </div>
+                <p>Social app for book lovers that allows users to add books to their library, make recommendations, make posts, and
+                comment on other users posts in the "social wall." A personal project for me that I intend to continue developing.</p>
               </div>
             </div>
           </div>
+          
+          <div id="skills"> 
+            <div id="skills_header">
+              <h1 class="titles">Skills & Experience</h1>
+              <p>Currently working to expand knowledge in these technologies and learning new tech like Swift, SwiftUI, Xcode, and Socket.io.</p>
+            </div>
+            <div id="skills_container">
+              <div>
+                <h3>Software Engineering Immersive - General Assembly</h3>
+                <p>Completed 420 hour immersive program that includes learning multiple languages, frameworks, libraries, and database
+                types through four projects that executed app planning through wire- framing, erd-diagramming, and (AAU) user-story
+                implementation of features for agile web development practices. Additionally took the role of project manager in group
+                git-hub workflow environment in a team of three.</p>
+              </div>
+              <div>
+                <h3>Masters Landscape Architecture - LSU</h3>
+                <p>Completed 420 hour immersive program that includes learning multiple languages, frameworks, libraries, and database
+                types through four projects that executed app planning through wire- framing, erd-diagramming, and (AAU) user-story
+                implementation of features for agile web development practices. Additionally took the role of project manager in group
+                git-hub workflow environment in a team of three.</p>
+              </div>
+              <h3>Tools</h3>
+              <div id="skills_grid">
+                <div class="skill">
+                  <img class="skill_icon" src="images/javascript.svg" alt="javascript_icon">
+                  <p>javascript</p>
+                </div>
+                <div class="skill">
+                  <img class="skill_icon" src="images/html_svg.svg" alt="html_icon">
+                  <p>html</p>
+                </div>
+                <div class="skill">
+                  <img class="skill_icon" src="images/css_svg.svg" alt="css_icon">
+                  <p>css</p>
+                </div>
+                <div class="skill">
+                  <img class="skill_icon" id="node" src="images/nodejs.svg" alt="nodejs_expressjs_icon">
+                  <p>nodejs/express</p>
+                </div>
+                <div class="skill">
+                  <img class="skill_icon" src="images/react.svg" alt="react_icon">
+                  <p>react</p>
+                </div>
+                <div class="skill">
+                  <img class="skill_icon" src="images/mongodb.svg" alt="mongodb_icon">
+                  <p>mongodb</p>
+                </div>
+                <div class="skill">
+                  <img class="skill_icon" src="images/python.svg" alt="mongodb_icon">
+                  <p>python</p>
+                </div>
+                <div class="skill">
+                  <img class="skill_icon" src="images/django (1).svg" alt="django_icon">
+                  <p>django</p>
+                </div>
+                <div class="skill">
+                  <img class="skill_icon" src="images/postgresql.svg" alt="postgres_icon">
+                  <p>postgresql</p>
+                </div>
+              </div>
+            </div>
+  
+            <div id="about"> 
+              <h1 class="titles">About</h1>
+              <div id="about_container">
+              <!-- <img id="about_me_pic" src="images/about_me_pic.jpeg" alt="profilePic"> -->
+              <p>
+                My path to becoming a software engineer was not a direct one. A friend of mine recommended
+                I consider it as a career trajectory when I was trying to figure out my next steps. I enrolled in a course and fell in love.
+                Software engineer seeks amazing company to grow with and continue learning the tech world while lending and adding his
+                design and hospitality background to said company. Communication, expert problem solving, and flexibility are a few of
+                the characteristics that I can bring to the table. I hope you will review my resume / portfolio and reach out if we are
+                a fit for each other! THANK YOU!
+              </p>
+            </div>
           </div>
-        <div id="about"> 
-          <h1 class="titles">About</h1>
-          <div id="about_container">
-            <img id="profile_Image" src="images/profilePic.jpeg" alt="profilePic">
-            <p>
-              My path to becoming a software engineer was not a direct one. A friend of mine recommended
-               I consider it as a career trajectory when I was trying to figure out my next steps. I enrolled in a course and fell in love.
-              Software engineer seeks amazing company to grow with and continue learning the tech world while lending and adding his
-              design and hospitality background to said company. Communication, expert problem solving, and flexibility are a few of
-              the characteristics that I can bring to the table. I hope you will review my resume / portfolio and reach out if we are
-              a fit for each other! THANK YOU!
-            </p>
-          </div>
-        </div>
-        
+          
         <div id="contact"> 
           <h3 class="titles">Let's connect!</h3>
           <h5>Feel free to reach out!</h5>
@@ -164,8 +197,3 @@
     </footer>
   </body>
 </html>
-
-
-<!-- <a href="https://iconscout.com/icons/postgresql" target="_blank">Postgresql Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> on <a href="https://iconscout.com">IconScout</a> -->
-<!-- <a href="https://iconscout.com/icons/html5" target="_blank">Html5 Icon</a> by <a
-  href="https://iconscout.com/contributors/unicons" target="_blank">Unicons Font</a> -->

@@ -19,7 +19,6 @@ body {
 .row {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 a {
@@ -37,8 +36,9 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 5vw 0 5vw;
-  padding: 5vh;
+  padding: 0 2.5vh;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 li {
@@ -49,7 +49,7 @@ li {
 
 .logo {
   background-color: black;
-  height: 10vh;
+  height: 7.5vh;
   width: 10vh;
   display: flex;
   align-items: center;
@@ -71,36 +71,52 @@ li {
 /******        INTRODUCTION      ********/
 
 #profile_Image {
-  width: 20vw;
+  width: 30vw;
   border-radius: 0.5vh;
   box-shadow: 2px 2px 2px rgb(171, 171, 171);
 }
 
+/* #header_info {
+  background-color: aliceblue;
+} */
+
 #intro {
-  height: 60vh;
-  text-align: center;
+  /* height: 70vh; */
   margin: 5vh;
+  /* background-color: lightgrey; */
+
+}
+
+#name {
+  margin: 5vh;
+}
+
+#intro_header {
+  /* margin: 2.5vh; */
+  border-bottom: 1px solid black;
 }
 
 .connect_box {
   border: 1px solid black;
   border-radius: 10px;
-  margin: 5vh;
+  /* margin: 5vh; */
   padding: 1vh;
 }
 
 /******        PROJECTS      ********/
 
 #projects_container {
-  margin: 5vh;
+  margin: 5vh 0 5vh 5vh;
 }
 
 #projects {
   display: flex;
   overflow: scroll;
+  border-radius: 2.5vh;
+  background-color: aliceblue;
 }
 
-#xyla_container, #taste_container, #climate_container, #master_container, #skills_container, #about_container {
+#xyla_container, #taste_container, #climate_container, #master_container, #about_container {
   margin: 5vw;
 }
 
@@ -125,34 +141,28 @@ li {
   margin: 0.5vh;
 }
 
-#project_link:hover {
-  border: 1px solid yellow;
-  border-radius: 50%;
-  
-}
-
 #github_logo {
   width: 5vw;
   background-size: cover;
   margin: 0.5vh;
 }
 
-#github_logo:hover {
-  border: 1px solid yellow;
-  border-radius: 50%;
-
-}
-
 /******        SKILLS      ********/
 #skills {
-  text-align: center;
+  margin: 0 5vh 5vh 0;
+  margin-top: none;
+}
+
+#skills_header {
+  margin-left: 5vh;
 }
 
 #skills_container {
-  margin:2.5vh;
-  padding: 2.5vh;
-  background-color: rgba(241, 246, 250, 0.5);
-  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: aliceblue;
+  border-radius: 2.5vh;
 }
 
 .skill {
@@ -160,12 +170,7 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 0.25px solid rgb(196, 196, 196);
-  border-radius: 5px;
-  background-color: white;
-  box-shadow: 1px 1px 1px rgb(209, 209, 209);
   padding: 1.5vh;
-  margin: 0.5vh;
 }
 
 .skill > p {
@@ -174,8 +179,9 @@ li {
 }
 
 #skills_grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1vh;
 }
 
 .skill_icon {
@@ -193,10 +199,8 @@ li {
   margin: 5vh;
 }
 
-.titles {
-  font-weight: 900;
-  margin: 5vw;
-
+#about_me_pic {
+  width: 45vw;
 }
 
 
