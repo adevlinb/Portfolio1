@@ -3,92 +3,103 @@ body {
   margin: 0;
   font-family: 'Open Sans',
     sans-serif;
-}
-
-/* font-family: 'Inter', sans-serif; */
-/* font-family: 'Alegreya Sans SC', sans-serif; */
-/* font-family: 'Open Sans', sans-serif; */
-
-*{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-}
-
-.row {
-  display: flex;
-  align-items: center;
-}
-
-a {
-  text-decoration: none;
-  color: grey;
-  font-variant-caps: small-caps;
-}
-
-a:hover {
-  color: black;
-}
-
-.navbar {
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 2.5vh;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
-li {
-  display: inline;
-  color: grey;
-  margin: 2.5vw;
-}
-
-.logo {
-  background-color: black;
-  height: 7.5vh;
-  width: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-variant-caps: small-caps;
-}
-
-.logo > h3 {
-  color: white;
-  font-size: 1rem;
-}
-
-#main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/******        INTRODUCTION      ********/
-
+  }
+  
+  /* font-family: 'Inter', sans-serif; */
+  /* font-family: 'Alegreya Sans SC', sans-serif; */
+  /* font-family: 'Open Sans', sans-serif; */
+  
+  *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: grey;
+    font-variant-caps: small-caps;
+  }
+  
+  a:hover {
+    color: black;
+  }
+  
+  .navbar {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5vh;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  
+  li {
+    display: inline;
+    color: grey;
+    margin: 2.5vw;
+  }
+  
+  .logo {
+    background-color: black;
+    height: 7.5vh;
+    width: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-variant-caps: small-caps;
+  }
+  
+  .logo > h3 {
+    color: white;
+    font-size: 1rem;
+  }
+  
+  #main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: aliceblue;
+  }
+  
+  /******        INTRODUCTION      ********/
+  
 #profile_Image {
-  width: 30vw;
+  width: 25vh;
   border-radius: 0.5vh;
   box-shadow: 2px 2px 2px rgb(171, 171, 171);
 }
 
-/* #header_info {
-  background-color: aliceblue;
-} */
-
 #intro {
-  height: 70vh;
+  /* height: 80vh; */
   margin: 5vh;
-  /* background-color: lightgrey; */
-
+  /* background-image: url("../images/profilePic2.jpeg");
+  background-size: cover; */
+  /* filter: grayscale(100%); */
 }
 
 #name {
   margin: 5vh;
+}
+
+#name > h1 {
+  font-weight: 100;
+  font-size: x-large;
+}
+
+#name > h3 {
+  color: rgb(243, 115, 29);
+}
+
+#matcha {
+  color: rgb(0, 71, 0);
 }
 
 #intro_header {
@@ -96,41 +107,102 @@ li {
   border-bottom: 1px solid black;
 }
 
+#software {
+  background-image: url("https://i.imgur.com/tWQpfbT.png");
+  background-size: cover;
+}
+
+#landscape {
+  background-image: url("https://i.imgur.com/GYcMktx.png");
+  background-size: cover;
+  color: black;
+}
+
+#photography {
+  background-image: url("https://i.imgur.com/bCoQx94.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  /* filter: grayscale(100%) */
+}
+
+#costume {
+  background-image: url("https://i.imgur.com/VPNcTpX.jpg");
+  background-size: cover;
+  background-position: top;
+  color: white;
+  /* filter: grayscale(100%) */
+}
+
+
+.interests {
+  background-color: rgb(148, 148, 148);
+  width: 100%;
+  height: 20vh;
+  margin-bottom: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 5vh;
+}
+
 .connect_box {
   border: 1px solid black;
   border-radius: 10px;
-  /* margin: 5vh; */
   padding: 1vh;
 }
 
 /******        PROJECTS      ********/
 
-#projects_container {
-  margin: 5vh 0 5vh 5vh;
-}
+/* #projects_container {
+  margin-bottom: 5vh;
+} */
 
 #projects {
   display: flex;
-  overflow: scroll;
-  border-radius: 2.5vh;
-  background-color: aliceblue;
+  flex-direction: column;
+  margin: 0 5vh;
+}
+
+#projects > h3 {
+  border-bottom: 1px solid black;
+  margin-bottom: 5vh;
 }
 
 #xyla_container, #taste_container, #climate_container, #master_container, #about_container {
-  margin: 5vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: medium;
+  font-size: small;
+}
+
+.testing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testing > h1 {
+  font-weight: 100;
+}
+
+.testing > p {
+  padding: 0 1.5vh;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 #xyla,
 #taste,
 #climate,
 #mastermind {
-  width: 40vw;
-  height: 40vw;
+  width: 45vw;
+  height: 45vw;
   object-fit: cover;
   border-radius: 10px;
-  border: 1px solid black;
-  margin-top: 2vh;
-  margin-bottom: 1vh;
+  border: 0.5px solid black;
   box-shadow: 3px 5px 5px rgb(171, 171, 171);
 }
 
@@ -141,6 +213,19 @@ li {
   margin: 0.5vh;
 }
 
+.project_skill_box {
+  display: flex;
+  justify-content: space-evenly;
+}
+.project_skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5vh;
+    font-size: x-small;
+}
+
 #github_logo {
   width: 5vw;
   background-size: cover;
@@ -149,21 +234,43 @@ li {
 
 /******        SKILLS      ********/
 #skills {
-  margin: 5vh;
   margin-top: none;
+  /* background-color: aliceblue; */
 }
 
-#skills_header {
-  text-align: center;
+/* #skills_header {
+  
+} */
+
+#key {
+  width: 2.5vh;
+  height: 2.5vh;
+  border: 1px solid rgb(243, 115, 29);
+  background-color: white;
+  border-radius: 5px;
 }
 
 #skills_container {
+  margin: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   /* background-color: aliceblue; */
   /* margin: 0 auto; */
   border-radius: 2.5vh;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#skills_container > h3:nth-child(1) {
+  border-bottom: 1px solid black;
+  margin-bottom: 5vh;
+}
+
+
+#skills_container > p {
+  margin-bottom: 2.5vh;
+  font-size: small;
 }
 
 .skill {
@@ -175,9 +282,29 @@ li {
   border: 1px solid black;
   border-radius: 5px;
   box-shadow: 2px 2px 2px rgb(171, 171, 171);
+  transform: rotate(-2.5deg);
+  background-color: white;
+}
+
+.skill_learning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5vh;
+  border: 1px solid rgb(243, 115, 29);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgb(171, 171, 171);
+  transform: rotate(-2.5deg);
+  background-color: white;
 }
 
 .skill > p {
+  font-family: 'Alegreya Sans SC',
+  sans-serif
+}
+
+.skill_learning > p {
   font-family: 'Alegreya Sans SC',
   sans-serif
 }
@@ -196,11 +323,38 @@ li {
   width: 8vw;
 }
 
+.photos {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+}
+
+.photos > img {
+  width: 50vh;
+  height: 25vh;
+  object-fit: cover;
+  margin: 2vh;
+}
 
 /******        ABOUT      ********/
 
+#experience {
+  margin: 5vh
+}
+
+#experience > h3 {
+  border-bottom: 1px solid black;
+  margin-bottom: 5vh;
+}
+
+
 #about {
   margin: 5vh;
+}
+
+#about > h3 {
+  border-bottom: 1px solid black;
+  margin-bottom: 5vh;
 }
 
 #about_me_pic {
