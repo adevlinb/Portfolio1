@@ -326,15 +326,20 @@ body {
 .photos {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+}
 
+#fish {
+  object-position: 0% 20%;
 }
 
 .photos > img {
   width: 50vh;
-  height: 25vh;
+  height: 30vh;
   object-fit: cover;
   margin: 2vh;
+  object-position: center;
 }
+
 
 /******        ABOUT      ********/
 
@@ -347,6 +352,9 @@ body {
   margin-bottom: 5vh;
 }
 
+#photography_container {
+    margin: 5vh;
+}
 
 #about {
   margin: 5vh;
