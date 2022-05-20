@@ -79,14 +79,7 @@ body {
   margin: 5vh;
 }
 
-#meetme {
-  height: 20vh;
-  background-color: blue;
-}
 
-#meetme > h3 {
-  color: white;
-}
 
 /* #name {
   margin: 5vh;
@@ -116,22 +109,25 @@ body {
 
 .arrow,
 .arrow:before {
-  position: absolute; 
+  /* position: relative; */
   left: 50%;
+  /* bottom: 80%; */
 } 
 .arrow {
-  width: 40px; 
-  height: 40px; 
-  top: 50%; 
+  position: relative;
+  width: 35px; 
+  height: 35px; 
+  top: 40%; 
   margin: -20px 0 0 -20px;
   transform: rotate(45deg);
   border-left: none;
   border-top: none;
   border-right: 2px solid rgb(171, 56, 56); 
   border-bottom: 2px solid rgb(171, 56, 56);
- }
+}
 
- .arrow:before {
+.arrow:before {
+  position: absolute;
   content: '';  
   width: 20px; 
   height: 20px;
@@ -139,8 +135,8 @@ body {
   margin: -10px 0 0 -10px;
   border-left: none;
   border-top: none;
-  border-right: 1px solid rgb(171, 56, 56);
-  border-bottom: 1px solid rgb(171, 56, 56);
+  border-right: 4px solid rgb(171, 56, 56);
+  border-bottom: 4px solid rgb(171, 56, 56);
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-name: arrow;
