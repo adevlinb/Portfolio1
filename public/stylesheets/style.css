@@ -40,7 +40,7 @@ body {
     padding: 0 2.5vh;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    margin-bottom: 2.5vh;
+    margin-bottom: 5vh;
   }
   
   li {
@@ -68,25 +68,32 @@ body {
     left: 0px;
     opacity: 0.7;
     z-index: 0;
-    height: 87.5vh;
+    height: 95vh;
   }
   
 /******        INTRODUCTION      ********/
 
 #intro {
-  height: 82.5vh;
+  height: 95vh;
   z-index: 10;
   margin: 5vh;
 }
 
+#meetme {
+  height: 20vh;
+  background-color: blue;
+}
 
+#meetme > h3 {
+  color: white;
+}
 
 /* #name {
   margin: 5vh;
 } */
 
 #name > h1 {
-  font-weight: 300;
+  font-weight: 500;
   font-size: x-large;
 }
 
@@ -96,26 +103,58 @@ body {
   font-weight: 400;
 }
 
-
-
-/* #software {
-  background-image: url("https://i.imgur.com/tWQpfbT.png");
-  background-size: cover;
-}
-
-#landscape {
-  background-image: url("https://i.imgur.com/GYcMktx.png");
-  background-size: cover;
+.copyright {
+  justify-self: end;
   color: black;
+  /* border: 2px solid white;
+  border-radius: 10%; */
+  padding: 20px;
+  /* background-color: white; */
+  margin-top: 5vh;
+
 }
 
-#photography {
-  background-image: url("https://i.imgur.com/bCoQx94.jpg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  filter: grayscale(100%)
-} */
+.arrow,
+.arrow:before {
+  position: absolute; 
+  left: 50%;
+} 
+.arrow {
+  width: 40px; 
+  height: 40px; 
+  top: 50%; 
+  margin: -20px 0 0 -20px;
+  transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px solid rgb(171, 56, 56); 
+  border-bottom: 2px solid rgb(171, 56, 56);
+ }
+
+ .arrow:before {
+  content: '';  
+  width: 20px; 
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px solid rgb(171, 56, 56);
+  border-bottom: 1px solid rgb(171, 56, 56);
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+ }
+ 
+ @keyframes arrow {
+  0% {
+    opacity: 1; 
+  } 
+  100% {
+    opacity: 0; 
+    transform: translate(-10px, -10px);
+  }
+ } 
 
 #costume {
   background-image: url("https://i.imgur.com/VPNcTpX.jpg");
