@@ -23,15 +23,16 @@ body {
   
   a {
     text-decoration: none;
-    color: grey;
+    color: black;
     font-variant-caps: small-caps;
+
   }
   
   a:hover {
-    color: black;
+    color: rgb(243, 115, 29);
   }
   
-  .navbar {
+  .navbar > ul {
     height: 10vh;
     display: flex;
     align-items: center;
@@ -39,6 +40,7 @@ body {
     padding: 0 2.5vh;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    margin-bottom: 2.5vh;
   }
   
   li {
@@ -47,67 +49,56 @@ body {
     margin: 2.5vw;
   }
   
-  .logo {
-    background-color: black;
-    height: 7.5vh;
-    width: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-variant-caps: small-caps;
-  }
-  
-  .logo > h3 {
-    color: white;
-    font-size: 1rem;
-  }
-  
   #main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: aliceblue;
   }
+
+  #main::before {
+    content: "";
+    background-image: url('https://i.imgur.com/Ygp6JD2.jpg');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.7;
+    z-index: 0;
+    height: 87.5vh;
+  }
   
-  /******        INTRODUCTION      ********/
-  
-#profile_Image {
-  width: 25vh;
-  border-radius: 0.5vh;
-  box-shadow: 2px 2px 2px rgb(171, 171, 171);
-}
+/******        INTRODUCTION      ********/
 
 #intro {
-  /* height: 80vh; */
+  height: 82.5vh;
+  z-index: 10;
   margin: 5vh;
-  /* background-image: url("../images/profilePic2.jpeg");
-  background-size: cover; */
-  /* filter: grayscale(100%); */
 }
 
-#name {
+
+
+/* #name {
   margin: 5vh;
-}
+} */
 
 #name > h1 {
-  font-weight: 100;
+  font-weight: 300;
   font-size: x-large;
 }
 
 #name > h3 {
   color: rgb(243, 115, 29);
+  font-size: x-large;
+  font-weight: 400;
 }
 
-#matcha {
-  color: rgb(0, 71, 0);
-}
 
-#intro_header {
-  /* margin: 2.5vh; */
-  border-bottom: 1px solid black;
-}
 
-#software {
+/* #software {
   background-image: url("https://i.imgur.com/tWQpfbT.png");
   background-size: cover;
 }
@@ -123,8 +114,8 @@ body {
   background-size: cover;
   background-position: center;
   color: white;
-  /* filter: grayscale(100%) */
-}
+  filter: grayscale(100%)
+} */
 
 #costume {
   background-image: url("https://i.imgur.com/VPNcTpX.jpg");
