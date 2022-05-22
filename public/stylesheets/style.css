@@ -258,6 +258,10 @@ body {
   padding: 1vh;
 }
 
+#meet_me_pic {
+  width: 40vh;
+}
+
 /******        PROJECTS      ********/
 
 /* #projects_container {
