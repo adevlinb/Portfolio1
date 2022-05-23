@@ -306,25 +306,30 @@ body {
     color: white;
     border-color: white;
     font-weight: 100; */
-}
-#meet_me_container > h1:after {
-  content: "Hello World";
-  /* background-color: white; */
-  opacity: .75;
-  color: rgb(243, 115, 29);
-  font-variant-caps: small-caps;
-}
-
-#meet_me_container > p {
+  }
+  /* #meet_me_container > h1:after {
+    content: "Hello World";
+    background-color: white;
+    opacity: .75;
+    color: rgb(243, 115, 29);
+    font-variant-caps: small-caps;
+  } */
+  
+  #meet_me_container > p {
+  border-left: 1px solid white;
   font-size: small;
+  margin-left: 8px;
+  padding-left: 10px;
 }
 
 
 /******        PROJECTS      ********/
 
-/* #projects_container {
-  margin-bottom: 5vh;
-} */
+#projects_container {
+  /* margin-bottom: 5vh; */
+  background-color: green;
+  width: 50%;
+}
 
 #projects {
   display: flex;
@@ -342,6 +347,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   font-size: medium;
   font-size: small;
+  width: 100%;
 }
 
 .testing {
@@ -356,7 +362,7 @@ body {
 }
 
 .testing > p {
-  padding: 0 1.5vh;
+  /* padding: 0 1.5vh; */
   text-align: justify;
   text-justify: inter-word;
 }
