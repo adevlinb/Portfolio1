@@ -274,12 +274,15 @@ body {
 #meet_me_container {
   margin-top: 1vh;
   padding: 5vh;
-  background-color: rgb(9, 89, 160);
+  /* background-color: rgb(9, 89, 160); */
+  background-image: url("../images/blue-textured-pattern-background-1488751643mUE.jpeg");
+  
+  background-size: contain;
   border-bottom: 5px solid black;
   color: white;
   /* height: 85vh; */
   /* width: 100%; */
-  filter: grayscale(25%);
+  /* filter: grayscale(50%); */
 }
 
 #meet_me_pic {
@@ -287,11 +290,15 @@ body {
   border-radius: 10px;
   margin-bottom: 5vh;
   filter: grayscale(25%);
-
+  
 }
 
 #meet_me_container > h1 {
   /* font-size: small; */
+  /* background-size: cover;
+  background-image: url("../images/blue-textured-pattern-background-1488751643mUE.jpeg"); */
+  /* background-color: white; */
+  /* opacity: 0.25; */
   color: rgb(243, 115, 29);
   font-variant-caps: small-caps;
     /* border-bottom: 1px solid black;
@@ -300,10 +307,19 @@ body {
     border-color: white;
     font-weight: 100; */
 }
+#meet_me_container > h1:after {
+  content: "Hello World";
+  /* background-color: white; */
+  opacity: .75;
+  color: rgb(243, 115, 29);
+  font-variant-caps: small-caps;
+}
 
 #meet_me_container > p {
   font-size: small;
 }
+
+
 /******        PROJECTS      ********/
 
 /* #projects_container {
@@ -425,29 +441,33 @@ body {
 }
 
 .skill {
+  font-size: small;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.5vh;
+  padding: 1vh;
   border: 1px solid black;
   border-radius: 5px;
-  box-shadow: 2px 2px 2px rgb(171, 171, 171);
-  transform: rotate(-2.5deg);
+  /* box-shadow: 2px 2px 2px rgb(171, 171, 171); */
+  /* transform: rotate(-2.5deg); */
   background-color: white;
+  color: black;
 }
 
 .skill_learning {
+  font-size: small;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.5vh;
+  padding: 1vh;
   border: 1px solid rgb(243, 115, 29);
   border-radius: 5px;
-  box-shadow: 2px 2px 2px rgb(171, 171, 171);
-  transform: rotate(-2.5deg);
+  /* box-shadow: 2px 2px 2px rgb(171, 171, 171); */
+  /* transform: rotate(-2.5deg); */
   background-color: white;
+  color: black;
 }
 
 .skill > p {
@@ -460,10 +480,15 @@ body {
   sans-serif
 }
 
+#grid_placement {
+  display: flex;
+  justify-content: flex-end;
+}
+
 #skills_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1vh;
+  gap: 3vh;
 }
 
 .skill_icon {
