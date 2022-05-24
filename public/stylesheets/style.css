@@ -256,13 +256,6 @@ body {
  
 
 
-#costume {
-  background-image: url("https://i.imgur.com/VPNcTpX.jpg");
-  background-size: cover;
-  background-position: top;
-  color: white;
-  /* filter: grayscale(100%) */
-}
 
 
 .interests {
@@ -312,9 +305,12 @@ body {
   background-image: url("../images/blue-textured-pattern-background-1488751643mUE.jpeg"); */
   /* background-color: white; */
   /* opacity: 0.25; */
-  color: rgb(255, 255, 255);
+  /* color: rgb(196, 16, 16); */
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-variant-caps: small-caps;
   filter: drop-shadow(50%);
+  text-shadow: 2px 2px grey;
     /* border-bottom: 1px solid black;
     margin-bottom: 5vh;
     color: white;
@@ -331,7 +327,7 @@ body {
   
   #meet_me_container > p {
   border-left: 1px solid rgb(78, 77, 77);
-  color: rgb(173, 173, 173);
+  color: rgb(211, 211, 211);
   font-size: small;
   margin-left: 8px;
   padding-left: 10px;
