@@ -61,8 +61,6 @@ body {
   #main::before {
     content: "";
     background-image: url('https://i.imgur.com/OnhZR3P.jpg');
-    /* transform: rotate(-90deg); */
-    /* background-image: url('https://i.imgur.com/Ygp6JD2.jpg'); */
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -82,7 +80,6 @@ body {
   height: 95vh;
   z-index: 10;
   margin: 5vh 5vh 0 5vh;
-      /* filter: grayscale(50%); */
 }
 
 #intro_header {
@@ -103,48 +100,32 @@ body {
   font-size: 5vh;
 }
 
-#name > h5 { 
-  font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 2vh;
-  font-weight: 200;
-  color: rgb(255, 255, 255);
-
-}
 
 #title_block {
+  align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 5vh;
   position: relative;
+  margin-bottom: 3.5vh;
 }
 
 #title {
-  /* color: rgb(243, 115, 29); */
-  /* color: rgb(97, 106, 118); */
   position: absolute;
   align-self: center;
   top: 0;
   color: black;
-  /* opacity: 0.25; */
-    font-family: cursive;
-  /* font-family: Haettenschweiler,
-  'Arial Narrow Bold',
-  sans-serif; */
+  font-family: cursive;
   font-size: 5vh;
   font-weight: 600;
   margin-bottom: 1.5vh;
 }
 #title_two {
-  /* filter: drop-shadow(0 0 0.75rem crimson); */
   text-shadow: 1px 1px rgba(0,0,0,0.65);
-  /* color: rgb(243, 115, 29); */
   color: rgb(196, 16, 16);
-  /* color: white; */
   opacity: 0.75;
-  font-family: Haettenschweiler,
-  'Arial Narrow Bold',
-  sans-serif;
+  font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 5vh;
   font-weight: 600;
   margin-bottom: 1.5vh;
@@ -167,12 +148,20 @@ body {
 }
 
 #bottom {
-  /* position: absolute; */
-  /* bottom: 0; */
+  position: relative;
   display: flex;
   flex-direction: column;
   align-self: center;
+  justify-content: center;
+  text-align: center;
   margin: 2.5vh;
+}
+
+#body_text_intro {
+  position: absolute;
+  color: white;
+  bottom: 80%;
+  text-align: justify;
 }
 
 .arrow,
