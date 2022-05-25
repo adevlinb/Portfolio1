@@ -55,7 +55,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(79, 79, 79);
+    /* background-color: rgb(79, 79, 79); */
+    background-color: aliceblue;
   }
 
   #main::before {
@@ -287,7 +288,7 @@ body {
   background-size: contain;
   border-bottom: 5px solid rgba(0, 0, 0, 0.65);
   /* background-color: rgba(255,255,255,0.35); */
-  color: white;
+  color: black;
   /* height: 85vh; */
   /* width: 100%; */
   /* filter: grayscale(50%); */
@@ -314,11 +315,11 @@ body {
   /* background-color: white; */
   /* opacity: 0.25; */
   /* color: rgb(196, 16, 16); */
-  color: white;
+  color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-variant-caps: small-caps;
+  /* font-variant-caps: small-caps; */
   /* filter: drop-shadow(50%); */
-  text-shadow: 2px 2px rgb(53, 53, 53);
+  /* text-shadow: 2px 2px rgb(53, 53, 53); */
     /* border-bottom: 1px solid black;
     margin-bottom: 5vh;
     color: white;
@@ -353,7 +354,7 @@ body {
   /* width: 50%; */
   border-top: 5px solid rgba(0, 0, 0, 0.65);
   height: 100%;
-
+  /* background-color: aliceblue; */
 }
 
 /* #projects_container::before {
@@ -379,18 +380,30 @@ body {
 }
 
 #projects > h1 {
-  color: white;
+  /* color: white; */
+  color: black;
   border-bottom: 1px solid black;
   margin-bottom: 5vh;
   z-index: 100;
+  text-shadow: 1px 1px 1px rgba(67, 67, 67, 0.65);
+}
+
+.projects_title {
+  /* color: white; */
+  color: black;
+  border-bottom: 1px solid black;
+  margin-bottom: 2.5vh;
+  z-index: 100;
+  text-shadow: 1px 1px 1px rgba(67, 67, 67, 0.65);
+  align-items: center;
+  justify-content: space-between;
+  /* padding-right: 2.5vh; */
 }
 
 #xyla_container, #taste_container, #climate_container, #master_container, #about_container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  font-size: medium;
-  font-size: small;
-  width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .testing {
@@ -414,8 +427,8 @@ body {
 #taste,
 #climate,
 #mastermind {
-  width: 45vw;
-  height: 45vw;
+  width: 45vh;
+  height: 45vh;
   object-fit: cover;
   border-radius: 10px;
   border: 0.5px solid black;
@@ -427,12 +440,14 @@ body {
   width: 6vw;
   background-size: cover;
   transform: rotate(-45deg);
-  margin: 0.5vh;
+  margin: 0 1vh;
+
 }
 
 .project_skill_box {
   display: flex;
   justify-content: space-evenly;
+
 }
 .project_skill {
     display: flex;
@@ -446,7 +461,11 @@ body {
 #github_logo {
   width: 5vw;
   background-size: cover;
-  margin: 0.5vh;
+  margin: 0 1vh;
+}
+
+#github_logo:hover {
+  background-color: red;
 }
 
 /******        SKILLS      ********/
@@ -478,7 +497,7 @@ body {
 }
 
 #skills_container > h1:nth-child(1) {
-  color: white;
+  color: black;
   border-bottom: 1px solid black;
   margin-bottom: 5vh;
 }
@@ -555,7 +574,7 @@ body {
 }
 
 #photography_container > h1:nth-child(1) {
-  color: white;
+  color: black;
   border-bottom: 1px solid black;
   margin-bottom: 5vh;
 } 
@@ -571,7 +590,8 @@ body {
 }
 
 #aws {
-  width: 10vw;
+  width: 12.5vw;
+  filter: none;
 }
 
 .photos {
