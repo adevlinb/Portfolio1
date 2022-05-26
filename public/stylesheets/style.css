@@ -14,6 +14,13 @@ body {
     display: flex;
     align-items: center;
   }
+  
+  .row_centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 
   .column {
     display: flex;
@@ -94,7 +101,6 @@ body {
   height: 95vh;
   z-index: 10;
   margin: 5vh 5vh 0 5vh;
-
 }
 
 #intro_header {
@@ -297,35 +303,65 @@ body {
 }
 
 #meet_me_pic {
-  width: 50%;
+  width: 60%;
   border-radius: 10px;
-  margin-bottom: 5vh;
+  margin-bottom: 2.5vh;
   filter: grayscale(25%);
   
 }
 
 #meet_me_container > h1:nth-child(1) {
   border-bottom: 1px solid black;
-  margin-bottom: 5vh;
+  margin-bottom: 2.5vh;
+
 }
 
 #meet_me_container > h1 {
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  
-#meet_me_container > p {
-  border-left: 1px solid rgb(78, 77, 77);
-  color: rgb(211, 211, 211);
-  font-size: small;
-  margin-left: 8px;
-  padding-left: 10px;
+
+#contact_links_meetme {
+  text-align: center;
+} 
+
+#contact_links_meetme > a {
+  text-align: center;
+  font-size: x-small;
 }
+
+.github_contact_meetme {
+  width: 5vw;
+  background-size: cover;
+  margin: 1.5vh;
+  background-color: rgb(168, 168, 168);
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+.github_contact_meetme:hover {
+  background-color: rgb(255, 255, 255);
+}
+
 
 #pic_row {
   justify-content: space-between;
 }
 
+#list {
+  text-align: left;
+  width: 21.5vw;
+  min-width: 21.5vw;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: inset 1px 1px 1px rgb(155, 155, 155);
+  padding: 5px;
+  line-height: 2.5vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 
 /******        PROJECTS      ********/
 
