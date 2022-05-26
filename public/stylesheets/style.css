@@ -28,7 +28,9 @@ body {
     font-size: 1.1rem;
     font-weight: 450;
     -webkit-text-stroke: 0.25px;
-    transition: color 1.5s,
+    transition: color 1.5s;
+    vertical-align: middle;
+    align-self: center;
   }
 
   a:hover {
@@ -374,8 +376,7 @@ body {
 #projects {
   display: flex;
   flex-direction: column;
-  margin: 5vh;
-  position: relative;
+  margin: 2.5vh 5vh;
   /* z-index: auto; */
 }
 
@@ -406,23 +407,6 @@ align-items: center;
 justify-content: center;
 }
 
-.testing {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.testing > h1 {
-  font-weight: 100;
-}
-
-.testing > p {
-  /* padding: 0 1.5vh; */
-  text-align: justify;
-  text-justify: inter-word;
-}
-
 #xyla,
 #taste,
 #climate,
@@ -436,19 +420,32 @@ justify-content: center;
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
 }
 
-#project_link {
-  width: 6vw;
-  background-size: cover;
-  transform: rotate(-45deg);
-  margin: 0 1vh;
+.project_button_alignment {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 5vh;
+}
 
+.project_buttons {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: aliceblue;
+  padding: 5px;
+  display: flex;
+  /* align-items: center !important; */
+  /* justify-content: center !important; */
+  margin: 1vh;
+  font-size: x-small;
+  /* color: ; */
 }
 
 .project_skill_box {
   display: flex;
   justify-content: space-evenly;
-
+  filter: saturate(200%);
 }
+
 .project_skill {
     display: flex;
     flex-direction: column;
