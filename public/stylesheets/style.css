@@ -371,6 +371,10 @@ justify-content: center;
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
 }
 
+#xyla, #taste {
+  object-position: left
+}
+
 .project_button_alignment {
   display: flex;
   justify-content: flex-start;
