@@ -258,10 +258,6 @@ body {
   }
  } 
  
-
-
-
-
 .interests {
   background-color: rgb(148, 148, 148);
   width: 100%;
@@ -282,18 +278,10 @@ body {
 
 #meet_me_container {
   border-top: 5px solid rgba(0,0,0,0.65);
-  /* margin-top: 1vh; */
   padding: 5vh;
-  /* background-color: rgb(36, 47, 56); */
-  /* background-image: url("../images/blue-textured-pattern-background-1488751643mUE.jpeg"); */
-  
   background-size: contain;
   border-bottom: 5px solid rgba(0, 0, 0, 0.65);
-  /* background-color: rgba(255,255,255,0.35); */
   color: black;
-  /* height: 85vh; */
-  /* width: 100%; */
-  /* filter: grayscale(50%); */
   filter: blur(100%);
 }
 
@@ -311,32 +299,11 @@ body {
 }
 
 #meet_me_container > h1 {
-  /* font-size: small; */
-  /* background-size: cover;
-  background-image: url("../images/blue-textured-pattern-background-1488751643mUE.jpeg"); */
-  /* background-color: white; */
-  /* opacity: 0.25; */
-  /* color: rgb(196, 16, 16); */
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /* font-variant-caps: small-caps; */
-  /* filter: drop-shadow(50%); */
-  /* text-shadow: 2px 2px rgb(53, 53, 53); */
-    /* border-bottom: 1px solid black;
-    margin-bottom: 5vh;
-    color: white;
-    border-color: white;
-    font-weight: 100; */
   }
-  /* #meet_me_container > h1:after {
-    content: "Hello World";
-    background-color: white;
-    opacity: .75;
-    color: rgb(243, 115, 29);
-    font-variant-caps: small-caps;
-  } */
   
-  #meet_me_container > p {
+#meet_me_container > p {
   border-left: 1px solid rgb(78, 77, 77);
   color: rgb(211, 211, 211);
   font-size: small;
@@ -353,25 +320,9 @@ body {
 
 #projects_container {
   margin-bottom: 5vh;
-  /* width: 50%; */
   border-top: 5px solid rgba(0, 0, 0, 0.65);
   height: 100%;
-  /* background-color: aliceblue; */
 }
-
-/* #projects_container::before {
-    content: "";
-    background-color: green;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.25;
-    height: 100%;
-    z-index: 0;
-    width: 50%;
-  } */
 
 #projects {
   display: flex;
@@ -380,17 +331,7 @@ body {
   /* z-index: auto; */
 }
 
-#projects > h1 {
-  /* color: white; */
-  color: black;
-  border-bottom: 1px solid black;
-  margin-bottom: 5vh;
-  z-index: 100;
-  text-shadow: 1px 1px 1px rgba(67, 67, 67, 0.65);
-}
-
 .projects_title {
-  /* color: white; */
   color: black;
   border-bottom: 1px solid black;
   margin-bottom: 2.5vh;
@@ -398,7 +339,6 @@ body {
   text-shadow: 1px 1px 1px rgba(67, 67, 67, 0.65);
   align-items: center;
   justify-content: space-between;
-  /* padding-right: 2.5vh; */
 }
 
 #xyla_container, #taste_container, #climate_container, #master_container, #about_container {
@@ -422,8 +362,8 @@ justify-content: center;
 
 .project_button_alignment {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding-right: 5vh;
 }
 
@@ -433,11 +373,13 @@ justify-content: center;
   background-color: aliceblue;
   padding: 5px;
   display: flex;
-  /* align-items: center !important; */
-  /* justify-content: center !important; */
   margin: 1vh;
   font-size: x-small;
-  /* color: ; */
+  transition: color 1.5s, background-color 1s;
+}
+.project_buttons:hover {
+  color: white;
+  background-color: black;
 }
 
 .project_skill_box {
@@ -468,12 +410,7 @@ justify-content: center;
 /******        SKILLS      ********/
 #skills {
   margin-top: none;
-  /* background-color: aliceblue; */
 }
-
-/* #skills_header {
-  
-} */
 
 #key {
   width: 2.5vh;
@@ -496,7 +433,7 @@ justify-content: center;
 #skills_container > h1:nth-child(1) {
   color: black;
   border-bottom: 1px solid black;
-  margin-bottom: 5vh;
+  margin-bottom: 2.5vh;
 }
 
 
@@ -649,6 +586,7 @@ justify-content: center;
 
 
 #contact {
+  border-top: 5px solid rgba(0, 0, 0, 0.65);
   height: 50vh;
   padding: 5vh;
   display: flex;
