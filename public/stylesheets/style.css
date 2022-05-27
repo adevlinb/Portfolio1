@@ -32,10 +32,11 @@ body {
   }
 
   p {
-        font-family: Verdana,
-        Tahoma,
-        sans-serif;
-        font-size: small;
+    font-family: Verdana,
+    Tahoma,
+    sans-serif;
+    font-size: medium;
+    color: rgb(31, 89, 141);
   }
   
   a {
@@ -50,8 +51,9 @@ body {
     vertical-align: middle;
     align-self: center;
   }
-
+  
   a:hover {
+    text-decoration: none;
     color: white;
   }
   
@@ -273,19 +275,7 @@ body {
     opacity: 0; 
     transform: translate(-10px, -10px);
   }
- } 
- 
-.interests {
-  background-color: rgb(148, 148, 148);
-  width: 100%;
-  height: 20vh;
-  margin-bottom: 2vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 5vh;
-}
+ }
 
 .connect_box {
   border: 1px solid black;
@@ -300,25 +290,37 @@ body {
   border-bottom: 5px solid rgba(0, 0, 0, 0.65);
   color: black;
   filter: blur(100%);
+  background-image: url("https://i.imgur.com/qKFtxYq.png");
+  background-size: contain;
 }
 
 #meet_me_pic {
-  width: 60%;
+  width: 75%;
   border-radius: 10px;
   margin-bottom: 2.5vh;
   filter: grayscale(25%);
-  
+  /* filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5)); */
+}
+
+#meetme_background {
+  background-color: rgba(67, 67, 67, 0.25);
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  /* filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5)); */
+  margin-bottom: 5vh;
 }
 
 #meet_me_container > h1:nth-child(1) {
   border-bottom: 1px solid black;
   margin-bottom: 2.5vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
-#meet_me_container > h1 {
-  color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+#meet_me_container > p {
+  color: rgb(31, 89, 141);
+  
   }
 
 #contact_links_meetme {
@@ -352,13 +354,40 @@ body {
 
 #list {
   text-align: left;
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  box-shadow: 1px 1px 1px rgb(155, 155, 155);
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  /* border-radius: 10px; */
+  /* box-shadow: 1px 1px 1px rgb(155, 155, 155); */
+
   padding: 5px;
   line-height: 2.5vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  /* border: 1px solid black; */
+}
+
+#list > p {
+  padding-bottom: 2.5px;
+  margin-bottom: 20px;
+  font-variant-caps: small-caps;
+  font-size: large;
+}
+
+
+#list > p:nth-child(even) {
+  background-color: rgb(185, 214, 239);
+  border-radius: 5px;
+  border: 0.5px solid black;
+  padding: 5px;
+  /* border-bottom: 1px ridge black;  */
+  text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.65);
+  font-size: larger;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65);
+}
+
+#list > p:nth-child(odd) {
+  padding: 5px;
+  font-weight: 800;
+  font-size: larger;
 }
 
 /******        PROJECTS      ********/
@@ -369,7 +398,7 @@ body {
   height: 100%;
 }
 
-#projects {
+.projects {
   display: flex;
   flex-direction: column;
   margin: 2.5vh 5vh;
@@ -506,7 +535,6 @@ justify-content: center;
   background-color: rgb(211, 211, 211);
   color: black;
   filter: saturate(200%);
-
 }
 
 .skill_learning {
@@ -524,12 +552,14 @@ justify-content: center;
 }
 
 .skill > p {
+  color: black;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-variant-caps: small-caps;
   font-weight: 600;
-  }
-  
+}
+
 .skill_learning > p {
+  color: black;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 600;
   font-variant-caps: small-caps;
@@ -659,7 +689,7 @@ footer {
 }
 
 .github_contact {
-  width: 10vw;
+  width: 5vh;
   background-size: cover;
   margin: 1.5vh;
   background-color: rgb(168, 168, 168);
@@ -667,6 +697,9 @@ footer {
   border-radius: 50%;
   padding: 20px;
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .github_contact:hover {
