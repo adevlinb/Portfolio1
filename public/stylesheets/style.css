@@ -296,16 +296,11 @@ body {
 }
 
 #meet_me_container > p {
-  /* color: rgb(77, 77, 77) !important; */
   -webkit-text-stroke: 0.25px;
   background-color: rgba(255, 255, 255, 1);
-    /* border-radius: 10px; */
-    padding: 10px;
-    /* border: 1px solid black; */
-    /* filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5)); */
-    margin-bottom: 5vh;
-    /* color: rgb(108, 108, 108) !important; */
-    font-size: large;
+  padding: 10px;
+  margin-bottom: 5vh;
+  font-size: large;
 }
 
 #meet_me_container::before {
@@ -590,7 +585,8 @@ justify-content: center;
 }
 
 .skill_icon {
-  width: 5vw;
+  width: 5vh;
+  /* width: 5vw; */
   filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.7));
 }
 
@@ -746,4 +742,32 @@ footer {
     display: flex;
     align-items: center;
   }
+
+  #meet_me_pic {
+    width: 55%;
+  }
+
+  #projects_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2.5vh 5vh;
+  }
+
+  .skill_icon {
+    width: 4vh;
+  }
+
+  #node {
+    width: 6vh;
+  }
+  
+  #go_lang {
+    width: 5vh;
+  }
+  
+  #aws {
+    width: 12.5vh;
+  }
+
+
 }
