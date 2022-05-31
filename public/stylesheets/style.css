@@ -392,12 +392,12 @@ a:hover {
 
 #list {
   text-align: left;
-  line-height: 3vh;
+  line-height: 4vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: white;
   filter: drop-shadow(1.5px 1.5px 1.5px rgba(0, 0, 0, 0.35));
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 2.5vh;
   border: 0.25px solid black;
   height: 100%;
@@ -407,6 +407,7 @@ a:hover {
   font-variant-caps: small-caps;
   font-size: large;
   margin: 5px;
+  color: red;
 }
 
 
