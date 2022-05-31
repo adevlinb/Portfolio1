@@ -392,7 +392,7 @@ a:hover {
 
 #list {
   text-align: left;
-  line-height: 2.5vh;
+  line-height: 3vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: white;
@@ -405,8 +405,6 @@ a:hover {
 }
 
 #list > p {
-  padding-bottom: 2.5px;
-  margin-bottom: 20px;
   font-variant-caps: small-caps;
   font-size: large;
 }
@@ -903,8 +901,6 @@ font-size: larger;
   }
 
   #list>p {
-    padding-bottom: 2.5px;
-    margin-bottom: 10px;
     font-variant-caps: small-caps;
     font-size: large;
   }
