@@ -326,17 +326,13 @@ a:hover {
 #meet_me_pic {
   width: 75%;
   /* border-radius: 10px; */
-  /* margin-bottom: 2.5vh; */
+  margin-bottom: 2.5vh;
   filter: grayscale(25%);
 }
 
 
 #hello_world {
-  /* color: white; */
-  /* border-bottom: 1px solid black; */
   margin-bottom: 10vh;
-  /* margin-bottom: 2.5vh; */
-  /* font-family: cursive; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -430,8 +426,9 @@ a:hover {
 #pic_container {
     background-color: rgb(224, 224, 224);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     filter: drop-shadow(1.5px 1.5px 1.5px rgba(0, 0, 0, 0.35));
     padding: 10px;
     border: 0.25px solid black;
@@ -822,6 +819,15 @@ font-size: larger;
 
   #meet_me_pic {
     width: 50%;
+    margin-bottom: 0;
+  }
+
+  #pic_container {
+    flex-direction: row;
+  }
+
+  .github_contact_meetme {
+    margin: 1vh;
   }
 
   #skills_grid {
@@ -852,47 +858,55 @@ font-size: larger;
 
 @media only screen and (min-width: 600px) {
   a {
-  font-size: 2vw;
+    font-size: 2vw;
+  }
+
+  .github_contact_meetme {
+    margin: 1.5vh;
   }
 
 }
 
 
 @media only screen and (min-width: 850px) {
-a {
-font-size: 1.55vw;
-}
+  a {
+    font-size: 1.55vw;
+  }
 
-#meet_me_media_query {
-display: flex;
-align-items: center;
-}
+  #meet_me_media_query {
+    display: flex;
+    align-items: center;
+  }
 
-#meet_me_pic {
-width: 55%;
-}
+  #meet_me_pic {
+    width: 55%;
+  }
 
-#projects_container {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-margin: 2.5vh 5vh;
-}
+  .github_contact_meetme {
+    margin: 1.5vh;
+  }
 
-.skill_icon {
-width: 4vh;
-}
+  #projects_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2.5vh 5vh;
+  }
 
-#node {
-width: 6vh;
-}
+  .skill_icon {
+    width: 4vh;
+  }
 
-#go_lang {
-width: 5vh;
-}
+  #node {
+    width: 6vh;
+  }
 
-#aws {
-width: 12.5vh;
-}
+  #go_lang {
+    width: 5vh;
+  }
+
+  #aws {
+    width: 12.5vh;
+  }
 
 
 }
