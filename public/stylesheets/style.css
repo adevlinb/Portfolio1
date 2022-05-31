@@ -396,7 +396,6 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: white;
-  /* background-color: rgba(255, 255, 255, 1); */
   filter: drop-shadow(1.5px 1.5px 1.5px rgba(0, 0, 0, 0.35));
   padding: 10px;
   margin-bottom: 2.5vh;
