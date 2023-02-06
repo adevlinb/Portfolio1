@@ -208,25 +208,25 @@ a:hover {
 .arrow,
 .arrow:before {
   left: 50%;
-} 
+}
 
 .arrow {
   position: relative;
-  width: 35px; 
-  height: 35px; 
-  top: 15%; 
+  width: 35px;
+  height: 35px;
+  top: 15%;
   margin: -20px 0 0 -20px;
   transform: rotate(45deg);
   border-left: none;
   border-top: none;
-  border-right: 2px solid rgb(171, 56, 56); 
+  border-right: 2px solid rgb(171, 56, 56);
   border-bottom: 2px solid rgb(171, 56, 56);
 }
 
 .arrow:before {
   position: absolute;
-  content: '';  
-  width: 20px; 
+  content: '';
+  width: 20px;
   height: 20px;
   top: 50%;
   margin: -10px 0 0 -10px;
@@ -241,37 +241,37 @@ a:hover {
 
 @keyframes arrow {
   0% {
-    opacity: 1; 
-  } 
+    opacity: 1;
+  }
   100% {
-    opacity: 0; 
+    opacity: 0;
     transform: translate(-10px, -10px);
   }
-} 
+}
 
 .blue_arrow,
 .blue_arrow:before {
   left: 50%;
-} 
+}
 
 .blue_arrow {
   position: relative;
-  width: 35px; 
-  height: 35px; 
-  top: 15%; 
+  width: 35px;
+  height: 35px;
+  top: 15%;
   /* left: 50%; */
   margin: -20px 0 0 -20px;
   transform: rotate(45deg);
   border-left: none;
   border-top: none;
-  border-right: 2px solid rgb(136, 188, 255); 
+  border-right: 2px solid rgb(136, 188, 255);
   border-bottom: 2px solid rgb(136, 188, 255);
 }
 
 .blue_arrow:before {
   position: absolute;
-  content: '';  
-  width: 20px; 
+  content: '';
+  width: 20px;
   height: 20px;
   top: 50%;
   margin: -10px 0 0 -10px;
@@ -286,10 +286,10 @@ a:hover {
 
 @keyframes blue_arrow {
   0% {
-    opacity: 1; 
-  } 
+    opacity: 1;
+  }
   100% {
-    opacity: 0; 
+    opacity: 0;
     transform: translate(-10px, -10px);
   }
 }
@@ -371,7 +371,7 @@ a:hover {
 
 #contact_links_meetme {
   text-align: center;
-} 
+}
 
 #contact_links_meetme > a {
   text-align: center;
@@ -449,6 +449,8 @@ a:hover {
   margin-bottom: 5vh;
   border-top: 5px solid rgba(0, 0, 0, 0.65);
   height: 100%;
+  text-justify: auto;
+  text-align: justify;
 }
 
 .projects {
@@ -469,16 +471,13 @@ a:hover {
   justify-content: space-between;
 }
 
-#xyla_container, #taste_container, #climate_container, #master_container, #about_container {
+.pic-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#xyla,
-#taste,
-#climate,
-#mastermind {
+.pic {
   width: 40vh;
   height: 40vh;
   object-fit: cover;
@@ -590,7 +589,7 @@ a:hover {
 }
 
 .skill_learning {
-  font-size: small; 
+  font-size: small;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -646,9 +645,11 @@ gap: 3vh;
   color: black;
   border-bottom: 1px solid black;
   margin-bottom: 5vh;
-} 
+}
 
-
+.mocha {
+  filter: drop-shadow(3px 5px 2px rgb(255, 255, 255));
+}
 
 #node {
   width: 20vw;
@@ -787,7 +788,7 @@ font-size: larger;
 
 @media only screen and (min-width: 300px) {
 
-  
+
   li {
     display: flex;
     align-items: center;
